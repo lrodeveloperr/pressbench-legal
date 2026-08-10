@@ -1,0 +1,55 @@
+---
+---
+
+@import "minima";
+
+.page-content a {
+  color: #1756a9;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+.page-content a:visited {
+  color: #4d2f83;
+}
+
+.site-title,
+.site-title:visited,
+.site-nav .page-link,
+.site-nav .page-link:visited {
+  color: #252525;
+}
+
+.site-footer,
+.footer-col-wrapper {
+  color: #595959;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+label:focus-visible {
+  outline: 3px solid #1756a9;
+  outline-offset: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav .nav-trigger {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .site-nav .nav-trigger:focus + label {
+    outline: 3px solid #1756a9;
+    outline-offset: 3px;
+  }
+}

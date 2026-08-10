@@ -1,0 +1,14 @@
+title: PressBench Legal & Support
+description: Pre-release privacy, terms, safety, purchase, data, and support drafts for PressBench.
+theme: minima
+lang: en-CA
+url: "https://lrodeveloperr.github.io"
+baseurl: "/pressbench-legal"
+repository: "lrodeveloperr/pressbench-legal"
+header_pages:
+  - privacy.md
+  - terms.md
+  - subscriptions.md
+  - support.md
+exclude:
+  - README.md
