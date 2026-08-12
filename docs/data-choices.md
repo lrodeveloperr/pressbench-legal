@@ -6,47 +6,60 @@ permalink: /data-choices/
 
 # Local Data, Backup, Export, and Deletion
 
-> **Pre-release draft.** Final deletion, backup, and purchase behaviour must be verified in the signed Android and iOS builds.
+> **Pre-release draft.** Final storage, deletion, backup, and purchase behaviour must be verified in the signed Android and iOS applications.
 
-**Last updated: 10 August 2026**
+**Last updated: 12 August 2026**
 
-PressBench has no developer account or cloud database. GoodUse Studios cannot see, recover, edit, or remotely delete production records stored in the App.
+PressBench has no GoodUse Studios account or operational cloud database. GoodUse Studios cannot see, recover, edit, or remotely delete setups, batches, active work, or other operational records stored in the App.
 
-## Export or back up first
+## Back up or export
 
-In PressBench, open **Data Management**.
+Use the App’s Data and Backup functions to:
 
-- Use **Backup & restore** to save or share a JSON database backup.
-- Use **Export CSV** for a spreadsheet-ready copy of production settings and batch records.
-- Use the Analytics and reporting area to create PDF or XLSX reports where available under the current plan.
+- create or restore a JSON operational backup;
+- export CSV records; and
+- create PDF or XLSX reports where paid access and report limits permit.
 
-Treat every export as production data. Check the destination and file contents before relying on it. A JSON backup may replace current local records when restored, so preserve a known-good copy separately.
+PressBench does not encrypt these files. Treat them as production records. Check the destination, contents, and access controls before relying on or sharing them.
+
+A restore can replace current local records. The App validates the incoming file and creates a local pre-restore recovery point before replacement. Preserve a separate known-good copy before restoring or deleting important records.
 
 ## Delete all local data
 
-In the App:
+Use **Delete all local data** and complete the typed confirmation shown by the App.
 
-1. Open the navigation menu.
-2. Select **Data Management**.
-3. In **Local data reset**, choose **Delete all local data**.
-4. Complete the typed confirmation shown by the App.
+The operation is intended to delete local machines, setups, batches, preferences, active work, drafts, and recovery state from every PressBench storage backend. The App must block deletion while a run is active and must report any cross-backend partial failure.
 
-The audited App clears the active local store and attempts to retire any alternate local storage backend. If the App reports that alternate storage could not be retired, an older local copy may remain recoverable: retry the deletion or clear the App’s storage through the operating system, then reopen the App and verify that no records return. Do not treat the in-App deletion as complete while that warning remains.
+If a partial-failure warning appears, do not assume deletion is complete. Retry, use the operating system’s clear-storage or delete-App controls, and reopen the App to verify that records do not return.
 
-Successful local deletion does not delete copies previously exported, shared, emailed, uploaded, printed, or included in an operating-system, device, cloud, or workplace backup.
+## What local deletion does not delete
 
-Clearing the App’s storage in device settings or uninstalling the App may also remove local records. These actions do not cancel an Android subscription. The iOS Pro unlock is a one-time purchase and has no renewal to cancel.
+Successful local deletion does not delete:
 
-## Delete exported copies
+- files previously exported, shared, emailed, uploaded, printed, or copied;
+- copies retained by recipients, workplace systems, cloud storage, trash folders, synced devices, or independent backups;
+- support email held by GoodUse Studios;
+- Apple or Google account, billing, or transaction records; or
+- the one-time store purchase, which may remain restorable.
 
-Delete exported files from every location to which they were saved or shared, including Downloads, Files, email, messages, shared drives, cloud-storage folders, removable media, print queues, and recipients’ systems. GoodUse Studios cannot remove those copies.
+GoodUse Studios cannot delete copies it does not possess.
 
-## Device backups
+## Device and cloud backups
 
-Android, iOS, a device manufacturer, or a workplace management system may back up App data independently. Review the relevant device or account backup settings and remove old backups where appropriate. Restoration of a device backup may restore an older App database.
+The intended native configuration excludes the PressBench operational database from automatic operating-system or cloud application backup. This must be verified in each final signed build.
 
-## Store and support data
+An exported file placed in Files, Downloads, email, cloud storage, messaging, workplace storage, removable media, or another destination may still be backed up by that destination. Users must manage those copies through the relevant service.
 
-Apple or Google controls store account, billing, and purchase history. Use the applicable platform controls for those records. To request access to or deletion of support email held by GoodUse Studios, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Data%20Request) with the subject **“PressBench Data Request.”** We may need enough information to locate the correspondence and verify that the requester is authorised.
+## Imports and restoration
+
+Only restore a backup obtained from a trusted source. A malformed or incompatible backup is rejected without replacing current data. Purchase entitlement is kept separately and is not imported from an editable JSON file.
+
+Restoring operational data does not prove that its setup values remain current, safe, or suitable. Review restored setups and current manufacturer or supplier instructions before use.
+
+## Support information
+
+To request access to, correction of, or deletion of support correspondence actually held by GoodUse Studios, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Data%20Request) with the subject **“PressBench Data Request.”**
+
+We may need to verify the requester and may retain limited information where required for accounting, fraud prevention, security, an unresolved dispute, or another legal obligation.
 
 For more detail, read the [Privacy Policy]({{ '/privacy/' | relative_url }}).

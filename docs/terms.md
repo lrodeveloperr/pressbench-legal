@@ -7,105 +7,164 @@ permalink: /terms/
 
 # Terms of Use
 
-> **Pre-release draft — not yet effective.** The platform offer structure is fixed, but the prices, Android billing period and recurring value, legal-assent flow, native purchase implementation, and signed binaries still require approval.
+> **Pre-release draft — not yet effective.** This draft is based on PressBench logic v0.21.2 and must be checked against the final signed Android and iOS applications before publication.
 
-**Draft date: 10 August 2026**
+**Draft date: 12 August 2026**
 
-Once made effective and presented in the released App, these Terms will govern use of PressBench (the **“App”**). The App is provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios in Ontario, Canada** (“we,” “us,” or “our”). By affirmatively accepting these Terms, or by continuing to use the App after valid notice where the law permits that form of acceptance, you agree to them. If you do not agree, do not use the App.
+These Terms of Use (“Terms”) govern PressBench (the **“App”**), provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios in Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”).
 
-## 1. Eligibility and authority
+By affirmatively accepting these Terms in the App, you agree to them. If you use PressBench for a business or organisation, you confirm that you have authority to bind that organisation. If you do not agree, do not use the App.
 
-The App is intended for adults using it for their own authorised production activities. You must be at least 18 or the age of legal majority where you live and legally capable of accepting these Terms. If you use the App for a business or organisation, you confirm that you are authorised to bind it, and “you” includes that organisation.
+## 1. Eligibility
+
+You must be at least 18 or the age of legal majority where you live and legally capable of entering this agreement. PressBench is an operational utility and is not directed to children.
 
 ## 2. What PressBench does
 
-PressBench helps users record and reuse operator-entered heat-press production settings, log batches and outcomes, record corrections and issues, calculate local analytics, and create user-directed backups and reports.
+PressBench helps users create and reuse operator-entered heat-press setups, guide and time runs, record batches and quality outcomes, maintain local history and evidence, calculate local analytics, and create user-directed backups and exports.
 
-PressBench is a recordkeeping and workflow tool only. It does not inspect equipment or materials, control machinery, measure actual temperature or pressure, certify a process, determine regulatory compliance, or determine whether an operating setting is safe or correct. Generic starter templates in the release build will be blank field examples and will not provide production setpoints.
+PressBench is a recordkeeping and workflow aid only. It does not:
 
-## 3. Mandatory safety responsibilities
+- connect to, inspect, monitor, control, stop, or certify equipment;
+- measure actual platen temperature, pressure, dwell time, ventilation, or material condition;
+- provide manufacturer or supplier instructions;
+- determine whether a setting is safe, compatible, compliant, or commercially suitable;
+- guarantee an outcome, yield, adhesion, durability, colour, placement, or customer acceptance; or
+- replace training, direct supervision, workplace procedures, or professional advice.
 
-Heat presses, heated materials, electrical equipment, inks, adhesives, transfers, and substrates can cause burns, fire, fumes, electrical injury, equipment damage, or other harm. Before every production run, you must independently verify the current instructions and limits issued by the heat-press manufacturer and each material, transfer, ink, and substrate supplier.
+Generic starters provide structure only and must not contain temperature, time, pressure, or other actionable production values.
 
-You are responsible for equipment condition, compatibility, ventilation, guarding, placement, pressure, temperature, time, personal protective equipment, fire precautions, training, supervision, and safe workplace procedures. Remain with operating equipment. Do not treat an App timer, sound, vibration, preset, prior result, “Verified” label, or report as a safety alarm, professional approval, or substitute for direct supervision and manufacturer instructions.
+## 3. Safety responsibilities
 
-The [Heat-Press Safety Notice]({{ '/safety/' | relative_url }}) forms part of these Terms.
+Heat presses, electrical equipment, heated materials, inks, adhesives, transfers, and substrates can cause burns, fire, fumes, electrical injury, equipment damage, or other harm.
 
-## 4. Records, presets, and calculated outputs
+Before every run, you must independently verify current instructions and limits from the equipment manufacturer and every relevant material or supplier source. You are responsible for equipment condition, compatibility, electrical supply, ventilation, guarding, clearances, placement, pressure, temperature, time, cooling, peel method, personal protective equipment, training, supervision, fire precautions, and emergency procedures.
 
-You control what information is entered. You are responsible for checking the accuracy, completeness, authority, and lawful use of records. Generic starter examples must not contain actionable operational values. If a build displays populated generic setpoints, do not use them; that build is not approved for release. Independently verify every operator-entered value against the current instructions for the specific machine and materials.
+Remain present with operating equipment. An App timer or notification is a convenience reminder, not a safety alarm. The [Heat-Press Safety Notice]({{ '/safety/' | relative_url }}) forms part of these Terms.
 
-Status labels such as Draft, Trial, Verified, Success, Rework, Failure, or Needs Review reflect App rules and operator-entered records. They are not certification by GoodUse Studios, a manufacturer, a testing laboratory, a regulator, a customer, or an insurer.
+## 4. Inputs, setup status, and outputs
 
-Analytics and reports depend on the input data and can be incomplete, stale, incorrectly classified, or affected by device, software, migration, locale, time-zone, or export limitations. Verify important records against primary production evidence before relying on them.
+You are responsible for the accuracy, completeness, authority, and lawful use of information entered into PressBench.
 
-## 5. Local data and backups
+A status such as Draft, Trial, Proven, Archived, Source checked, Success, Rework, Failure, or Needs review describes App logic and operator-entered evidence only. It is not certification, verification, approval, or a guarantee by GoodUse Studios, a manufacturer, supplier, laboratory, engineer, regulator, insurer, customer, or other third party.
 
-The audited configuration stores production records locally and does not provide a developer cloud account or remote recovery service. You are responsible for maintaining appropriate backups and testing that they can be opened before deleting records, resetting a device, changing devices, or reinstalling the App.
+“Proven on this setup” applies only to the exact recorded operational fingerprint and qualifying local batch evidence. A material operational change returns the setup to Trial. Historical outcomes do not establish that a future run will be safe or successful.
 
-Deleting the App, clearing its storage, losing or damaging the device, restoring an older backup, or encountering device failure may permanently remove or overwrite records. We cannot retrieve local data. Exported files may expose production or customer information and must be handled securely and lawfully.
+Analytics and reports depend on user-entered records and may be incomplete, stale, incorrectly classified, or affected by device, locale, time-zone, migration, correction, or export limits. Verify important decisions against primary source records and current instructions.
+
+## 5. Local data and confidentiality
+
+PressBench has no GoodUse Studios account, operational cloud database, or remote recovery service. You are responsible for device access, lawful handling of customer and production information, confidentiality obligations, backups, exports, and authoritative source records.
+
+GoodUse Studios cannot view, retrieve, correct, restore, or remotely delete operational records stored only on the device. Device loss, corruption, reset, storage clearing, uninstall, or restore may permanently remove or replace records.
+
+Manual JSON, CSV, XLSX, and PDF files are not encrypted by PressBench. Once exported or shared, those copies are controlled by the selected destination and are not removed by deleting App data.
 
 ## 6. Licence
 
-Subject to these Terms and the applicable store rules, we grant you a limited, revocable, non-exclusive, non-transferable licence to use the App on devices you own or control for lawful internal purposes. You may not sell, sublicense, rent, distribute, reverse engineer, bypass purchase controls, defeat usage limits, interfere with security or integrity controls, or use the App to violate law or another person’s rights, except where a restriction is prohibited by law or an open-source licence expressly permits the activity.
+Subject to these Terms, applicable store terms, and payment of any applicable charge, GoodUse Studios grants you a limited, revocable, non-exclusive, non-transferable licence to install and use the App on supported devices you own or control for lawful internal personal or business operations.
 
-For an Apple-distributed version, Apple’s [Standard Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) also governs the licence unless App Store Connect identifies an approved custom EULA. For a Google Play version, the Google Play Terms and applicable purchase rules also apply.
+Except where applicable law or an open-source licence expressly permits, you may not:
 
-## 7. Free Tier, Pro access, purchases, and subscriptions
+- copy, sell, sublicense, rent, lease, redistribute, or commercially host the App;
+- reverse engineer, decompile, disassemble, or attempt to derive source code;
+- bypass or interfere with usage limits, entitlement verification, security, or data-integrity controls;
+- use the App to violate law, contract, privacy, confidentiality, safety, or intellectual-property rights; or
+- represent an App record or report as independently certified, manufacturer-approved, measured by PressBench, or legally conclusive.
 
-The Free Tier permits a new setting while fewer than three operator-created production settings are currently stored and a new batch while fewer than five batch records are currently stored. Deleting a record of that type reopens a slot. A restore may place the database above either Free Tier count; restored records are not deleted, but a new record of that type cannot be added until its stored count falls below the threshold or Pro is active. JSON backup and CSV export are included without Pro.
+## 7. Free and paid access
 
-Pro is intended to permit creation of up to 1,000 operator-created production settings and 1,000 batch records and unlock PDF and XLSX report exports. JSON backup and CSV export do not require Pro. Record creation is also subject to the App's internal data limits and available device storage. In the audited v0.17.1 runtime, those internal limits are 8 MB total in primary storage, 2 MB total in compatibility storage, and 1 MB for an individual record, so an internal limit may be reached before the numerical record ceiling. The final build must count starter examples separately and enforce the disclosed limits consistently.
+The Free Tier permits up to **3 saved setups** and **10 saved batches**. It is not a timed trial. Existing records remain available subject to device and technical limits.
 
-On iOS, PressBench offers a one-time, non-consumable Pro unlock with no subscription or recurring charge; the entitlement does not expire merely with time. On Android, PressBench offers an auto-renewing Pro subscription that provides Pro while the entitlement is active. PressBench contains no advertising on either platform.
+On each platform, PressBench offers an optional one-time, non-consumable paid unlock. The United States base price is **US$4.99**, with store-managed geographic pricing, currency conversion, and applicable taxes. The exact price and currency shown by Apple or Google before confirmation control the transaction.
 
-The purchase screen will show the applicable local price, currency, tax treatment, included features and, on Android, billing period, renewal terms, recurring value, and cancellation method before confirmation. Do not purchase unless the in-App description and platform purchase sheet clearly agree. Deleting the Android App does not cancel its subscription. The separate [Purchases, Pro Access, Cancellations, and Refunds page]({{ '/subscriptions/' | relative_url }}) forms part of these Terms.
+Paid access permits creation subject to physical limits of up to 1,000 saved setups and 1,000 saved batches and unlocks paid report and analytics capabilities identified on the purchase screen. JSON backup and CSV export remain available without paid access. Device storage, compatibility storage, record-size, report-row, and App-availability limits still apply.
 
-## 8. Updates and changes
+There is no PressBench subscription or recurring App charge on either platform. Deleting or reinstalling PressBench does not create a new purchase and does not by itself remove a valid store entitlement.
 
-We may provide corrections, security updates, compatibility changes, or feature changes. Device and operating-system requirements may change. In the audited runtime, an inactive or unverified entitlement does not delete existing or restored production records: those records remain stored, viewable, editable or correctable, available to JSON backup, and available to CSV export. PDF/XLSX report export is blocked. A new record of a type is blocked while its current stored count is at or above the applicable Free Tier threshold; deleting records below that threshold reopens a slot.
+The [Purchases, Paid Access, and Refunds page]({{ '/purchases/' | relative_url }}) forms part of these Terms.
 
-The final native builds must preserve and test this rule for Android expiry, cancellation, billing failure, grace or hold states, and for a refund, revocation, pending purchase, or offline verification state on either platform. A completed refund or revocation may terminate iOS Pro, but a temporary offline state or store-verification outage must not by itself revoke a previously verified one-time entitlement. Export a current backup before changing plans, updating, migrating, or removing the App.
+## 8. Store purchases and restoration
 
-We may discontinue a feature or the App, subject to applicable store rules and mandatory consumer law. Nothing in these Terms promises perpetual availability, support, compatibility, or any particular future feature.
+Purchases are processed by Apple App Store or Google Play. PressBench does not independently charge payment cards.
 
-## 9. Intellectual property and user records
+iOS and Android products are separate. A purchase does not transfer between Apple and Google, between incompatible store accounts, or between platforms unless the store purchase screen expressly says otherwise.
 
-The App, branding, interface, and original software are owned by or licensed to Lateef Razaq-Oyetola carrying on business as GoodUse Studios and are protected by applicable law. Third-party components remain governed by their own licences.
+Use **Restore Purchases** while signed into the store account that made the purchase. Restoration concerns the entitlement only; it does not restore local setups, batches, or exported files.
 
-As between you and us, you retain your rights in records you create. The local-first App does not grant us ownership of those records. You are responsible for having the right to enter, use, export, and disclose customer, supplier, design, and production information.
+A completed refund, chargeback, or store revocation may remove paid access. Temporary offline status or a temporary store-verification failure must not by itself delete operational records or erase a valid entitlement.
 
-## 10. Third-party services
+## 9. Refunds and consumer rights
 
-App stores, operating systems, device manufacturers, email providers, file destinations, and GitHub Pages are independent services with their own terms and privacy practices. They may control availability, security, billing decisions, refunds, backups, or account actions. Where Google Play permits a developer-issued refund or subscription action, our ability to act remains subject to Play Console permissions, store rules, and mandatory law.
+Refund requests are handled under the applicable store rules and mandatory consumer law. Apple and Google determine or administer store refunds. GoodUse Studios may assist with entitlement troubleshooting but cannot guarantee a refund decision.
 
-## 11. Disclaimer of warranties
+Nothing in these Terms excludes a warranty, condition, refund, cancellation right, remedy, or other consumer protection that applicable law does not permit us to exclude or limit.
 
-To the maximum extent permitted by law, the App and related materials are provided “as is” and “as available.” We do not warrant that the App will be uninterrupted, error-free, fit for a particular process, accurate, compatible with any material or machine, or sufficient for safety, legal, quality-control, customer, insurance, tax, audit, or record-retention requirements.
+## 10. Ownership and feedback
 
-No App output or support response creates a manufacturer instruction, engineering opinion, safety certification, professional advice, or warranty. Mandatory statutory warranties and consumer rights that cannot lawfully be excluded remain unaffected.
+GoodUse Studios and its licensors retain rights in the App, branding, design, documentation, and original software. Third-party components remain governed by their own licences.
 
-## 12. Limitation of liability
+You retain rights in information you enter. You are responsible for having authority to enter, use, export, and disclose it.
 
-To the maximum extent permitted by law, Lateef Razaq-Oyetola carrying on business as GoodUse Studios will not be liable for indirect, incidental, special, exemplary, punitive, or consequential loss, or for lost profits, revenue, production, contracts, goodwill, business opportunity, or data, arising from or related to the App.
+If you voluntarily send feedback or suggestions, you permit us to use them without restriction or payment, provided we do not publicly identify you without permission. Do not send information you are not authorised to disclose.
 
-For all other claims, our aggregate liability will not exceed the greater of the amount you paid for the App or Pro access during the 12 months before the event giving rise to the claim and CAD $50. These limits do not apply where prohibited by law and do not exclude liability that cannot lawfully be excluded, including liability that applicable law imposes for fraud, wilful misconduct, gross negligence, or personal injury.
+## 11. Third-party services
 
-## 13. Suspension and termination
+Apple, Google, operating systems, device manufacturers, email providers, file destinations, and website hosts are independent services governed by their own terms and privacy practices. Their actions may affect store availability, transactions, refunds, diagnostics, file retention, or backups.
 
-Your licence may end if you materially breach these Terms, misuse the App, bypass payment controls, or use it unlawfully. Provisions that by their nature should survive—including ownership, disclaimers, liability limits, and governing law—continue after termination. Store cancellation and refund rights remain governed by the applicable platform and mandatory law.
+For Apple-distributed versions, Apple’s [Standard Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) also applies unless App Store Connect presents an approved custom EULA. Apple and its subsidiaries are third-party beneficiaries of the Apple licence terms and may enforce them.
 
-## 14. Governing law and disputes
+## 12. Updates, compatibility, and discontinuation
 
-These Terms are governed by the laws of Ontario and the federal laws of Canada applicable there, without regard to conflict-of-law rules. Courts located in Ontario have non-exclusive jurisdiction. If you are a consumer, this section does not deprive you of mandatory protections or access to a court or regulator available under the law of your usual residence.
+We may provide corrections, safety, security, legal, compatibility, or feature updates. An update may be required for continued operation on a supported platform.
 
-Before filing a claim, contact [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Terms) so we can try to resolve the issue informally. This does not shorten or waive any legal deadline or mandatory right.
+A one-time purchase does not promise perpetual development, availability on every device, or indefinite store distribution. We will not knowingly revoke a valid entitlement merely because pricing changes, but a store refund or revocation may end it.
 
-## 15. Changes to these Terms
+We may change or discontinue the App or a feature subject to applicable store rules and mandatory law. Existing local records remain subject to device, format, compatibility, and data-loss risks.
 
-We may update these Terms for legal, safety, security, store, or product changes. The current version and effective date will be posted here. If required by law, we will provide additional notice or seek consent. Continued use after a validly notified change constitutes acceptance to the extent permitted by law.
+## 13. Disclaimer of warranties
 
-## 16. Contact
+To the maximum extent permitted by law, the App and related materials are provided “as is” and “as available.” We do not warrant uninterrupted or error-free operation, compatibility with every machine or material, accuracy of user-entered records, successful production outcomes, or suitability for safety, regulatory, quality-control, insurance, tax, audit, or retention requirements.
+
+No App output or support response creates a manufacturer instruction, engineering opinion, safety certification, professional advice, or warranty. Mandatory rights remain unaffected.
+
+## 14. Limitation of liability
+
+To the maximum extent permitted by law, GoodUse Studios is not liable for indirect, incidental, special, exemplary, punitive, or consequential loss, or for lost profits, revenue, production, contracts, goodwill, business opportunity, customer relationship, or data arising from the App.
+
+To the maximum extent permitted by law, our aggregate liability arising from the App or these Terms will not exceed the greater of: (a) the amount paid for PressBench during the 12 months before the event giving rise to the claim; and (b) CAD $100.
+
+These limits do not apply to fraud, wilful misconduct, gross negligence, death or personal injury caused by negligence, or any liability or remedy that cannot lawfully be limited.
+
+## 15. Business-use indemnity
+
+If you use PressBench for a business, you will indemnify GoodUse Studios against a third-party claim and reasonable direct costs to the extent caused by your unlawful use, knowing infringement of another person’s rights, or material misrepresentation of an App record or report.
+
+This does not require indemnification for our negligence, breach, unlawful conduct, or any matter that applicable law does not allow us to shift.
+
+## 16. Suspension and termination
+
+You may end these Terms by stopping use and deleting the App. We may suspend or terminate the licence for material breach, unlawful use, misuse of entitlement systems, or infringement of rights.
+
+Sections that by their nature should survive—including ownership, record responsibility, disclaimers, liability limits, and dispute terms—continue after termination. Mandatory consumer rights and accrued claims remain unaffected.
+
+## 17. Governing law and disputes
+
+These Terms are governed by the laws of Ontario and the federal laws of Canada applicable there, without regard to conflict-of-law rules. Ontario courts have non-exclusive jurisdiction.
+
+If you are a consumer, this section does not deprive you of mandatory rights or access to a court or regulator available under the law of your usual residence.
+
+Before filing a claim, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Terms) with a concise description and requested resolution so we can attempt informal resolution. This does not shorten any statutory deadline or prevent urgent relief.
+
+## 18. Changes
+
+We may update these Terms for legal, safety, security, store, or product changes. The current version and effective date will be posted. Additional notice or renewed acceptance will be provided where required. Changes apply prospectively and do not remove accrued mandatory rights.
+
+## 19. General
+
+These Terms, incorporated policies, and mandatory store terms form the agreement concerning PressBench. If one provision is unenforceable, it will be limited to the minimum necessary and the remainder continues. Failure to enforce a provision is not a waiver.
+
+## 20. Contact
 
 Email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Terms) with the subject **“PressBench Terms.”**
 

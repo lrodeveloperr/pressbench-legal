@@ -1,103 +1,195 @@
 # PressBench Store Disclosures — Provisional Release Worksheet
 
-**Source baseline:** v0.17.1, reviewed 10 August 2026.  
-**Status:** Provisional until the final signed Android App Bundle and iOS archive are inspected.
+**Logic baseline:** PressBench v0.21.2, reviewed 12 August 2026  
+**Status:** Provisional until the final signed Android App Bundle, iOS archive, store products, and runtime traffic are inspected.
 
-## Intended public URLs
+## 1. Public URLs
 
-The intended GitHub Pages URLs are:
+This repository is private and cannot be used as a store privacy-policy URL.
 
-- Privacy: `https://lrodeveloperr.github.io/pressbench-legal/privacy/`
-- Terms: `https://lrodeveloperr.github.io/pressbench-legal/terms/`
-- Purchases: `https://lrodeveloperr.github.io/pressbench-legal/subscriptions/`
-- Support: `https://lrodeveloperr.github.io/pressbench-legal/support/`
-- Data choices: `https://lrodeveloperr.github.io/pressbench-legal/data-choices/`
-- Safety: `https://lrodeveloperr.github.io/pressbench-legal/safety/`
+Planned public routes after approval:
 
-These URLs are not approved store URLs until GitHub Pages is enabled, the pre-release banners are removed after final approval, and every route is verified without authentication.
+- Privacy: /privacy/
+- Terms: /terms/
+- Purchases: /purchases/
+- Support: /support/
+- Data choices: /data-choices/
+- Safety: /safety/
+- Third-party notices: /third-party-notices/
 
-## Apple App Privacy
+Before use in a store, each final URL must be public, stable, accessible without authentication, and tested. Google’s privacy URL must not be a PDF or editable document.
 
-Provisional answer for the audited local-only configuration:
+## 2. Apple App Privacy
 
-- **Data collection:** “No, we do not collect data from this app.”
+Provisional answer, conditional on final-binary verification:
+
+- **Data collection:** No, GoodUse Studios does not collect data from this App.
 - **Tracking:** No.
-- **Privacy Policy URL:** required; use the public Privacy URL above.
-- **User Privacy Choices URL:** use the Data Choices URL above.
+- **Privacy Policy URL:** required.
+- **Privacy Choices URL:** use the public Data Choices page.
 
-Use this answer only if the final iOS archive contains no analytics, advertising, crash-reporting, remote configuration, cloud sync, account, developer server, or other SDK that transmits accessible data off-device. StoreKit/App Store processing and any Apple-provided diagnostics must be reviewed in the final binary and App Store Connect configuration.
+On-device machine profiles, setups, batches, notes, optional references, settings, and active-work state are not developer collection if they remain on-device. User-directed exports are not transmitted to GoodUse Studios.
 
-## Google Play Data safety
+Do not use “Data Not Collected” if the final App, SDKs, or Apple services used by GoodUse Studios transmit accessible diagnostics, identifiers, usage, purchase, support, or other information requiring disclosure.
 
-Provisional answer for the audited local-only configuration:
+Support email and store financial records remain described in the Privacy Policy even if they qualify for optional or out-of-App treatment under Apple’s disclosure definitions.
 
-- No account creation.
-- No production data collected by or shared with GoodUse Studios.
+## 3. Google Play Data Safety
+
+Provisional answers, conditional on final AAB verification:
+
+- No PressBench account creation.
+- No operational data collected by GoodUse Studios.
+- No operational data shared by GoodUse Studios.
 - No advertising or tracking.
-- No developer analytics or crash-reporting SDK.
-- Local records and user-directed exports are not developer collection merely because they exist on the device; review any Android backup configuration separately.
-- Google Play may process purchases under its own service terms.
+- No GoodUse Studios analytics or crash-reporting SDK.
+- No remote push token.
+- No location, camera, microphone, contacts, Bluetooth, health, or advertising-ID access required by the audited logic.
+- User-directed exports remain under user control.
+- Google Play processes purchases under its own terms.
 
-Do not submit “no data collected or shared” until the final AAB manifest, SDK list, network-security configuration, Android backup rules, and runtime traffic are verified. If any library transmits device, diagnostics, purchase, or usage data to a developer or third party, disclose the relevant data type, purpose, retention, and sharing status.
+A privacy policy and Data Safety form are required even when the final answer is no collection and no sharing.
 
-The App has no account, so Google’s in-App account-deletion requirement should not apply. The Data Choices page still provides a public explanation of local deletion.
+Do not submit these answers until the final manifest, SDK list, data-safety dependencies, backup rules, network configuration, and runtime traffic are verified.
 
-## Permissions and platform features
+Because PressBench has no account creation, Google’s online account-deletion requirement should not apply. The public Data Choices page should still explain local deletion.
 
-The audited source does not require location, camera, microphone, contacts, Bluetooth, health, advertising ID, or broad shared-storage permission. Haptic and audio cues are outputs. Backup import, file save, and sharing should use user-initiated system pickers or share sheets.
+## 4. Purchase products
 
-Verify the final manifests and entitlements. Remove any permission or capability that is not essential.
+| Platform | Product identifier | Store product type | US base price | Renewal |
+|---|---|---|---:|---|
+| iOS | pressbench_unlimited_lifetime_ios | Non-consumable one-time purchase | US$4.99 | None |
+| Android | pressbench_unlimited_lifetime_android | One-time in-app product | US$4.99 | None |
 
-## Monetisation declarations
+Both stores use geographic pricing. The exact local storefront price, currency, and tax shown before confirmation control.
 
-Confirmed commercial structure:
+There is:
 
-- Android: limited Free Tier followed by an auto-renewing Pro subscription.
-- iOS: limited Free Tier followed by a one-time non-consumable Pro unlock that does not expire merely with time and has no recurring charge.
-- No ads.
-- No trial unless one is deliberately configured and disclosed.
+- no subscription;
+- no automatic renewal;
+- no monthly or annual billing;
+- no trial conversion; and
+- no advertising.
 
-The Android paywall and store metadata must state the exact local price, billing period, automatic renewal, ongoing subscription value, cancellation method, and links to Privacy and Terms. The current static creation-ceiling and export unlock is exposed to Google Play’s recurring-value rule. The iOS purchase flow must contain no subscription or renewal wording.
+Consumer-facing copy should say **one-time paid unlock** rather than “unlimited” or “lifetime.”
 
-Free/Pro limits govern current stored counts and new record creation rather than lifetime creation or total local storage. Deleting a record below its Free threshold reopens a slot. At or above a threshold, existing, restored, or lapsed records remain stored, viewable, editable or correctable, JSON-backupable, and CSV-exportable; a new record of that type and PDF/XLSX report generation remain gated. Store copy and the purchase screen must state that split exactly unless the released code is deliberately changed and re-audited. The iOS purchase has no recurring charge and does not expire merely with time; record and storage limits still apply.
+## 5. Free and paid disclosures
 
-## Store-listing factual claims
+Free Tier:
 
-Permitted only if the final binary matches:
+- up to 3 saved setups;
+- up to 10 saved batches;
+- not time limited;
+- JSON backup and CSV export available.
 
-- local-first production settings and batch records;
-- no login or cloud account;
+Paid access:
+
+- permits creation up to 1,000 saved setups and 1,000 saved batches;
+- unlocks paid reports and advanced analytics;
+- remains subject to storage, record, report-row, device, compatibility, and App-availability limits.
+
+A separate purchase is required on Apple and Google because there is no cross-platform PressBench account.
+
+A refund or revocation may remove paid access but must not delete local records. Temporary offline operation must not by itself revoke a previously verified entitlement.
+
+## 6. Purchase-flow checks
+
+### Apple
+
+Verify:
+
+- exact non-consumable product type and identifier;
+- localized price and tax;
+- StoreKit 2 verified transaction;
+- currentEntitlements on launch and resume;
+- transaction updates;
+- pending and cancelled states;
+- Restore Purchases;
+- refund and revocation handling;
+- offline cached entitlement;
+- wrong-product rejection; and
+- no subscription or renewal copy.
+
+### Google
+
+Verify:
+
+- exact one-time product type and identifier;
+- localized price and tax;
+- Play Billing purchase-token and signature/verification handling;
+- PENDING state does not grant access;
+- PURCHASED state grants access only after required verification;
+- acknowledgement within Google’s required period;
+- restoration/query on launch and resume;
+- refund, chargeback, and revocation handling;
+- wrong-product rejection;
+- offline cached entitlement; and
+- no subscription, base-plan, renewal, cancellation, or grace-period copy.
+
+## 7. Permissions and platform features
+
+The audited logic does not require:
+
+- location;
+- contacts;
+- camera;
+- microphone;
+- Bluetooth;
+- health data;
+- advertising identifier;
+- broad shared-storage permission; or
+- remote push.
+
+Notifications are optional, scheduled locally, and must use generic text without customer, job, or production references. Timer use inside the App must remain available without notification permission.
+
+Backup import, export, file saving, and sharing should use user-initiated system interfaces.
+
+The operational database is designed to be excluded from automatic OS/cloud application backup. Verify the final Android data-extraction/backup rules and iOS file backup attributes.
+
+## 8. Store-listing claims
+
+Permitted only if the final applications match:
+
+- local-first operational records;
+- no login or GoodUse Studios cloud account;
 - no ads or tracking;
-- no developer analytics SDK;
-- user-directed JSON, CSV, XLSX, and PDF exports;
-- app does not control machinery or determine safe settings; and
-- operator must verify current manufacturer instructions.
+- no GoodUse Studios analytics SDK;
+- optional generic notifications;
+- user-directed JSON, CSV, XLSX, and PDF files;
+- one-time paid unlock on both platforms;
+- App does not control or measure equipment; and
+- operators must verify current manufacturer and supplier instructions.
 
-Avoid absolute claims such as “zero network activity” or “records never leave the device.” Prefer: **“PressBench does not transmit production records to GoodUse Studios. Your exports and any enabled operating-system, device, cloud, or workplace backups may move copies.”**
+Avoid absolute claims such as “zero network,” “data can never leave the device,” “unlimited,” “lifetime access,” “manufacturer verified,” “certified,” or “measures temperature consistency.”
 
-## Category, audience, and content
+Preferred privacy claim:
 
-- Likely primary category: Business or Productivity.
+> PressBench does not transmit operational records to GoodUse Studios. Files you export or share are controlled by you and the selected destination.
+
+## 9. Trader, audience, and market information
+
 - Intended audience: adult heat-press operators and production teams.
+- Likely category: Business or Productivity.
 - Not directed to children.
-- No user-to-user communication or uploaded user-generated content in the audited configuration.
-- No medical, financial, government, or professional certification function.
-- Safety disclaimer must be visible in-App before the first production run and remain accessible thereafter.
+- No user-to-user communication.
+- No medical, financial, government, calibration, certification, or professional-advice function.
 
-Store age-rating answers must be completed from the final questionnaire; do not use the legal adult-audience statement as a substitute for accurate content-rating answers.
+For EU storefronts, complete Apple and Google trader verification and provide the required business address, email, and telephone information.
 
-## Final submission gate
+For Québec, complete French-first contract and distance-contract review before enabling distribution. Translate policies and purchase disclosures required for every launch market.
 
-Confirm the following from the signed binaries, not from this HTML source:
+## 10. Final submission checklist
 
-1. SDK inventory and third-party privacy practices.
-2. Android permissions, data backup rules, and runtime traffic.
-3. iOS entitlements, privacy manifest, required-reason APIs, and runtime traffic.
-4. Product identifiers, price, period, entitlement restoration, and failure states.
-5. Working in-App links to Privacy, Terms, Purchases, Support, Data Choices, and Safety.
-6. Versioned Terms/Privacy presentation and any required assent; easy in-App subscription cancellation access where applicable.
-7. Generic starter templates contain no unsafe actionable setpoints, and “validated” is used only where the verification rule actually passes.
-8. The 1,000 operator-created-setting ceiling counts canonical starters separately, every storage path enforces the intended invariants, and the 8 MB / 2 MB / 1 MB internal data limits are either disclosed or removed.
-9. iOS contains only the confirmed one-time non-consumable offer; Android contains only the confirmed auto-renewing subscription offer; neither build contains ads.
-10. Delete-all clears and verifies every local storage backend, including failure and retry states.
-11. Store declarations match the exact released version.
+1. Inspect final signed binaries, SDKs, permissions, entitlements, privacy manifests, and traffic.
+2. Verify exact product IDs, one-time types, US$4.99 anchors, geographic prices, tax, and family-sharing settings.
+3. Test every purchase, restoration, refund, revocation, pending, wrong-account, offline, and failure state.
+4. Verify legal links and effective document versions inside both Apps.
+5. Verify Terms and safety acceptance and privacy-notice presentation.
+6. Verify optional generic notification content.
+7. Verify automatic backup exclusion and manual unencrypted export warnings.
+8. Verify delete-all across both storage backends.
+9. Complete Apple App Privacy and Google Data Safety from the final binaries.
+10. Publish stable public policy and support URLs.
+11. Complete trader information and required translations.
+12. Generate final third-party licence notices.
+13. Ensure store copy matches the App and contains no subscription or uncapped-access wording.

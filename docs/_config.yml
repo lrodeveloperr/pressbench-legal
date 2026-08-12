@@ -8,7 +8,7 @@ repository: "lrodeveloperr/pressbench-legal"
 header_pages:
   - privacy.md
   - terms.md
-  - subscriptions.md
+  - purchases.md
   - support.md
 exclude:
   - README.md
