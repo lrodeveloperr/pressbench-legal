@@ -82,7 +82,7 @@ Paid access permits creation subject to physical limits of up to 1,000 saved set
 
 There is no PressBench subscription or recurring App charge on either platform. Deleting or reinstalling PressBench does not create a new purchase and does not by itself remove a valid store entitlement.
 
-The [Purchases, Paid Access, and Refunds page]({{ '/subscriptions/' | relative_url }}) forms part of these Terms.
+The [Purchases, Paid Access, and Refunds page]({{ '/purchases/' | relative_url }}) forms part of these Terms.
 
 ## 8. Store purchases and restoration
 
