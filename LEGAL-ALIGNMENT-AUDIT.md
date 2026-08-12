@@ -1,117 +1,207 @@
 # PressBench Legal and Store Alignment Audit
 
-**Audited artifact:** PressBench source v0.17.1  
-**Audit date:** 10 August 2026  
-**Provider:** Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada
+**Audited logic:** PressBench v0.21.2 dated 12 August 2026  
+**Audit date:** 12 August 2026  
+**Provider:** Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada  
+**Status:** Conditional pre-release pass for the logic; final native applications and store configuration remain unapproved.
 
-## Conclusion
+## 1. Bottom line
 
-The local-first privacy and safety posture is strong, but the supplied artifact is **not yet commercially or legally release-ready**. The platform model is now confirmed—one-time Pro unlock that does not expire merely with time on iOS, auto-renewing Pro subscription on Android, and no ads—but the source implements only an unfinished Android-oriented entitlement bridge. The Android subscription currently unlocks a static offline creation ceiling and report exports without demonstrated recurring value. The policy set is a pre-release draft and must not be treated as proof that a native binary or store listing complies.
+The v0.21.2 logic materially improves the legal posture and closes the central defects identified in the earlier v0.17.1 review:
 
-## Confirmed product facts
+- starter templates contain structure rather than generic operating setpoints;
+- the App distinguishes “Source checked” from “Proven on this setup” and does not present either as certification;
+- both platforms use one-time, non-consumable purchases rather than an Android subscription;
+- the Free Tier is 3 saved setups and 10 saved batches;
+- the US price anchor is US$4.99 on both platforms with store geographic pricing;
+- current Terms, safety acknowledgement, privacy-notice presentation, and temperature-unit confirmation are required before new operational work;
+- existing records, deletion, correction, JSON backup, and CSV export remain available under the defined continuity rules;
+- operational records remain local;
+- manual exports are explicitly unencrypted;
+- optional notifications are generic and use no remote push token;
+- active and reserved work is protected from entitlement changes;
+- restore requires a validated target and a durable pre-restore recovery point; and
+- delete-all coordinates both local storage backends and reports partial failure.
 
-- Free Tier may add a setting while fewer than 3 operator-created settings are currently stored and add a batch while fewer than 5 batches are currently stored; deleting one reopens a slot. JSON backup and CSV export remain available.
-- Pro is intended to permit creation of up to 1,000 operator-created settings and 1,000 batch records; PDF and XLSX report exports are gated by verified Pro.
-- Local fields can contain job/customer labels, suppliers, SKUs, lots, material and design details, operating settings, outcomes, issues, corrections, timestamps, and notes.
-- User-directed exports: JSON, CSV, XLSX, and PDF.
-- Source claims: no account, cloud database, analytics SDK, or network permission.
-- No advertising or tracking integration was identified in the supplied source.
-- Purchase entitlement is deliberately excluded from editable backups.
-- The App records operator input and does not inspect or control machinery or determine safe settings.
+The consumer policy set is now aligned to those facts. It must remain marked as a draft until the native wrappers, store products, public URLs, translations, and final binaries are verified.
 
-## Release blockers
+## 2. Confirmed logic facts
 
-### P0 — Remove actionable generic starter setpoints
+### Product and access
 
-The source says the App does not recommend safe or correct settings, yet it auto-installs “Factory Presets” containing generic actionable values, including 315°F for 15 seconds at medium pressure and 285°F for 10 seconds at medium pressure. A title saying “Verify Manufacturer” does not cure that product contradiction. Remove the operational values and rename the templates as blank starter examples before release; do not rely on a disclaimer to close this blocker.
+- Free Tier: 3 saved setups and 10 saved batches.
+- iOS product: pressbench_unlimited_lifetime_ios.
+- Android product: pressbench_unlimited_lifetime_android.
+- Both products: one-time, non-consumable; no renewal or subscription.
+- US base-price anchor: US$4.99; store geographic pricing enabled.
+- Paid physical ceilings: 1,000 saved setups and 1,000 saved batches.
+- Premium reports and advanced analytics require paid access.
+- JSON backup and CSV export remain available without paid access.
 
-### P0 — Implement the confirmed model and compliant Android recurring value
+### Privacy architecture
 
-The source contains Subscribe and Restore Purchase language but no price, period, product ID, trial, or completed purchase service. Its own error copy says a verified store purchase service is unavailable in the web build.
+- No PressBench account.
+- No GoodUse Studios operational cloud or synchronization.
+- No advertising, tracking SDK, analytics SDK, or remote push token required by the logic.
+- Routine network boundary is limited to store entitlement.
+- Operational database is required to be excluded from automatic operating-system backup.
+- Manual JSON backup is not encrypted.
+- Notification content is generic and excludes job references.
+- No equipment connection, control, or measurement.
 
-Google Play requires subscriptions to provide sustained or recurring value. A static local creation-limit and report-export unlock is much closer to a one-time product.
+### Safety and evidence
 
-**Confirmed model:** iOS uses a one-time non-consumable Pro unlock that does not expire merely with time and has no subscription; Android uses an auto-renewing Pro subscription; neither platform uses ads. The Android release must define and implement genuine sustained or recurring value with exact billing terms. If that recurring value is not added, the Android subscription remains exposed to rejection and should be changed to a one-time product before submission.
+- Structural starters contain no numerical operating values.
+- A run uses a frozen setup snapshot and explicit current-instruction acknowledgement.
+- “Source checked” and “Proven” are independent local evidence descriptions.
+- Operational edits reset proof.
+- App timing is a convenience aid, not a safety alarm.
+- Historical batches preserve the values actually recorded.
 
-### P0 — Implement and test the native purchase layer
+## 3. Consumer-document assessment
 
-Implement store product configuration, secure entitlement verification, restoration, pending purchase handling, cancellation/lapse behaviour, billing retry or grace states, refund/revocation handling, offline caching, and the no-data-loss rule. Test every state with store sandbox/test accounts.
+The updated drafts cover:
 
-### P0 — Put exact purchase facts before confirmation
+- privacy and local-data handling;
+- Terms of Use and licence;
+- one-time purchase, restoration, and refund rules;
+- heat-press safety;
+- support and privacy requests;
+- local backup, export, restore, and deletion;
+- accessibility positioning; and
+- third-party software notices.
 
-The final iOS purchase screen must show the local one-time price, the fact that Pro does not expire merely with time, included features, restoration, and working Privacy and Terms links, with no subscription wording. The Android paywall must show the actual local price, currency, billing period, automatic renewal, recurring value, included features, cancellation method, expiry behaviour, and working Privacy and Terms links. Policies hosted elsewhere do not cure an incomplete paywall.
+The policy correctly says that users may place personal information in local fields while GoodUse Studios does not receive those operational records. It separately discloses support email, store records, website hosting, recipients, legal grounds, retention, international processing, and rights.
 
-The current “Manage plan” control only reopens the subscribe/restore paywall; it has no manage or cancel route. Add a working platform management action for active subscribers or relabel the control until that action exists.
+The purchase policy does not call the product uncapped or promise perpetual support. Store product identifiers containing “unlimited_lifetime” must not be displayed as consumer claims.
 
-### P0 — Verify the final binaries
+## 4. Remaining release blockers
 
-The attachment is HTML/JavaScript source, not a signed AAB or iOS archive. Before store declarations, inspect the final dependency graph, Android manifest, iOS entitlements and privacy manifest, backup settings, SDK behaviour, network traffic, and purchase integration.
+### P0 — Final native privacy and security inspection
 
-### P0 — Add in-App legal access and assent
+Inspect each signed Android App Bundle and iOS archive for:
 
-The audited interface exposes safety copy and data controls but no confirmed working links to Privacy, Terms, Purchases, Support, Data Choices, or third-party notices. Add accessible links in Data Management or About and from every purchase screen. Present the effective Terms and Privacy notice conspicuously in the release flow and record versioned affirmative acceptance where required. A Google Play subscription build must also provide an in-App link to an easy online management and cancellation method. Keep Safety available from the production-run flow.
+- exact SDK and dependency inventory;
+- runtime network destinations and payloads;
+- advertising, analytics, diagnostics, crash reporting, remote configuration, or telemetry;
+- Android permissions, backup rules, data-extraction rules, Billing integration, and notification behaviour;
+- iOS entitlements, privacy manifest, required-reason APIs, StoreKit integration, backup exclusion, and notifications;
+- App database and export-file locations;
+- legal links and assent behaviour; and
+- deletion across every storage backend.
 
-### P0 — Implement the iOS non-consumable offer
+“No data collected” store answers are conditional on this inspection.
 
-The source UI is Android-subscription-oriented. The iOS build must replace Subscribe and Android-plan wording with a one-time non-consumable Pro purchase, non-expiring-with-time entitlement copy, and Restore Purchase. It must never display automatic-renewal or subscription-management language. Ensure store listing, code, and policies say the same thing.
+### P0 — Store product verification
 
-### P0 — Make the paid creation ceiling truthful and enforce it everywhere
+Confirm:
 
-Free/Pro limits govern current stored counts and new-record creation, not lifetime creation or total storage. Deleting a record below its Free threshold reopens a slot. Restore can load as many as 1,000 settings and 1,000 batches without Pro; at or above a Free threshold, those records remain stored, viewable, editable or correctable, JSON-backupable, and CSV-exportable, while a new record of that type and PDF/XLSX report export remain blocked. Preserve and describe that no-data-loss rule.
+- both product identifiers exist and have the correct one-time product type;
+- the US base price is US$4.99 and geographic storefront prices are configured;
+- the paywall says one time and includes no subscription, renewal, or cancellation wording;
+- purchase, pending, restored, refunded, revoked, wrong-product, wrong-account, offline, and response-loss states;
+- Google Play purchases are acknowledged within Google’s required period;
+- StoreKit 2 current entitlements and transaction updates process refunds and revocations;
+- a temporary offline state does not revoke a verified entitlement; and
+- a refund or revocation never deletes operational records.
 
-Canonical starters are excluded from the displayed user-created count, but the hard recipe ceiling counts every row. With five starters installed, a default database can block creation at 995 operator-created settings while the UI shows `995 / 1000`. Make the physical ceiling exclude canonical starters or increase the raw ceiling accordingly. IndexedDB and normal UI creation paths otherwise check the intended record limit, but several compatibility-storage mutation and replacement methods do not independently enforce it. Centralise the invariant across every store backend, import, replacement, demo, batch, and setting mutation. Disclose or remove the separate 8 MB primary-store, 2 MB compatibility-store, and 1 MB per-record limits; otherwise paid users may be blocked far below the numerical ceiling despite available device storage.
+If the products have not yet been created, consider less absolute identifiers such as pressbench_pro_onetime_ios and pressbench_pro_onetime_android. Existing product identifiers may be difficult or impossible to rename after store creation.
 
-## High-priority alignment items
+### P0 — Public legal URLs
 
-### P1 — Correct absolute offline wording
+The repository is intentionally private and therefore cannot serve as the store privacy-policy or support URL.
 
-“No network permission” and similar absolute claims can conflict with store billing, store licensing, user-opened legal pages, platform diagnostics, or enabled device backups. Use the accurate claim: **PressBench does not transmit production records to GoodUse Studios; user-directed exports and operating-system, device, cloud, or workplace backups may move copies.**
+Before submission:
 
-### P1 — Define expiry behaviour
+- publish approved consumer policies at stable HTTPS URLs accessible without authentication;
+- ensure the Google privacy URL is active, public, non-geofenced, non-editable, and not a PDF;
+- add an easily accessible Privacy link inside both applications;
+- add working Terms, Purchases, Support, Data Choices, Safety, and third-party-notice links;
+- verify every route on a clean device and unsigned-in browser; and
+- keep the private audit and internal release notes out of the public policy site.
 
-The current runtime does not delete existing or restored records when entitlement is inactive. Those records remain stored, viewable, editable or correctable, JSON-backupable, and CSV-exportable; PDF/XLSX report generation is blocked. A new record of a type is blocked while its current stored count is at or above the applicable Free threshold; deleting records below that threshold reopens a slot. Verify that the final native wrappers preserve this behaviour for Android expiry, cancellation, billing failure, grace or hold states, and for refund, revocation, pending purchase, and offline verification on either platform. Test users already above both Free Tier limits.
+### P0 — Legal version alignment
 
-### P1 — Complete third-party notices
+The logic currently uses APP-018-TERMS-v2, APP-018-SAFETY-v2, and APP-018-PRIVACY-v2. The updated drafts materially change pricing and privacy wording. Before release, assign final effective versions—normally v3—and ensure the native applications present and record the matching versions.
 
-The source embeds ExcelJS, JSZip, jsPDF, pako, browser buffer utilities, and modified Noto subsets. Preserve all embedded notices and generate a complete notice/SBOM file from the final locked dependencies. The current public notice is a human-readable summary, not a substitute for binary-level licence compliance.
+Privacy-policy presentation is notice, not blanket consent. Terms and safety acknowledgement remain separate. Any future processing that legally requires consent needs its own informed choice.
 
-### P1 — Correct misleading runtime labels
+### P0 — Trader and contact facts
 
-The dashboard says “Repeat a validated production setup,” but the repeat-last logic accepts a complete failure, rework, partial, Draft, or Trial record without requiring a successful or Verified result. Change this to **“Repeat a recorded setup”** and reserve “Verified” or “validated” for the documented evidence rule.
+Confirm before publication:
 
-User-facing onboarding and backup text also drift between “PressBench” and the legacy name “Press Bench Log.” Keep the technical schema identifier if required, but make all visible product copy consistently say “PressBench.”
+1. full business mailing address and postal code;
+2. public business telephone number where required;
+3. exact legal/trader name in Apple and Google;
+4. bundle and package identifiers;
+5. support-email provider and account safeguards;
+6. whether the 24-month support-retention schedule will be operationally followed;
+7. Apple/Google family-sharing settings;
+8. store tax categories; and
+9. countries and languages included at launch.
 
-### P1 — Privacy and support operations
+### P0 — Language and market gate
 
-Keep a documented process for support-email access/deletion requests and delete resolved support correspondence on the stated schedule unless an exception applies. Do not ask users to email unredacted backups or production reports.
+Do not enable a storefront until the effective policies, purchase disclosures, safety text, and required consumer information are available in the language and form required there.
 
-### P1 — Make delete-all verifiable across storage backends
+For Québec, provide the French version of predetermined consumer terms before a user expressly chooses another language and complete a Québec distance-contract review.
 
-Delete-all clears the active store and attempts to retire the alternate backend, but an alternate-backend failure can leave an older recovery copy and only display a warning. Make deletion clear and verify every local backend, or provide a reliable retry and verification flow. Keep the Data Choices page's warning until the final implementation proves atomic deletion.
+For EU distribution, complete Digital Services Act trader verification and publish required trader contact information. Preserve mandatory digital-content conformity, update, remedy, and withdrawal-law disclosures applicable to the specific store transaction.
 
-### P1 — Market and language gate
+Assess whether an EU or UK representative is required for any personal information GoodUse Studios actually receives. The operational database itself remains on-device and is not received by GoodUse Studios.
 
-Do not distribute into a jurisdiction until the effective policies and purchase disclosures meet its language and consumer-information rules. If Québec is included, obtain Québec-specific review of the French-first consumer-contract requirements before release. If any EU/EEA market is included, complete the privacy-controller, lawful-basis, international-transfer, consumer, and Digital Services Act trader disclosures before release.
+### P1 — Third-party licensing
 
-The source contains dormant, currently unsupported locale strings that describe record capacity as “unlimited,” while the domain ceiling is 1,000 per record type. Keep those locales disabled until every pricing and capacity string is corrected and regression-tested.
+The v0.21.2 logic-only file does not establish the dependencies used in the final native applications. Generate a software bill of materials and exact third-party notice file from each locked release build. Confirm whether earlier web-runtime components such as ExcelJS, JSZip, jsPDF, pako, buffer utilities, and modified Noto fonts remain before naming them publicly.
 
-## Store declaration judgment
+### P1 — Accessibility claims
 
-If the final native apps preserve the audited local-only configuration and use only platform purchase services, Apple’s “Data Not Collected” response and Google Play’s no developer collection/sharing position may be supportable. This is a provisional inference, not a final declaration; platform definitions require evaluating all integrated code and final runtime behaviour.
+Keep the accessibility page as an objective and feedback channel until the native applications and exports have been tested. Do not claim WCAG or platform-standard conformance without evidence.
 
-## Primary official references
+### P1 — Support operations
 
-- [Apple App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/) — subscriptions must provide ongoing value; purchase terms must be clear.
-- [Apple App Privacy management](https://developer.apple.com/help/app-store-connect/manage-app-information/manage-app-privacy/) — privacy URL and accurate disclosures are required.
-- [Apple Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
-- [Google Play Subscriptions policy](https://support.google.com/googleplay/android-developer/answer/9900533) — subscriptions require sustained or recurring value and clear terms.
-- [Google Play Data safety guidance](https://support.google.com/googleplay/android-developer/answer/10787469)
-- [Google Play Payments policy](https://support.google.com/googleplay/android-developer/answer/9858738)
-- [Google Play subscription cancellation](https://support.google.com/googleplay/answer/7018481) — uninstalling does not cancel.
-- [Google Play order management and refunds](https://support.google.com/googleplay/android-developer/answer/2741495) — eligible Play Console users can issue full or partial refunds.
+Implement a support procedure that:
+
+- restricts account access;
+- avoids requesting operational backups or unnecessary personal information;
+- records and fulfils applicable access, correction, and deletion requests;
+- applies the stated retention schedule;
+- preserves records only where a documented exception applies; and
+- escalates suspected privacy or security incidents.
+
+## 5. Store privacy judgment
+
+### Apple
+
+A provisional “Data Not Collected” answer is supportable only if the final application and integrated third parties do not transmit accessible data off-device. Apple states that information processed only on-device is not collected for its App Privacy disclosure framework.
+
+### Google Play
+
+A provisional “No data collected” and “No data shared” answer is supportable only after final AAB, SDK, manifest, backup, and runtime-traffic verification. A privacy policy and Data Safety form are still required even for an app reporting no collection.
+
+The App has no account creation, so the online account-deletion requirement should not apply. Local-data deletion must still remain functional and documented.
+
+## 6. Primary sources
+
+- [Apple App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
+- [Apple App Privacy Details](https://developer.apple.com/app-store/app-privacy-details/)
+- [Apple App Store privacy management](https://developer.apple.com/help/app-store-connect/manage-app-information/manage-app-privacy/)
+- [Apple EU Digital Services Act trader requirements](https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-european-union-digital-services-act-trader-requirements/)
+- [Apple StoreKit Transaction documentation](https://developer.apple.com/documentation/storekit/transaction)
+- [Google Play Data Safety guidance](https://support.google.com/googleplay/android-developer/answer/10787469)
+- [Google Play one-time purchase lifecycle](https://developer.android.com/google/play/billing/lifecycle/one-time)
+- [Google Play refund process](https://support.google.com/googleplay/answer/2479637)
+- [PIPEDA](https://laws-lois.justice.gc.ca/eng/acts/p-8.6/FullText.html)
 - [Office of the Privacy Commissioner of Canada mobile-app guidance](https://www.priv.gc.ca/en/privacy-topics/ai-technology-and-innovation/mobile-and-digital-devices/mobile-apps/gd_app_201210/)
-- [Québec Charter of the French language, section 55](https://www.legisquebec.gouv.qc.ca/en/document/cs/C-11?langCont=en#se:55)
+- [EU General Data Protection Regulation](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng)
+- [EU Digital Content Directive](https://eur-lex.europa.eu/eli/dir/2019/770/oj/eng)
+- [Québec Charter of the French Language, section 55](https://www.legisquebec.gouv.qc.ca/en/version/cs/C-11?code=se%3A55&langCont=en)
+- [Québec Consumer Protection Act](https://www.legisquebec.gouv.qc.ca/en/document/cs/P-40.1)
+- [Competition Act, section 52](https://laws-lois.justice.gc.ca/eng/acts/c-34/section-52.html)
 
-## Final approval gate
+## 7. Approval status
 
-Do not make the consumer pages effective or submit to either store until every P0 item is closed, the chosen pricing model is reflected byte-for-byte in the native builds, and the public URLs are live and tested without login.
+**Logic-level legal status:** conditional pass.  
+**Consumer-policy status:** aligned pre-release drafts.  
+**Store-submission status:** not approved until every P0 gate above is closed.  
+**Worldwide-compliance claim:** not made; launch remains jurisdiction- and release-specific.
