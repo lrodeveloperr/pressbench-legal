@@ -7,96 +7,133 @@ permalink: /privacy/
 
 # Privacy Policy
 
-> **Pre-release draft — not yet effective.** Final data handling must be verified from the signed Android and iOS builds before this policy is approved for release.
+> **Pre-release draft — not yet effective.** This draft is based on PressBench logic v0.21.2. It must be checked against the final signed Android and iOS applications before publication.
 
-**Draft date: 10 August 2026**
+**Draft date: 12 August 2026**
 
-This Privacy Policy explains how PressBench (the **“App”**) and this legal-support website handle information. PressBench is provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios in Ontario, Canada** (“we,” “us,” or “our”).
+This Privacy Policy explains how PressBench (the **“App”**) and its legal-support website handle information. PressBench is provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios in Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”).
 
 ## 1. Privacy summary
 
-The audited PressBench configuration is designed so that production data stays on the user’s device.
+PressBench is designed so that operational records remain on the user’s device.
 
 - No PressBench account or login.
-- No developer-operated cloud database or synchronization.
-- No advertising, analytics SDK, tracking SDK, or behavioural profiling.
-- No app-level location, camera, microphone, contacts, or broad shared-storage permission.
-- No sale or rental of personal information.
-- The App itself does not transmit production records to us. User-directed exports or shares, and any enabled operating-system, device, cloud, or workplace backup, may move copies outside the App.
+- No GoodUse Studios cloud database or synchronization.
+- No advertising, behavioural analytics, tracking, data brokerage, or remote AI processing.
+- No transmission of production records to GoodUse Studios.
+- No equipment connection, control, or measurement.
+- Network use in the audited logic is limited to Apple App Store or Google Play purchase and entitlement services.
+- Notifications are optional and use generic content without job or customer references.
 
-The App may use Apple’s or Google Play’s store services to complete and verify a purchase. Those platform services operate under their own privacy terms.
+Users can nevertheless enter names, job references, notes, or other information into local fields. The correct statement is that GoodUse Studios does not collect or receive those local records—not that the App can never contain personal information.
 
 ## 2. Information stored locally
 
-Depending on how the App is used, local records may contain:
+Depending on use, the App may store locally:
 
-- production settings, steps, temperatures, time, pressure descriptions, press or machine nicknames, platen zones, peel methods, and operator notes;
-- customer or job labels, blank and transfer suppliers, SKUs, lots, colours, sizes, design revisions, printer or material profiles, and placement or cooling notes;
-- planned, processed, good, reworked, and wasted quantities; outcomes; issue details; corrections; and timestamps;
-- active-work state, language, temperature unit, appearance, haptic, audio, and manufacturer-prompt preferences; and
-- transient in-memory report filters and locally stored app state needed to provide the requested features.
+- machine profiles, nicknames, brand and model information, pressure methods, platen or zone details, and maintenance-check dates;
+- setup names, process structures, substrate or blank details, instruction sources, stages, temperatures, durations, pressure descriptions, peel or cooling steps, and notes;
+- optional job or reference labels;
+- planned, processed, good, first-pass-good, reworked, and wasted quantities;
+- outcomes, quality checks, issues, corrections, timestamps, evidence status, and setup lineage;
+- active-run and recovery state;
+- language, region, unit, legal-notice, notification, and other App settings; and
+- locally cached purchase-entitlement state.
 
-Some fields are free text. A user could enter a person’s name or other personal information, but the App does not require that. Users should avoid entering confidential or unnecessary personal information.
+Some fields are free text. Users should enter only information they are authorised to use and should avoid unnecessary personal, confidential, or sensitive information.
 
-Production records, preferences, and active-work state are kept in the App’s local storage area; report filters in the audited runtime are transient. We do not receive or have remote access to this App data.
+GoodUse Studios cannot remotely view, retrieve, correct, restore, or delete these locally stored operational records.
 
-## 3. Exports and backups
+## 3. Permissions and device features
 
-The App can create user-directed JSON backups and CSV, XLSX, or PDF exports. A file may contain the production information described above. When a user saves, copies, shares, uploads, emails, or otherwise moves a file outside the App, the user and the selected destination control it. Device, file-provider, email, messaging, or cloud-storage services may process that file under their own terms.
+The audited architecture does not require location, contacts, camera, microphone, Bluetooth, health data, advertising identifiers, or broad shared-storage access. A final native build must be re-assessed if it adds any such permission or capability.
 
-Backups and exports should be treated as production records. Users are responsible for choosing a secure destination, limiting access, and deleting unwanted copies. PressBench does not encrypt exported files itself.
+Timer notifications are optional. A timer continues to function inside the App even if notification permission is refused. Notification text must remain generic and must not include a customer name, job reference, or production details.
 
-## 4. Purchases and store services
+User-directed file pickers and share sheets may be used to import, export, save, or share files. The selected operating-system service or destination then processes the file under its own terms and privacy practices.
 
-On iOS, Apple processes the one-time, non-consumable Pro unlock. PressBench does not offer an iOS subscription. On Android, Google Play processes the auto-renewing Pro subscription. The App may receive or check limited purchase information such as product identifier, entitlement state, transaction status, or a store-issued purchase token. The audited design does not send production records to a developer server and does not import entitlement status from editable backups.
+## 4. Backups, exports, and imports
 
-We do not receive full payment-card details. Apple and Google may provide us with sales, financial, tax, refund, purchase, and, for Android, subscription reports under their developer programmes. Their handling of information is governed by their own privacy policies and account settings.
+PressBench can create user-directed JSON backups and CSV, XLSX, or PDF exports. These files may contain the operational information described above.
 
-## 5. Diagnostics and operating-system services
+PressBench does not encrypt JSON, CSV, XLSX, or PDF exports. Users control where exported files are saved or shared and are responsible for appropriate access controls, retention, and deletion. Copies saved to email, messaging, cloud storage, workplace systems, removable media, or another app are outside PressBench and may be backed up or retained by those destinations.
 
-The audited source contains no developer analytics or crash-reporting SDK. Apple, Google, the device manufacturer, or the operating system may independently process store activity, security information, diagnostics, backups, or crash data according to the user’s device and account settings. We may receive store-provided diagnostic or sales information if the user and platform make it available to developers.
+The intended native configuration excludes the operational database from automatic operating-system or cloud application backup. This must be verified in each final signed build. Independently exported files and device-level copies may still be included in backups controlled by the user, operating system, device manufacturer, workplace, or destination provider.
 
-Haptic and audio cues are device outputs; they do not require microphone recording. File selection, saving, and sharing use user-initiated system interfaces where available.
+A restore replaces local information only after validation and creation of a local pre-restore recovery point. GoodUse Studios does not receive the backup or restored records.
 
-## 6. Support communications
+## 5. Store purchases
 
-If a user emails us, we receive the sender’s email address and whatever information the user chooses to provide. We use it to respond, troubleshoot, prevent abuse, protect legal rights, and meet legal obligations. Users should not send JSON backups, customer names, supplier-confidential information, or other production data unless we specifically request the minimum material needed and the user is authorised to disclose it.
+PressBench offers a one-time, non-consumable paid unlock on both iOS and Android. Apple or Google processes the transaction under its own terms and privacy policy.
 
-We generally retain support correspondence for up to 24 months after the last substantive support interaction, then delete or anonymise it unless longer retention is reasonably required for security, accounting, dispute, or legal purposes.
+The App may process limited store information needed to complete, verify, restore, refund, or revoke the entitlement, such as product identifier, purchase state, transaction status, or store-issued token. The audited architecture does not send that information or production records to a GoodUse Studios server.
 
-## 7. This website
+We do not receive full payment-card or bank-account details. Apple and Google may provide developers with sales, financial, tax, refund, and transaction reports under their developer programmes. Purchase entitlement is not included in editable operational backups.
 
-When published, this legal-support site contains no advertising or author-installed analytics and does not intentionally set marketing cookies. It is hosted through GitHub Pages. GitHub may process IP addresses, request logs, device or browser information, security data, and essential cookies under the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+## 6. Diagnostics
 
-If the site later moves to another host or adds analytics, this policy will be updated before that change becomes active.
+The audited logic requires no GoodUse Studios analytics, advertising, tracking, crash-reporting, remote-configuration, or push-token service. Apple, Google, the operating system, or the device manufacturer may independently process security, store, and diagnostic information under the user’s platform settings and their own policies.
 
-## 8. Retention and deletion
+Before release, the final dependency list, privacy manifest, Android manifest, entitlements, network traffic, and store configuration must be inspected. If a future version sends diagnostics or other information to GoodUse Studios or an added provider, this policy and the store privacy declarations must be updated before that processing begins.
 
-Local App data remains on the device until the user deletes it in the App, clears the App’s storage, uninstalls the App, restores or replaces it with a backup, or the operating system removes it. Device-level backups may retain an App copy according to the user’s operating-system settings.
+## 7. Support communications
 
-Because we do not possess local production records, we cannot retrieve, correct, export, or delete them remotely. The [Local Data, Backup, Export, and Deletion page]({{ '/data-choices/' | relative_url }}) explains the controls available to users.
+If a user contacts us, we receive the sender’s contact details and whatever information the user chooses to provide, such as a message, App version, device information, screenshot, or redacted purchase reference.
 
-Store purchase history and account information are controlled by Apple or Google. Support email held by us may be the subject of an access, correction, or deletion request, subject to applicable legal exceptions.
+We use support information to answer the request, troubleshoot, protect the App and our legal rights, prevent abuse or fraud, administer a purchase issue, and comply with law. The applicable grounds may include performing the requested support, legitimate interests in operating and protecting the App, legal obligations, and consent where required.
 
-## 9. Security
+Users should not send passwords, payment-card information, store purchase tokens, JSON backups, customer names, confidential production records, or information that is not necessary for support. Screenshots and transaction references should be redacted.
 
-The local-first design reduces exposure to remote database breaches, but no device or storage method is completely secure. Users should protect the device with current software, a passcode or biometric lock, appropriate workplace access controls, and secure backup handling. A rooted, jailbroken, compromised, shared, or unlocked device can expose local records.
+We generally retain support correspondence for up to 24 months after the last substantive interaction, then delete or de-identify it unless a longer period is reasonably required for an unresolved dispute, security matter, accounting record, fraud prevention, or legal obligation.
 
-## 10. Children
+## 8. Sale, advertising, tracking, and sharing
 
-PressBench is a professional production utility intended for adults and is not directed to children. It is not offered to anyone who does not meet the eligibility requirement in the Terms. If we learn that a child sent personal information directly through support email, a parent or guardian may contact us to request appropriate action.
+GoodUse Studios does not sell or rent personal information. PressBench does not use local operational records for advertising, cross-context behavioural advertising, profiling, or tracking.
 
-## 11. International users and legal rights
+We may disclose information we actually possess to service providers used for support or business administration, to Apple or Google for a purchase issue, or where reasonably necessary to comply with law, protect rights and safety, investigate fraud or abuse, or establish, exercise, or defend legal claims. This does not give us access to information stored only on the user’s device.
 
-Support, store, and website-hosting providers may process information in countries other than the user’s country. Their safeguards and transfer mechanisms are described in their own policies.
+## 9. Website
 
-Depending on location, a user may have rights to access, correct, delete, restrict, object to, or receive a copy of personal information held by us, or to complain to a privacy regulator. Since we do not receive local production records, these rights ordinarily apply only to direct communications or other information actually held by us.
+When made public, the legal-support website is intended to contain no advertising or GoodUse Studios analytics and no marketing cookies. If hosted by GitHub Pages, GitHub may process IP addresses, request logs, browser information, security data, and essential cookies under the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-## 12. Changes
+The website host and this section must be updated before launch if a different host or analytics service is used.
 
-We may update this policy when the App, its providers, or legal requirements change. The page will show the new effective date. A material change in data handling will be reflected in the App and store disclosures as required before or when it takes effect.
+## 10. Retention and deletion
 
-## 13. Contact
+Local operational records remain on the device until the user deletes them, clears App storage, uninstalls the App, replaces them through restore, or the operating system removes them.
+
+The in-App **Delete all local data** function is intended to remove operational records, preferences, and recoverable work from all PressBench local-storage backends. It does not:
+
+- delete previously exported, shared, printed, or independently backed-up copies;
+- delete support email held by GoodUse Studios;
+- delete Apple or Google account and transaction records; or
+- erase a valid store purchase, which may remain restorable.
+
+The [Local Data, Backup, Export, and Deletion page]({{ '/data-choices/' | relative_url }}) provides instructions. Users may contact us regarding personal information we actually hold through support.
+
+## 11. Security
+
+The local-first design limits remote exposure, but no device or storage method is completely secure. Users should maintain current device software, a passcode or biometric lock, appropriate workplace controls, and secure handling of exports. A rooted, jailbroken, compromised, shared, lost, or unlocked device can expose local records.
+
+GoodUse Studios cannot recover locally stored records after device loss, deletion, reset, or corruption.
+
+## 12. International processing and rights
+
+GoodUse Studios is based in Ontario, Canada. Support, store, email, and website providers may process information in Canada, the United States, or other countries under their own safeguards and policies.
+
+Depending on applicable law, a person may have rights concerning information GoodUse Studios actually holds, including access, correction, deletion, restriction, objection, portability, withdrawal of consent, and a complaint to a privacy regulator. These rights do not give GoodUse Studios access to records held only on the user’s device. We may need to verify a requester’s identity and may retain information where law permits or requires.
+
+## 13. Children
+
+PressBench is an operational utility intended for adults and is not directed to children. We do not knowingly collect children’s personal information through the App. A parent or guardian who believes a child sent personal information to support may contact us.
+
+## 14. Changes
+
+We may update this policy when the App, its providers, or legal requirements change. We will update the effective or revision date and provide additional notice where required. A material change in data handling must also be reflected in the App and store declarations before or when it takes effect.
+
+A privacy notice records that the policy was presented; it is not treated as consent to unrelated processing. Any consent legally required for a particular future activity must be obtained separately.
+
+## 15. Contact
 
 For privacy questions or requests, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Privacy) with the subject **“PressBench Privacy.”**
 
