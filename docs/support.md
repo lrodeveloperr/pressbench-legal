@@ -35,7 +35,7 @@ Use the App’s backup function and verify important exported files. Purchase re
 
 ## Purchases
 
-For purchase restoration and refund information, see [Purchases, Paid Access, and Refunds]({{ '/subscriptions/' | relative_url }}).
+For purchase restoration and refund information, see [Purchases, Paid Access, and Refunds]({{ '/purchases/' | relative_url }}).
 
 PressBench has no subscription or recurring charge. There is nothing to cancel after the one-time purchase. To troubleshoot an entitlement, use the subject **“PressBench Purchase”** and include only a redacted store order or transaction reference if necessary.
 
@@ -53,6 +53,6 @@ Support does not provide heat-press operating, engineering, calibration, materia
 
 - [Privacy Policy]({{ '/privacy/' | relative_url }})
 - [Terms of Use]({{ '/terms/' | relative_url }})
-- [Purchases, Paid Access, and Refunds]({{ '/subscriptions/' | relative_url }})
+- [Purchases, Paid Access, and Refunds]({{ '/purchases/' | relative_url }})
 - [Heat-Press Safety Notice]({{ '/safety/' | relative_url }})
 - [Local Data, Backup, Export, and Deletion]({{ '/data-choices/' | relative_url }})
