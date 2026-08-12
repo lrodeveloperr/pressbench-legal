@@ -6,35 +6,45 @@ permalink: /safety/
 
 # Heat-Press Safety Notice
 
-> **Pre-release draft.** Confirm this notice remains conspicuous in the final production-run flow.
+> **Pre-release draft.** This notice must remain conspicuous in the final onboarding, run-preflight, and active-run experience.
 
-**Last updated: 10 August 2026**
+**Last updated: 12 August 2026**
 
-PressBench is a recordkeeping and workflow utility. It does not inspect, connect to, monitor, or control heat-press equipment. It does not measure actual platen temperature or pressure and does not determine whether a setting is safe, compatible, or effective.
+PressBench is a recordkeeping and workflow utility. It does not inspect, connect to, monitor, control, stop, or certify heat-press equipment. It does not measure actual platen temperature, pressure, dwell time, ventilation, or material condition and does not determine whether a setting is safe, compatible, compliant, or effective.
 
 ## Before every run
 
-- Read and follow the current instructions, warnings, operating limits, and maintenance requirements from the heat-press manufacturer.
-- Verify the current specifications for every transfer, ink, adhesive, blank, garment, substrate, accessory, and protective sheet involved.
+- Read and follow current equipment-manufacturer instructions, warnings, operating limits, and maintenance requirements.
+- Verify current specifications for each transfer, ink, adhesive, blank, garment, substrate, accessory, and protective sheet.
 - Confirm material compatibility, equipment condition, electrical supply, clearances, ventilation, guarding, fire precautions, pressure, temperature, time, placement, cooling, and peel method.
-- Use appropriate training, supervision, and personal protective equipment.
+- Use appropriate training, supervision, personal protective equipment, and workplace procedures.
 - Keep flammable and heat-sensitive materials away from the work area.
-- Remain with operating equipment and use the machine’s approved controls and safety systems.
+- Remain present with operating equipment and use the machine’s approved controls and safety systems.
 
-## App records are not instructions
+The App requires the operator to acknowledge that current instructions were checked before a run snapshot is frozen. That acknowledgement records the operator’s statement; it is not verification by GoodUse Studios.
 
-A saved setting records what an operator entered or previously used. Materials, coatings, suppliers, lots, equipment calibration, ambient conditions, and manufacturer guidance can change. A prior successful result does not prove that the same setting is safe or correct for a later run.
+## Saved setups are not instructions
 
-Generic starter templates in the release build will be blank field examples and will not contain actionable operational values. If a build displays populated generic setpoints, do not use them; that build is not approved for release. Independently verify every operator-entered value against the current instructions for the specific machine and materials. A “Verified” label means only that the App found qualifying operator-entered evidence under its internal rules. It is not a manufacturer, engineering, laboratory, regulatory, insurer, customer, or GoodUse Studios certification.
+A saved setup records operator-entered values and prior outcomes. Materials, coatings, suppliers, lots, equipment condition, external checks, ambient conditions, and instructions can change. A prior clean batch does not prove that the same values will be safe or successful later.
 
-## Timers and alerts
+Starter structures must contain no actionable temperature, time, pressure, repeat, or production values. Users must enter and independently verify their own values.
 
-The App timer is a convenience aid, not a safety device. Background operation, sound, vibration, operating-system restrictions, battery state, focus mode, volume, device failure, or App closure can delay or prevent a cue. Keep the App screen available where practical, remain with the press, watch the machine’s own controls, and use workplace-approved timing and safety procedures.
+“Source checked” means only that the user recorded an instruction source and date. “Proven on this setup” means only that the exact locally recorded setup fingerprint obtained qualifying batch evidence under the App’s rules. Neither status is manufacturer approval, independent testing, calibration, certification, engineering advice, regulatory approval, or a guarantee.
 
-## Stop when uncertain
+A material operational or machine change resets the proof state for future use. Historical batch records remain historical evidence only.
 
-Do not continue if instructions conflict, the equipment or material condition is uncertain, ventilation is inadequate, a safety device is unavailable, the App record appears corrupted or stale, or the operator lacks required training. Stop safely and consult the relevant manufacturer, supplier, workplace safety lead, or qualified technician.
+## Timers and notifications
 
-For burns, fire, fumes, electrical incidents, or other emergencies, follow the equipment and workplace emergency procedures and contact local emergency services. The App is not an emergency service.
+The App timer is a convenience reminder, not a safety device or alarm. Background restrictions, device settings, notification permission, focus mode, volume, battery state, operating-system behaviour, App closure, or device failure can delay or prevent a cue.
 
-This notice is part of the [Terms of Use]({{ '/terms/' | relative_url }}).
+Timer functionality remains available inside the App when notification permission is refused. Remain with the press, watch the machine’s controls, and follow workplace-approved timing and safety procedures.
+
+## Test and production responsibility
+
+New, changed, or unproven setups should be tested before production as required by the App logic. A guided test reduces risk but does not prove safety or suitability.
+
+Stop safely if instructions conflict, equipment or material condition is uncertain, ventilation is inadequate, a safety system is unavailable, records appear corrupted or stale, or the operator lacks appropriate training.
+
+For burns, fire, fumes, electrical incidents, or another emergency, follow workplace and equipment emergency procedures and contact local emergency services. PressBench is not an emergency service.
+
+This notice forms part of the [Terms of Use]({{ '/terms/' | relative_url }}).
