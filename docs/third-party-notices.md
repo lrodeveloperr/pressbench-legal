@@ -1,39 +1,25 @@
 ---
 layout: default
 title: Third-Party Software Notices
+nav_title: Notices
 permalink: /third-party-notices/
 ---
 
 # Third-Party Software Notices
 
-> **Pre-release inventory — not the complete release notice.** Generate and include exact copyright and licence texts from the final locked native dependencies before distribution.
+**Release baseline: PressBench Android 1.0.0, 24 August 2026**
 
-**Source baseline reviewed: PressBench v0.17.1, 10 August 2026**
+PressBench includes third-party software. Each component remains owned by its respective rights holder and is governed by its applicable licence and service terms. Nothing in the PressBench Terms limits rights granted by an applicable open-source licence.
 
-PressBench includes or embeds third-party software and font components. Those components remain owned by their respective copyright holders and are governed by their own licences. Nothing in the PressBench Terms restricts rights granted by an applicable open-source licence.
+The Android release directly depends on components including:
 
-The reviewed source expressly identifies the following components:
+- AndroidX Core, Activity, Navigation, Compose UI/Foundation/Material 3 and Material Icons — Android Open Source Project / AndroidX licences (primarily Apache License 2.0);
+- Kotlin and kotlinx.coroutines — Apache License 2.0;
+- Google Play Billing Library — Google Play/Android SDK terms;
+- Google Mobile Ads SDK — Google Mobile Ads SDK terms;
+- Google User Messaging Platform SDK — Google Mobile Ads/UMP terms; and
+- JUnit / AndroidX Test components in test builds — their respective open-source licences.
 
-| Component | Identified version or build | Licence noted in source |
-|---|---:|---|
-| ExcelJS browser bundle | Bundle dated 19 October 2023; exact package version not declared in the embedded header | MIT; includes separately licensed dependencies |
-| JSZip | 3.10.1 | MIT or GPL-3.0; PressBench relies on the permissive MIT option |
-| jsPDF | 4.2.1, built 17 March 2026 | MIT |
-| pako | 2.1.0 | MIT and zlib |
-| buffer and safe-buffer browser components | Version not declared in the reviewed header | MIT |
-| ieee754 browser component | Version not declared in the reviewed header | BSD-3-Clause |
-| Modified Noto font subsets presented as “PressBench Report” | Embedded subsets | SIL Open Font License 1.1 |
+The exact transitive dependency inventory can change when dependencies are updated. Release engineering should retain the dependency lock/build files for each published version and regenerate notices when a dependency or version changes.
 
-The ExcelJS bundle contains additional transitive components and embedded notices. Complete licence headers must remain in the distributed bundle. The final native package should include a generated software-bill-of-materials and complete third-party notice file based on the exact locked dependencies used to build that release.
-
-## Licence sources
-
-- [ExcelJS licence](https://github.com/exceljs/exceljs/blob/master/LICENSE)
-- [JSZip licence](https://github.com/Stuk/jszip/blob/main/LICENSE.markdown)
-- [jsPDF licence](https://github.com/parallax/jsPDF/blob/master/LICENSE)
-- [pako licence](https://github.com/nodeca/pako/blob/master/LICENSE)
-- [SIL Open Font License 1.1](https://openfontlicense.org/open-font-license-official-text/)
-
-The embedded Noto subset source contains the complete SIL Open Font License 1.1 text and identifies the font as a modified version. The generated report documents are not themselves required to use the font licence.
-
-For a licensing question, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Open%20Source) with the subject **“PressBench Open Source.”**
+For a licensing question, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Open%20Source) with the subject **PressBench Open Source**.
