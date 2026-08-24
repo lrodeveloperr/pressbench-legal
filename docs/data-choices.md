@@ -1,52 +1,34 @@
 ---
 layout: default
-title: Local Data, Backup, Export, and Deletion
+title: Local Data and Deletion
+nav_title: Data
 permalink: /data-choices/
 ---
 
-# Local Data, Backup, Export, and Deletion
+# Local Data and Deletion
 
-> **Pre-release draft.** Final deletion, backup, and purchase behaviour must be verified in the signed Android and iOS builds.
+**Last updated: 24 August 2026**
 
-**Last updated: 10 August 2026**
+PressBench has no developer cloud account or remote production database. GoodUse Studios cannot see, recover, edit, or remotely delete the machines, setups, runs, QC records, and local settings stored only on your device.
 
-PressBench has no developer account or cloud database. GoodUse Studios cannot see, recover, edit, or remotely delete production records stored in the App.
+## Delete local PressBench data
 
-## Export or back up first
+In PressBench, open **Settings → Delete Local Data** and confirm the deletion. This deletes the App’s local machines, setups, runs, and local settings from that device.
 
-In PressBench, open **Data Management**.
+You can also remove local App data through Android device settings or by uninstalling PressBench. Deleting local data does not delete files you previously exported or shared.
 
-- Use **Backup & restore** to save or share a JSON database backup.
-- Use **Export CSV** for a spreadsheet-ready copy of production settings and batch records.
-- Use the Analytics and reporting area to create PDF or XLSX reports where available under the current plan.
+## Exports
 
-Treat every export as production data. Check the destination and file contents before relying on it. A JSON backup may replace current local records when restored, so preserve a known-good copy separately.
+When you save a CSV or PDF report, the file is placed at the destination you choose through Android’s system file interface. Delete unwanted copies from every destination where you saved, shared, emailed, or uploaded them.
 
-## Delete all local data
+## Google Play and advertising data
 
-In the App:
+Deleting PressBench local data does not delete Google Play purchase history and does not cancel an active Remove Ads subscription. Manage the subscription through Google Play.
 
-1. Open the navigation menu.
-2. Select **Data Management**.
-3. In **Local data reset**, choose **Delete all local data**.
-4. Complete the typed confirmation shown by the App.
+Advertising and consent information processed by Google is governed by Google and applicable device/privacy controls. Where required, PressBench exposes **Settings → Privacy choices** using Google UMP.
 
-The audited App clears the active local store and attempts to retire any alternate local storage backend. If the App reports that alternate storage could not be retired, an older local copy may remain recoverable: retry the deletion or clear the App’s storage through the operating system, then reopen the App and verify that no records return. Do not treat the in-App deletion as complete while that warning remains.
+## Support email
 
-Successful local deletion does not delete copies previously exported, shared, emailed, uploaded, printed, or included in an operating-system, device, cloud, or workplace backup.
+To request access to, correction of, or deletion of support correspondence held by GoodUse Studios, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Data%20Request) with the subject **PressBench Data Request**. We may need enough information to locate the correspondence and verify that the requester is authorised.
 
-Clearing the App’s storage in device settings or uninstalling the App may also remove local records. These actions do not cancel an Android subscription. The iOS Pro unlock is a one-time purchase and has no renewal to cancel.
-
-## Delete exported copies
-
-Delete exported files from every location to which they were saved or shared, including Downloads, Files, email, messages, shared drives, cloud-storage folders, removable media, print queues, and recipients’ systems. GoodUse Studios cannot remove those copies.
-
-## Device backups
-
-Android, iOS, a device manufacturer, or a workplace management system may back up App data independently. Review the relevant device or account backup settings and remove old backups where appropriate. Restoration of a device backup may restore an older App database.
-
-## Store and support data
-
-Apple or Google controls store account, billing, and purchase history. Use the applicable platform controls for those records. To request access to or deletion of support email held by GoodUse Studios, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Data%20Request) with the subject **“PressBench Data Request.”** We may need enough information to locate the correspondence and verify that the requester is authorised.
-
-For more detail, read the [Privacy Policy]({{ '/privacy/' | relative_url }}).
+For more detail, see the [Privacy Policy]({{ '/privacy/' | relative_url }}).
