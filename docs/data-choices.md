@@ -9,13 +9,17 @@ permalink: /data-choices/
 
 **Last updated: 24 August 2026**
 
-PressBench has no developer cloud account or remote production database. GoodUse Studios cannot see, recover, edit, or remotely delete the machines, setups, runs, QC records, and local settings stored only on your device.
+PressBench has no developer cloud account or remote production database. GoodUse Studios cannot see, recover, edit, or remotely delete the machines, setups, runs, QC records, local settings, and optional setup photos stored only on your device.
 
 ## Delete local PressBench data
 
-In PressBench, open **Settings → Delete Local Data** and confirm the deletion. This deletes the App’s local machines, setups, runs, and local settings from that device.
+In PressBench, open **Settings → Delete Local Data** and confirm the deletion. This deletes the App’s local machines, setups, runs, local settings, and setup photos from that device.
 
-You can also remove local App data through Android device settings or by uninstalling PressBench. Deleting local data does not delete files you previously exported or shared.
+You can also remove local App data through Android device settings or by uninstalling PressBench. Deleting local data does not delete files or photos you previously exported or shared.
+
+## Setup photos
+
+Optional setup photos are stored in PressBench’s private app storage and associated locally with a setup. Removing a setup removes its associated managed photo, and **Delete Local Data** clears the managed setup-photo storage together with other local PressBench data.
 
 ## Exports
 
