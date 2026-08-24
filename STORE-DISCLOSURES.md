@@ -1,103 +1,86 @@
-# PressBench Store Disclosures — Provisional Release Worksheet
+# PressBench Android — Google Play Disclosure Worksheet
 
-**Source baseline:** v0.17.1, reviewed 10 August 2026.  
-**Status:** Provisional until the final signed Android App Bundle and iOS archive are inspected.
+**Release target:** Android 1.0.0  
+**Reviewed:** 24 August 2026  
+**Package:** `com.goodusestudios.pressbench`
 
-## Intended public URLs
+This is a release worksheet, not a substitute for inspecting the final signed AAB and Play Console forms.
 
-The intended GitHub Pages URLs are:
+## Store model
 
-- Privacy: `https://lrodeveloperr.github.io/pressbench-legal/privacy/`
-- Terms: `https://lrodeveloperr.github.io/pressbench-legal/terms/`
-- Purchases: `https://lrodeveloperr.github.io/pressbench-legal/subscriptions/`
-- Support: `https://lrodeveloperr.github.io/pressbench-legal/support/`
-- Data choices: `https://lrodeveloperr.github.io/pressbench-legal/data-choices/`
-- Safety: `https://lrodeveloperr.github.io/pressbench-legal/safety/`
+- Core functionality: free.
+- Advertising: yes — one Google-served anchored adaptive banner when privacy state permits ads.
+- Ad personalization: publisher personalization disabled; Android advertising-ID permission removed.
+- Paid product: optional Google Play auto-renewing monthly subscription `remove_ads_monthly` that removes PressBench banner ads while active.
+- No account, login, developer cloud sync, interstitial ads, or app-open ads.
+- Intended audience: adults / professional heat-press operators; not directed to children.
 
-These URLs are not approved store URLs until GitHub Pages is enabled, the pre-release banners are removed after final approval, and every route is verified without authentication.
+## App content declarations
 
-## Apple App Privacy
+- **Privacy policy:** required. Use `https://lrodeveloperr.github.io/pressbench-legal/privacy/` only after the GitHub Pages site is publicly reachable without authentication. The repository itself may remain private if the GitHub plan/settings allow a public Pages site.
+- **Contains ads:** Yes.
+- **App access:** All functionality can be accessed without special credentials. No reviewer login is required.
+- **Target audience:** 18+ only, provided this accurately reflects the Play Console audience selection and marketing.
+- **Content rating:** Complete the IARC questionnaire accurately. The app must not remain Unrated.
+- **Account deletion:** Not applicable because PressBench does not create user accounts.
+- **High-risk permissions:** none intended. Release manifest requests Internet and Google Play Billing only; `AD_ID` is explicitly removed.
 
-Provisional answer for the audited local-only configuration:
+## Data safety — release baseline
 
-- **Data collection:** “No, we do not collect data from this app.”
-- **Tracking:** No.
-- **Privacy Policy URL:** required; use the public Privacy URL above.
-- **User Privacy Choices URL:** use the Data Choices URL above.
+Production records entered into PressBench are stored locally and are not transmitted to GoodUse Studios. However, the app contains Google Mobile Ads and Google Play Billing, so **do not answer “no data collected or shared.”**
 
-Use this answer only if the final iOS archive contains no analytics, advertising, crash-reporting, remote configuration, cloud sync, account, developer server, or other SDK that transmits accessible data off-device. StoreKit/App Store processing and any Apple-provided diagnostics must be reviewed in the final binary and App Store Connect configuration.
+Google documents that Mobile Ads SDK 25.4.0 may automatically collect/share for advertising, analytics, and fraud prevention:
 
-## Google Play Data safety
+- IP address / approximate general location;
+- user product interactions;
+- diagnostics/performance information; and
+- device/account identifiers. The release manifest removes the Android advertising-ID permission, but other app/device identifiers may still be processed by Google.
 
-Provisional answer for the audited local-only configuration:
+Google states Mobile Ads SDK data is encrypted in transit. UMP consent information is refreshed on each launch, ads fail closed if privacy state cannot be updated, and the App exposes Google’s Privacy Options form when required.
 
-- No account creation.
-- No production data collected by or shared with GoodUse Studios.
-- No advertising or tracking.
-- No developer analytics or crash-reporting SDK.
-- Local records and user-directed exports are not developer collection merely because they exist on the device; review any Android backup configuration separately.
-- Google Play may process purchases under its own service terms.
+Google Play Billing processes purchase/subscription information needed to complete and verify the Remove Ads entitlement. PressBench does not receive full payment-card details.
 
-Do not submit “no data collected or shared” until the final AAB manifest, SDK list, network-security configuration, Android backup rules, and runtime traffic are verified. If any library transmits device, diagnostics, purchase, or usage data to a developer or third party, disclose the relevant data type, purpose, retention, and sharing status.
+Before submission, complete the Data safety form against the exact final AAB and current Google SDK disclosure documentation.
 
-The App has no account, so Google’s in-App account-deletion requirement should not apply. The Data Choices page still provides a public explanation of local deletion.
+## Subscription disclosure
 
-## Permissions and platform features
+The Remove Ads screen must clearly show:
 
-The audited source does not require location, camera, microphone, contacts, Bluetooth, health, advertising ID, or broad shared-storage permission. Haptic and audio cues are outputs. Backup import, file save, and sharing should use user-initiated system pickers or share sheets.
+- that the core App is usable without the subscription;
+- the local price returned by Google Play;
+- that the subscription is monthly and auto-renewing until cancelled;
+- that the benefit is removal of PressBench banner ads while active;
+- Restore Purchases; and
+- a direct Manage subscription / cancellation link in Settings for active subscribers.
 
-Verify the final manifests and entitlements. Remove any permission or capability that is not essential.
+No free trial should be advertised unless a Play Console offer is deliberately configured and the in-App/store disclosures are updated.
 
-## Monetisation declarations
+## Technical release gates
 
-Confirmed commercial structure:
+- `targetSdk = 36` (meets the Google Play requirement taking effect 31 August 2026).
+- Build and publish an Android App Bundle (AAB).
+- Verify 16 KB page-size compatibility on the final bundle, including every bundled native library from third-party SDKs. Google currently says apps targeting API 35+ must support 16 KB page sizes for Play updates by 1 February 2027; test before the first release rather than deferring the risk.
+- Run release on at least one Android 15/16 16 KB environment or equivalent Play pre-launch testing.
+- Replace Google sample AdMob IDs with approved production App ID and banner unit ID.
+- Use the final Play upload/release signing configuration; never commit private keys or passwords.
+- Verify subscription product/base plan is active and test through a Play testing track.
+- Verify privacy/terms/safety/support URLs work publicly and without login.
+- Verify all legal links from Settings and first-use onboarding.
+- Verify UMP in EEA/UK and other configured regulated regions using Google test geography before production.
+- Verify ads never overlap run controls, navigation, or system gesture areas.
 
-- Android: limited Free Tier followed by an auto-renewing Pro subscription.
-- iOS: limited Free Tier followed by a one-time non-consumable Pro unlock that does not expire merely with time and has no recurring charge.
-- No ads.
-- No trial unless one is deliberately configured and disclosed.
+## Distribution-specific gates
 
-The Android paywall and store metadata must state the exact local price, billing period, automatic renewal, ongoing subscription value, cancellation method, and links to Privacy and Terms. The current static creation-ceiling and export unlock is exposed to Google Play’s recurring-value rule. The iOS purchase flow must contain no subscription or renewal wording.
+### Japan
 
-Free/Pro limits govern current stored counts and new record creation rather than lifetime creation or total local storage. Deleting a record below its Free threshold reopens a slot. At or above a threshold, existing, restored, or lapsed records remain stored, viewable, editable or correctable, JSON-backupable, and CSV-exportable; a new record of that type and PDF/XLSX report generation remain gated. Store copy and the purchase screen must state that split exactly unless the released code is deliberately changed and re-audited. The iOS purchase has no recurring charge and does not expire merely with time; record and storage limits still apply.
+Because PressBench offers an in-app subscription, distribution to consumers in Japan requires the business-operator disclosures required by Japan’s Specified Commercial Transactions Act, including operator name, telephone number, and physical address through the applicable Play/Payments surfaces or a compliant linked page.
 
-## Store-listing factual claims
+### New personal Play accounts
 
-Permitted only if the final binary matches:
+If the developer account is a personal account created after 13 November 2023, production access requires a closed test with at least 12 testers continuously opted in for at least 14 days, followed by the Play production-access application.
 
-- local-first production settings and batch records;
-- no login or cloud account;
-- no ads or tracking;
-- no developer analytics SDK;
-- user-directed JSON, CSV, XLSX, and PDF exports;
-- app does not control machinery or determine safe settings; and
-- operator must verify current manufacturer instructions.
+### Global privacy
 
-Avoid absolute claims such as “zero network activity” or “records never leave the device.” Prefer: **“PressBench does not transmit production records to GoodUse Studios. Your exports and any enabled operating-system, device, cloud, or workplace backups may move copies.”**
+The app uses a privacy-minimising baseline: local-only production records, no account/cloud backend, no sensitive permissions, non-personalized publisher ad treatment, AD_ID permission removed, UMP regional consent, public privacy policy, local data deletion, and direct subscription management.
 
-## Category, audience, and content
-
-- Likely primary category: Business or Productivity.
-- Intended audience: adult heat-press operators and production teams.
-- Not directed to children.
-- No user-to-user communication or uploaded user-generated content in the audited configuration.
-- No medical, financial, government, or professional certification function.
-- Safety disclaimer must be visible in-App before the first production run and remain accessible thereafter.
-
-Store age-rating answers must be completed from the final questionnaire; do not use the legal adult-audience statement as a substitute for accurate content-rating answers.
-
-## Final submission gate
-
-Confirm the following from the signed binaries, not from this HTML source:
-
-1. SDK inventory and third-party privacy practices.
-2. Android permissions, data backup rules, and runtime traffic.
-3. iOS entitlements, privacy manifest, required-reason APIs, and runtime traffic.
-4. Product identifiers, price, period, entitlement restoration, and failure states.
-5. Working in-App links to Privacy, Terms, Purchases, Support, Data Choices, and Safety.
-6. Versioned Terms/Privacy presentation and any required assent; easy in-App subscription cancellation access where applicable.
-7. Generic starter templates contain no unsafe actionable setpoints, and “validated” is used only where the verification rule actually passes.
-8. The 1,000 operator-created-setting ceiling counts canonical starters separately, every storage path enforces the intended invariants, and the 8 MB / 2 MB / 1 MB internal data limits are either disclosed or removed.
-9. iOS contains only the confirmed one-time non-consumable offer; Android contains only the confirmed auto-renewing subscription offer; neither build contains ads.
-10. Delete-all clears and verifies every local storage backend, including failure and retry states.
-11. Store declarations match the exact released version.
+This baseline reduces risk but does not itself certify compliance with every law in every country. Before launch, confirm whether GoodUse Studios requires an EEA representative, UK representative, local consumer/merchant disclosures, tax registrations, or other jurisdiction-specific steps based on the actual business establishment, targeting, and processing.
