@@ -1,57 +1,68 @@
 # PressBench Android — Google Play Disclosure Worksheet
 
-**Release target reviewed:** Android 1.0.0-closed-v14  
-**Reviewed:** 25 August 2026  
-**Package:** `com.goodusestudios.pressbench`  
-**Source ZIP SHA-256:** `3ad63565ae2c2492eee545304cd866b435de78a6f231388ae952d35c3bac5442`
+**Release target reviewed:** Android 1.0.0-closed-v14-native
 
-This is an exact-code worksheet, not a substitute for inspecting the final signed AAB and Play Console forms. Do not enter these answers in Play Console until the veteran review is complete and the final submitted AAB matches this baseline.
+**Reviewed:** 25 August 2026
 
-## Store model in the reviewed build
+**Package:** `com.goodusestudios.pressbench`
 
-- Intended commercial model: free download for this closed-test baseline; confirm the final Play pricing setting separately.
-- Advertising: no. The 320×50 area is an empty interface-inspection placeholder.
-- Paid product: none. The purchase, restoration and subscription-management controls are local simulations only.
-- Account/login: none.
-- Developer cloud sync: none.
-- Analytics/crash/attribution SDK: none.
-- Export: not implemented; PDF and CSV controls display a toast only.
-- Photos/camera: not implemented.
-- Developer-selected intended audience: adults / professional heat-press operators; not directed to children. The App does not technically verify age.
+**Approved source commit:** `52547ce51e50134004e34dd9da899ac014cd3d9a`
+
+This worksheet matches the closed-test AAB built from the approved source with Google’s official Mobile Ads test identifiers. Recheck it before replacing test IDs, adding billing or changing SDKs.
+
+## Store model
+
+- Free closed-test app.
+- Google test adaptive-banner ads; no live ad revenue.
+- Google Mobile Ads SDK 25.4.0 and UMP SDK 4.0.0.
+- Non-personalized-ad signal added to every banner request.
+- No Google Play Billing dependency and no paid product.
+- Local **Remove Ads** preference only; no purchase or subscription entitlement.
+- No account/login or developer cloud sync.
+- No GoodUse Studios analytics, crash-reporting or attribution SDK.
+- User-initiated PDF and CSV export through Android’s system share sheet.
+- Intended audience: adults / professional heat-press operators; not directed to children.
 
 ## App content declarations
 
-- **Privacy policy:** `https://lrodeveloperr.github.io/pressbench-legal/privacy/` after the 25 August 2026 exact-build policy set is published and publicly verified.
-- **Contains ads:** No for the exact v14 package.
-- **In-app purchases/subscriptions:** No for the exact v14 package.
+- **Privacy policy:** `https://lrodeveloperr.github.io/pressbench-legal/privacy/`
+- **Contains ads:** Yes.
+- **In-app purchases/subscriptions:** No.
 - **App access:** All implemented functionality is available without credentials.
-- **Target audience:** Select 18 and over as the developer’s intended audience decision; this is not a code-derived age gate.
-- **Account deletion:** Not applicable because PressBench creates no account. Local data deletion is available under Settings.
-- **Permissions:** `INTERNET`, `VIBRATE`, `WAKE_LOCK`.
+- **Target audience:** 18 and over.
+- **Account deletion:** Not applicable; PressBench creates no account. Local deletion is available in Settings.
+- **Government app:** No.
+- **Financial features:** No.
+- **Health features:** No.
 
-## Data safety — provisional exact-build baseline
+## Data Safety declaration
 
-The reviewed v14 code stores machine, setup, active-run, timer, QC, completed-run and preference data locally in WebView/app storage. It contains no code that automatically sends that operational data off device and no third-party SDK that collects analytics, advertising, attribution or crash data.
+Google Mobile Ads may automatically collect or share the following, as disclosed by Google for SDK 25.4.0:
 
-Provisional finding: **no automatic publisher collection or sharing was identified in the reviewed source**. Final Data Safety answers remain unset until the signed AAB, merged manifest, dependency tree and network test are verified, including treatment of user-initiated support email under Google’s current definitions. Provider-controlled browser, email and Google Play processing must be evaluated separately under Google’s current Data Safety definitions.
+| Data type | Collected | Shared | Purposes |
+| --- | --- | --- | --- |
+| Approximate location (derived from IP) | Yes | Yes | Advertising or marketing; analytics; fraud prevention, security and compliance |
+| App interactions | Yes | Yes | Advertising or marketing; analytics; fraud prevention, security and compliance |
+| Diagnostics | Yes | Yes | Analytics; fraud prevention, security and compliance |
+| Device or other IDs | Yes | Yes | Advertising or marketing; analytics; fraud prevention, security and compliance |
+
+Operational machine, setup, run and report data stays in private app storage and is not automatically uploaded by PressBench.
+
+- Data is encrypted in transit by Google.
+- The App does not offer account creation.
+- PDF/CSV disclosure is covered as user-initiated transfer through the system share sheet.
+- The App supplies Google’s non-personalized-ad signal, but the technical SDK data above still requires disclosure.
 
 ## Exact dependency baseline
 
-Direct App dependencies are AndroidX Core KTX, Activity Compose, Compose UI, UI Tooling Preview and debug-only UI Tooling. Google Mobile Ads, UMP and Play Billing are absent.
+Direct release dependencies include AndroidX/Jetpack Compose, AndroidX DataStore, Google Mobile Ads 25.4.0 and Google UMP 4.0.0. Play Billing is absent.
 
-## Release blockers
+## Closed-test launch controls
 
-1. Remove or genuinely implement simulated ads, privacy choices, billing, restoration, subscription management and PDF/CSV controls.
-2. Remove the seeded production values or mark every demo card, detail and run screen unmistakably as **DEMO — NOT FOR PRODUCTION**; prevent a production run until the operator replaces or expressly confirms the values. Remove manufacturer/supplier attribution unless genuine and authorised.
-3. Correct or stop marketing the current “first-pass yield” metric because the reviewed formula does not subtract rework.
-4. If any simulated function is implemented, recompile the applicable legal modules and store declarations from the final code; do not reuse this no-ads/no-billing baseline.
-5. Resolve or formally accept the PressBench name/trademark risk before public launch.
-6. Build and inspect the final signed AAB, including its merged manifest and full dependency tree.
-7. Perform network testing and verify Android backup remains disabled.
-8. Verify the Target Audience and content-rating forms, plus every legal URL and in-App link.
-9. Publish the matching legal pages atomically and verify them publicly. Do not replace policies for another active build with this exact-v14 baseline.
-10. Capture only genuine final screenshots that show working functions.
-
-## Localized listing control
-
-The app has 31 base language IDs plus a selectable Traditional Chinese (`zh-Hant`) override. Every localized listing must remain within Google’s field limits and must not claim export, photos, ads, purchases, machine control, recommended settings or other absent functionality.
+1. Use only Google’s official Android test app and adaptive-banner test IDs.
+2. Sign every upload with the dedicated PressBench upload key.
+3. Upload the AAB to a closed-testing draft; do not publish production.
+4. Add required store icon, feature graphic and phone screenshots.
+5. Complete the 12-testers-for-14-continuous-days requirement before applying for production access.
+6. Before production, replace test IDs with approved production IDs, link the AdMob app to its Play listing, finish AdMob account/app review and re-audit the final AAB.
+7. Do not advertise a paid ad-removal product until Play Billing and a real product are implemented and tested.
