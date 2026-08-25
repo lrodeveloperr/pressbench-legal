@@ -29,7 +29,7 @@
 
 - version code/name, package, target API and merged permissions;
 - dependency inventory and absence of Play Billing;
-- no Advertising ID permission declared by the App artifact;
+- merged permission inventory, including the Google Mobile Ads SDK's `com.google.android.gms.permission.AD_ID` declaration, remains consistent with advertising and Data Safety disclosures;
 - test AdMob IDs, UMP gating and non-personalized request signal;
 - backup/data-transfer exclusions;
 - network and Data Safety consistency;
