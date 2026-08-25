@@ -2,7 +2,7 @@
 
 Public legal and support documents for **PressBench** by GoodUse Studios.
 
-Current Android release baseline: **1.0.0 — 24 August 2026**.
+Current Android closed-test release baseline: **1.0.0-closed-v14-native — 25 August 2026**.
 
 Public GitHub Pages routes, once Pages is enabled:
 
