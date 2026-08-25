@@ -7,32 +7,28 @@ permalink: /data-choices/
 
 # Local Data and Deletion
 
-**Last updated: 24 August 2026**
+**Last updated: 25 August 2026**
 
-PressBench has no developer cloud account or remote production database. GoodUse Studios cannot see, recover, edit, or remotely delete the machines, setups, runs, QC records, local settings, and optional setup photos stored only on your device.
+PressBench has no developer cloud account or remote production database. GoodUse Studios cannot see, recover, edit or remotely delete the machines, setups, runs, QC records and local settings stored only in the App’s WebView/app storage on your device.
 
 ## Delete local PressBench data
 
-In PressBench, open **Settings → Delete Local Data** and confirm the deletion. This deletes the App’s local machines, setups, runs, local settings, and setup photos from that device.
+In PressBench, open **Settings → Delete Local Data** and confirm the deletion. This clears PressBench-prefixed local-storage keys containing machines, setups, runs, active-run/timer state and local preferences on that device. The App then reloads its bundled demonstration state.
 
-You can also remove local App data through Android device settings or by uninstalling PressBench. Deleting local data does not delete files or photos you previously exported or shared.
+You can also remove local App data through Android device settings or by uninstalling PressBench. Android application backup is disabled in the reviewed release.
 
-## Setup photos
+## Reports and exports
 
-Optional setup photos are stored in PressBench’s private app storage and associated locally with a setup. Removing a setup removes its associated managed photo, and **Delete Local Data** clears the managed setup-photo storage together with other local PressBench data.
+The PDF and CSV buttons in the reviewed `1.0.0-closed-v14` build are non-functional interface-inspection placeholders. They do not create, save, upload or share a file.
 
-## Exports
+## Advertising and Google Play billing
 
-When you save a CSV or PDF report, the file is placed at the destination you choose through Android’s system file interface. Delete unwanted copies from every destination where you saved, shared, emailed, or uploaded them.
+The reviewed build does not include Google Mobile Ads, Google UMP or Google Play Billing. Its banner reservation and privacy/purchase controls are non-functional interface-inspection placeholders. Deleting local data therefore does not cancel a PressBench subscription because this build cannot create or verify one.
 
-## Google Play and advertising data
-
-Deleting PressBench local data does not delete Google Play purchase history and does not cancel an active Remove Ads subscription. Manage the subscription through Google Play.
-
-Advertising and consent information processed by Google is governed by Google and applicable device/privacy controls. Where required, PressBench exposes **Settings → Privacy choices** using Google UMP.
+Google Play and the device platform may independently retain ordinary installation or store information under their own terms.
 
 ## Support email
 
-To request access to, correction of, or deletion of support correspondence held by GoodUse Studios, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Data%20Request) with the subject **PressBench Data Request**. We may need enough information to locate the correspondence and verify that the requester is authorised.
+To request access to, correction of or deletion of support correspondence held by GoodUse Studios, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Data%20Request) with the subject **PressBench Data Request**. We may need enough information to locate the correspondence and verify that the requester is authorised.
 
 For more detail, see the [Privacy Policy]({{ '/privacy/' | relative_url }}).

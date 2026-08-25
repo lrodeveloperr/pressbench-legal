@@ -7,26 +7,26 @@ permalink: /support/
 
 # PressBench Support
 
-**Last updated: 24 August 2026**
+**Last updated: 25 August 2026**
 
 Email: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Support)  
 Provider: **Lateef Razaq-Oyetola carrying on business as GoodUse Studios**, Ontario, Canada
 
-For the fastest help, include Android version, device model, PressBench version, the screen/action involved, what you expected, what happened, and any exact error text.
+For the fastest help, include Android version, device model, PressBench version, the screen/action involved, what you expected, what happened and any exact error text.
 
-Do not email passwords, payment-card details, purchase tokens, complete production databases, customer information, or confidential supplier information. Redact unrelated production information from screenshots.
+Do not email passwords, payment-card details, purchase tokens, complete production databases, customer information or confidential supplier information. Redact unrelated production information from screenshots.
 
 ## Local-data limitation
 
-PressBench has no developer cloud account or remote production database. Support cannot retrieve local records from a lost, reset, damaged, uninstalled, or cleared device.
+PressBench has no developer cloud account or remote production database. Support cannot retrieve local records from a lost, reset, damaged, uninstalled or cleared device.
 
-## Billing
+## Current purchases and advertising status
 
-For subscription management, cancellation, restoration, and refund information, see [Remove Ads Subscription, Cancellations, and Refunds]({{ '/subscriptions/' | relative_url }}).
+The reviewed `1.0.0-closed-v14` build does not serve ads or process Google Play purchases. Its advertising and purchase controls are non-functional interface-inspection placeholders. See [Purchases and Advertising Status]({{ '/subscriptions/' | relative_url }}).
 
 ## Safety
 
-Support does not provide heat-press operating, engineering, material-compatibility, workplace-safety, or emergency advice. Follow the current machine and material manufacturer instructions and your workplace procedures.
+Support does not provide heat-press operating, engineering, material-compatibility, workplace-safety or emergency advice. Follow the current machine and material manufacturer instructions and your workplace procedures.
 
 ## Legal and privacy
 
