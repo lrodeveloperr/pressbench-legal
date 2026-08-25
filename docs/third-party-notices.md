@@ -7,7 +7,7 @@ permalink: /third-party-notices/
 
 # Third-Party Software Notices
 
-**Release baseline: PressBench Android 1.0.0-closed-v14, 25 August 2026**
+**Release baseline: PressBench Android 1.0.0-closed-v16-native (version code 1403), 25 August 2026**
 
 PressBench includes third-party software. Each component remains owned by its respective rights holder and is governed by its applicable licence and service terms. Nothing in the PressBench Terms limits rights granted by an applicable open-source licence.
 

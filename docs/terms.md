@@ -37,15 +37,17 @@ The App may include demonstration machines, setups and results with example valu
 
 ## 5. Local records
 
-Production records are stored locally in the reviewed Android build’s WebView/app storage. GoodUse Studios does not provide a PressBench cloud account or remote recovery service.
+Production records are stored locally in Android private App storage. GoodUse Studios does not provide a PressBench cloud account or remote recovery service.
 
-Deleting the App, clearing App storage, using **Delete Local Data**, losing the device or the operating system removing App data may permanently remove local records. We cannot recover records that we do not possess. Android application backup is disabled in the reviewed release.
+Deleting the App, clearing App storage, using **Delete Local Data**, losing the device or the operating system removing App data may permanently remove local records. We cannot recover records that we do not possess. The reviewed release disables Android backup and explicitly excludes App data from cloud backup and device-to-device transfer.
 
 ## 6. Current advertising, privacy-choice, billing and export status
 
-The reviewed `1.0.0-closed-v14` Android build contains visual banner space and controls labelled Privacy choices, Remove Ads, Restore purchases, Manage subscription, PDF and CSV for closed-test interface inspection. They are not connected to Google Mobile Ads, Google UMP, Google Play Billing or file-export code.
+The reviewed `1.0.0-closed-v16-native` Android build uses Google Mobile Ads and UMP with Google's official test identifiers. It requests test banners with the non-personalized-ad signal and shows Google's consent form or privacy-options entry when UMP reports that one is required. Test ads do not generate advertising revenue.
 
-The reviewed build does not serve ads, obtain advertising consent, process purchases, verify a subscription, create a PDF or CSV file, or share an export. These functions must not be relied on. If a later build activates any of them, the App, store disclosures and legal documents will be updated before that build is distributed.
+The build has no Google Play Billing dependency, paid product, purchase interface or subscription controls. All implemented features are available without payment. PDF and CSV export are functional: the App creates a report in its cache and opens Android's system share sheet; it does not automatically choose a recipient or upload the report.
+
+If a later build activates production advertising or a paid product, the App, store disclosures and legal documents will be updated before distribution.
 
 The [Purchases and Advertising Status page]({{ '/subscriptions/' | relative_url }}) forms part of these Terms.
 

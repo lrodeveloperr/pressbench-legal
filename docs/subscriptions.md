@@ -1,32 +1,30 @@
 ---
 layout: default
-title: Purchases and Advertising Status
-nav_title: Purchases
+title: Advertising and Purchases Status
+nav_title: Advertising
 permalink: /subscriptions/
 ---
 
-# Purchases and Advertising Status
+# Advertising and Purchases Status
 
 **Effective: 25 August 2026**
 
-The PressBench Android closed-test build includes Google Mobile Ads and Google UMP and uses Google’s official test app and adaptive-banner identifiers.
-
 ## Current closed-test build
 
-- Displayed banners are Google test ads and do not generate advertising revenue.
-- Banner requests include Google’s non-personalized-ad signal.
-- UMP checks whether a consent form or privacy-options entry is required before the App requests an ad.
-- **Remove Ads** changes a local preference on that device and stops displaying the banner.
-- Google Play Billing is not integrated.
-- No payment, subscription, renewal, refund, purchase restoration or Play entitlement is created.
-- **Restore purchases** and **Manage subscription** do not contact Google Play in this build.
+- PressBench includes Google Mobile Ads SDK 25.4.0 and Google UMP SDK 4.0.0.
+- It uses Google's official test app and adaptive-banner identifiers. Test banners do not generate advertising revenue.
+- Each banner request includes Google's non-personalized-ad signal.
+- UMP is checked before an ad request; a consent form or privacy-options entry is shown when Google reports that it is required.
+- The App has no Google Play Billing dependency or purchase interface.
+- No paid product, payment, subscription, renewal, refund, restoration or Play entitlement can be created in this build.
+- All implemented PressBench features are available without payment.
 
-The App will not activate a paid product or production ad unit without updating the App, privacy policy, store declarations and applicable purchase terms.
+A future paid ad-free option or production ad unit would require a new App build and updated store and legal disclosures before distribution. This page is not an offer of a future product.
 
 Do not send payment-card details or purchase tokens by email.
 
 ## Contact
 
-Email: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Billing)
+Email: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Advertising)
 
-Subject: **PressBench Billing**
+Subject: **PressBench Advertising**

@@ -1,68 +1,34 @@
 # PressBench — Global Play & Privacy Compliance Review
 
-**Review date:** 24 August 2026  
-**Release baseline:** Android 1.0.0 / package `com.goodusestudios.pressbench`
+**Review date:** 25 August 2026
+**Release baseline:** Android `1.0.0-closed-v16-native`, version code 1403
 
-This is an engineering/store-readiness review, not a legal opinion for 175 jurisdictions. PressBench intentionally minimizes direct publisher processing: production data stays on-device, there is no PressBench account/cloud database, sensitive Android permissions are not requested, and the only routine external services are Google Mobile Ads/UMP and Google Play Billing.
+This is an engineering/store-readiness review, not legal advice for every jurisdiction. PressBench minimizes publisher processing: operational records remain on-device, there is no PressBench account or cloud database, Android backup/device transfer is disabled, and routine external services are limited to Google Mobile Ads/UMP, the public legal site and user-chosen external apps.
 
 ## Google Play baseline
 
-The Android release must keep these declarations synchronized with the signed AAB:
+- Keep the public privacy policy and in-App legal links accessible without login.
+- Declare Google Mobile Ads data in Data Safety even though PressBench production records remain local.
+- Declare **Contains ads: Yes**, **In-app purchases: No**, adult target audience and unrestricted App access.
+- The closed-test build has no Play Billing dependency or purchase/subscription UI.
+- Use only official Google test ad identifiers in testing. Do not publish a production release with test IDs.
+- Request ads only after UMP permits it, expose privacy options when required, and keep the `npa=1` signal.
+- Recheck target API, SDK policy status, permissions and 16 KB compatibility from the exact signed AAB before every release.
 
-- Privacy policy: public HTTPS/HTML URL, accessible without login, and linked in-app.
-- Data safety: include data transmitted by Google Mobile Ads and Play Billing; do not declare “no data collected/shared” merely because production records are local.
-- Contains ads: **Yes**.
-- Target audience: **18+ / adults** only, if that matches the store listing and marketing.
-- App access: no reviewer credentials required.
-- Content rating: complete IARC questionnaire accurately.
-- Subscription: `remove_ads_monthly`, auto-renewing monthly; only recurring benefit is removal of the banner while active; local price from Google Play; cancellation/management link in Settings.
-- Ads: persistent banner only; no interstitial/app-open baseline; never position ads to cause accidental clicks or impair run controls.
-- Target API: 36 for the 31 August 2026 Play requirement.
-- 16 KB: test the signed bundle and native SDKs now. Google currently states that API 35+ apps must support 16 KB page sizes for Play updates from 1 February 2027.
-- SDK responsibility: re-check the exact versions of Google Mobile Ads, UMP, Billing and all transitive SDKs before every release.
+## Regional privacy considerations
 
-## Privacy baseline by region
+For Canada, maintain transparency, appropriate purposes/consent, safeguards, retention limits and a rights/contact process. In the EEA and UK, the principal risk is advertising consent: configure applicable Google-certified consent messaging and confirm with qualified counsel whether an Article 27 EEA representative and/or UK representative is required for the actual establishment, targeting and monitoring facts. If required, appoint and publish the representative before distribution in that market.
 
-### Canada
+For US states, Brazil, Japan, Australia, New Zealand, Switzerland, Türkiye, South Africa, South Korea, India and other markets, requirements vary with business thresholds and actual processing. Confirm applicable notices, consent/opt-out mechanisms, representatives/officers, language, security, retention and consumer disclosures. Temporarily exclude a market if a mandatory local obligation cannot be confirmed.
 
-PIPEDA and any applicable provincial laws require transparency, appropriate purposes/consent, safeguards, retention limits, access/correction mechanisms, and accountability for service providers. PressBench’s policy identifies the operator/privacy contact, local-only production data, Google service processing, retention, security, and user controls.
+## Consumer and commercial status
 
-### EEA
+This build is free, shows only Google test ads and offers no purchase or subscription. A future paid ad-free option requires a separate billing implementation, Play product/base plan, localized Play price, entitlement and restoration lifecycle, cancellation access, updated legal/store disclosures and regional merchant/tax checks. An internal planning price is not a public offer.
 
-If EU GDPR/ePrivacy rules apply, the principal PressBench risk is advertising/consent rather than the local production database. Google UMP must be configured with the required certified CMP message(s), ads must not be requested before `canRequestAds`, and the Privacy Options entry point must be shown when UMP says it is required. Confirm with counsel whether Article 27 requires an EEA representative for the actual GoodUse Studios processing model; if yes, publish the representative’s contact details before enabling EEA distribution.
+## Languages and market scope
 
-### United Kingdom
-
-Apply the same discipline under UK GDPR/PECR and Google’s UK consent requirements. Confirm whether a UK representative is required for the actual processing/targeting model and publish the details before UK distribution if so.
-
-### United States
-
-State privacy laws apply based on state, activity and statutory thresholds. Do not assume CCPA/CPRA or another state law applies or does not apply without checking the business thresholds and advertising practices. Configure Google Privacy & Messaging/UMP for applicable US-state messages, maintain the global privacy notice, and honor any legally required opt-out/rights route for data GoodUse Studios actually controls.
-
-### Brazil
-
-LGPD can apply to processing connected with individuals in Brazil. Maintain clear purposes, lawful processing, security, retention/deletion, and rights/contact information. Confirm any local representative/officer obligations that apply to the actual business size and processing model.
-
-### Japan
-
-APPI privacy principles may apply to personal information handled in Japan. Separately, because PressBench sells an in-app subscription, Google Play notes that Japan’s Specified Commercial Transactions Act can require the business operator’s name, physical address and telephone number to be displayed through the required Play/Payments surface or compliant disclosure page.
-
-### Australia / New Zealand / Switzerland / Türkiye / South Africa / South Korea / India and other markets
-
-These markets have privacy/consumer regimes that can impose notice, security, rights, retention, transfer, local-language, representative/officer, or merchant-disclosure duties depending on thresholds and the actual processing. The PressBench technical baseline is designed to minimize exposure, but it is not a substitute for jurisdiction-specific legal advice. If a local obligation cannot be confirmed before launch, exclude that market temporarily rather than making a false compliance claim.
-
-## Consumer / merchant disclosures
-
-Because PressBench monetizes through a Play subscription, the Google Payments profile/merchant information must be accurate. Google states that monetizing developer accounts display the full legal address on Google Play. Keep the developer/merchant identity consistent with the Terms and Privacy Policy.
-
-For the EEA, complete Play’s tax/compliance classification for the subscription (Digital Content vs Service; Google says “Service” may be selected if in doubt, but the developer remains responsible for the classification). Complete any trader/consumer information Play requests.
-
-For Japan, verify the required operator name, public address and telephone number before enabling paid distribution.
-
-## Languages
-
-The app UI is localized, but the legal site is currently English. Store policy does not by itself turn machine-translated legal text into legally reliable local terms. Before relying on translated Terms/Privacy as a contract or statutory notice in a jurisdiction that requires local-language documents (for example, potentially Quebec/French consumer contexts), obtain a legally reviewed translation or exclude that jurisdiction until ready.
+The App and listing may be localized while this legal site is English. Do not treat machine translation as legally reviewed local terms. Obtain qualified local review where local-language legal documents are mandatory or exclude the affected market until ready.
 
 ## Release rule
 
-A “global” checkbox in Play Console does not prove compliance with every law. Ship only to markets for which the Play account/merchant details, privacy/consent configuration, local-language requirements, representatives (if required), taxes, and paid-product disclosures have been completed. Re-run this review whenever the app adds a new SDK, permission, data flow, account/cloud feature, ad format, or paid feature.
+A global distribution selection does not prove global compliance. Re-run this review whenever the App adds or changes an SDK, permission, data flow, account/cloud feature, ad format, purchase, price or target market.

@@ -6,15 +6,15 @@ permalink: /
 
 # PressBench Legal & Support
 
-> **Closed-test baseline.** These documents describe the reviewed PressBench Android `1.0.0-closed-v14` package. Advertising, consent, billing and export controls visible in that package are non-functional interface-inspection placeholders.
+> **Closed-test baseline.** These documents describe PressBench Android `1.0.0-closed-v16-native` (version code 1403). The build uses Google Mobile Ads and UMP with Google's official test identifiers, exports PDF/CSV through Android's share sheet, and has no billing, purchase or subscription functionality.
 
-PressBench is a local-first heat-press production setup and run-record utility. It records information entered by the operator; it does not inspect or control heat-press equipment and does not determine safe or correct operating settings.
+PressBench is a local-first heat-press production setup and run-record utility. It records information entered by the operator; it does not inspect or control heat-press equipment or determine safe or correct operating settings.
 
 ## Documents
 
 - [Privacy Policy]({{ '/privacy/' | relative_url }})
 - [Terms of Use]({{ '/terms/' | relative_url }})
-- [Purchases and Advertising Status]({{ '/subscriptions/' | relative_url }})
+- [Advertising and Purchases Status]({{ '/subscriptions/' | relative_url }})
 - [Support]({{ '/support/' | relative_url }})
 - [Heat-Press Safety Notice]({{ '/safety/' | relative_url }})
 - [Local Data and Deletion]({{ '/data-choices/' | relative_url }})

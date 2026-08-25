@@ -21,7 +21,7 @@ PressBench is a local-first heat-press production log.
 - You can deliberately export a production report as PDF or CSV and choose where to share it using Android’s system share sheet.
 - The closed-test build uses Google Mobile Ads and Google’s User Messaging Platform (“UMP”) and may display Google test banner ads. Ads are requested as non-personalized ads.
 - PressBench does not include a GoodUse Studios analytics, crash-reporting or attribution service.
-- Android application backup is disabled.
+- Android application backup and device-to-device transfer are disabled and all supported storage domains are explicitly excluded.
 - We do not sell or rent your production records.
 
 ## 2. Information stored locally
@@ -34,7 +34,7 @@ Depending on how you use PressBench, local records may include:
 - job references and planned quantities;
 - active-run state, timer state, first-piece attempts and quality checks;
 - processed, first-pass, reworked and wasted quantities, notes and timestamps; and
-- preferences such as language, temperature unit, sound, vibration, onboarding state and whether the local ad display has been disabled.
+- preferences such as language, temperature unit, sound, vibration and onboarding state.
 
 Some fields are free text. Do not enter personal, customer, employee, confidential or trade-secret information unless it is necessary and you are authorized to store it on the device.
 
@@ -59,9 +59,9 @@ Google states that this information may be used for advertising, analytics, secu
 
 The App does not send your machine, setup, run, report or free-text production fields to Google Mobile Ads.
 
-## 4. Local ad-disable control and billing
+## 4. Advertising and billing status
 
-The reviewed closed-test build does not implement Google Play Billing and does not process a purchase or subscription. Its **Remove Ads** control changes a local preference on that device and stops rendering the banner in the App. No charge, renewal, purchase restoration or subscription entitlement is created.
+The reviewed closed-test build may show Google test banner ads. All implemented App features are available without payment. The build has no Google Play Billing dependency, paid product, purchase interface or subscription controls, and cannot create a charge, renewal, restoration or entitlement.
 
 Any later build that introduces a paid product or production ad unit will require an updated policy, store declaration and applicable purchase terms before distribution.
 
@@ -85,7 +85,7 @@ The PressBench legal and support pages are hosted using GitHub Pages. GoodUse St
 
 ## 8. Retention, deletion and control
 
-Local PressBench records and preferences remain on the device until you delete them in PressBench, clear the App’s storage, uninstall the App or Android removes them. Android application backup is disabled for PressBench.
+Local PressBench records and preferences remain on the device until you delete them in PressBench, clear the App’s storage, uninstall the App or Android removes them. PressBench sets Android backup off and supplies explicit rules excluding every supported storage domain from cloud backup and device-to-device transfer.
 
 Use **Settings → Delete Local Data** and confirm the deletion to clear PressBench’s local records and preferences on that device. GoodUse Studios cannot remotely retrieve or delete local records it never received.
 
@@ -113,7 +113,7 @@ PressBench is a professional heat-press workflow utility intended for adults and
 
 ## 12. Security
 
-The App uses HTTPS-capable Google SDKs and Android’s private app storage, disables clear-text network traffic and disables Android application backup. Information handled by Google Mobile Ads is encrypted in transit according to Google. No device or software is completely secure, so keep your device updated, use appropriate access controls and avoid entering unnecessary personal or confidential information.
+The App uses HTTPS-capable Google SDKs and Android’s private app storage, disables clear-text network traffic, disables Android application backup and explicitly excludes App data from cloud backup and device-to-device transfer. Information handled by Google Mobile Ads is encrypted in transit according to Google. No device or software is completely secure, so keep your device updated, use appropriate access controls and avoid entering unnecessary personal or confidential information.
 
 ## 13. Changes
 
