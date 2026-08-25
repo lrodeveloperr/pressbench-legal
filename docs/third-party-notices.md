@@ -15,13 +15,18 @@ The reviewed Android build directly declares dependencies on:
 
 - AndroidX Core KTX;
 - AndroidX Activity Compose;
+- AndroidX Lifecycle;
+- AndroidX DataStore;
 - Jetpack Compose UI;
-- Jetpack Compose UI Tooling Preview; and
+- Material 3 and Material Icons;
+- Google Mobile Ads SDK 25.4.0;
+- Google User Messaging Platform SDK 4.0.0;
+- JUnit for unit tests; and
 - Jetpack Compose UI Tooling in debug builds.
 
 These AndroidX components are generally provided under the Apache License 2.0. Kotlin, the Android Gradle plugin, the Compose compiler/plugin and transitive build/runtime components remain subject to their respective licences and terms.
 
-The reviewed build does **not** directly declare Google Play Billing, Google Mobile Ads, Google UMP, AndroidX Navigation, Material 3, Material Icons, kotlinx.coroutines or JUnit/AndroidX Test as App dependencies.
+The reviewed build does **not** directly declare Google Play Billing or AndroidX Navigation. Google Mobile Ads and UMP are subject to Google's applicable SDK and service terms in addition to any included software licences.
 
 The exact transitive inventory can change when dependencies are updated. Release engineering should retain the dependency report and build files for each published version and regenerate these notices when a dependency or version changes.
 
