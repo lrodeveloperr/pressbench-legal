@@ -18,7 +18,7 @@
 
 - Verify the uploaded artifact is the signed version code 1403 AAB and matches the recorded SHA-256.
 - Verify privacy URL and all in-App legal URLs resolve publicly without login.
-- Set **Contains ads: Yes**, **In-app purchases: No**, **App access: unrestricted**, and target audience **18+**.
+- Set **Contains ads: Yes**, **In-app purchases: No**, **App access: unrestricted**, and target audience **18+** with Google Play's minor-access restriction enabled.
 - Complete Data Safety using `STORE-DISCLOSURES.md`, including Google Mobile Ads data.
 - Complete content rating and all other App content declarations accurately.
 - Confirm listing text and localized screenshots describe only functions present in this build and mark AI-generated/edited assets where Play asks.
