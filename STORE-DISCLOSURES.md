@@ -16,7 +16,7 @@ This worksheet describes the signed closed-test build when compiled by the appro
 - No account/login, developer cloud sync, GoodUse Studios analytics, crash-reporting or attribution SDK.
 - Local operational data in Android private storage; Android backup and device-to-device transfer disabled with explicit exclusions.
 - User-initiated PDF/CSV export through Android's system share sheet.
-- Intended audience: adults/professional heat-press operators; not directed to children.
+- Intended and access-restricted audience: adults/professional heat-press operators aged 18 and over; Google Play's minor-access restriction is enabled; not directed to children.
 
 ## App content declarations
 
@@ -24,7 +24,7 @@ This worksheet describes the signed closed-test build when compiled by the appro
 - **Contains ads:** Yes.
 - **In-app purchases/subscriptions:** No.
 - **App access:** No credentials or special access required.
-- **Target audience:** 18 and over.
+- **Target audience:** 18 and over; Google Play minor-access restriction enabled.
 - **Account deletion:** Not applicable; no account is created. Local deletion is available in Settings.
 - **Government, financial and health features:** No.
 
