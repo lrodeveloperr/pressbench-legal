@@ -7,7 +7,7 @@ permalink: /privacy/
 
 # Privacy Policy
 
-**Effective: 25 August 2026**
+**Effective: 26 August 2026**
 
 This Privacy Policy explains how **PressBench** (the “App”) handles information. PressBench is provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”).
 
@@ -109,7 +109,7 @@ Because GoodUse Studios does not receive the local production database during or
 
 ## 11. Children
 
-PressBench is a professional heat-press workflow utility intended for adults and is not directed to children. Do not use the App if you do not meet the eligibility requirements in the Terms of Use.
+PressBench is a professional heat-press workflow utility intended only for adults aged 18 and over and is not directed to children. Google Play is configured to restrict users it determines to be minors from finding or downloading the App, but this control may not identify every minor. Do not use the App if you are under 18, below the age of legal majority where you live, or otherwise do not meet the eligibility requirements in the Terms of Use.
 
 ## 12. Security
 
