@@ -7,12 +7,12 @@ permalink: /support/
 
 # PressBench Support
 
-**Last updated: 25 August 2026**
+**Last updated: 29 August 2026**
 
 Email: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Support)  
 Provider: **Lateef Razaq-Oyetola carrying on business as GoodUse Studios**, Ontario, Canada
 
-For the fastest help, include your Android version, device model, PressBench version, the screen/action involved, expected result, actual result and exact error text.
+For the fastest help, include your iOS or Android version, device model, PressBench version, the screen/action involved, expected result, actual result and exact error text.
 
 Do not email passwords, payment-card details, complete production databases, customer information or confidential supplier information. Redact unrelated production information from screenshots.
 
@@ -20,9 +20,13 @@ Do not email passwords, payment-card details, complete production databases, cus
 
 PressBench has no developer cloud account or remote production database. Support cannot retrieve records from a lost, reset, damaged, uninstalled or cleared device.
 
-## Current advertising and purchases status
+## Advertising, purchases and ad reports
 
-The reviewed `1.0.0-closed-v16-native` build may show Google test banner ads and uses UMP. It does not include Google Play Billing, paid products, subscriptions or purchase controls. See [Advertising and Purchases Status]({{ '/subscriptions/' | relative_url }}).
+The current iOS development model uses a fixed Google test banner and permits five completed free press runs. An active US$9.99/month PressBench Pro subscription is intended to provide unlimited presses, no ads and PDF/XLSX reports. Availability and the localized price are controlled by Apple. The reviewed Android closed-test build has test banners but no billing.
+
+To report an inappropriate ad, email the address above with the subject **PressBench Ad Report**. Include the time, screen, country, a description and—if safe—a screenshot of the ad. Do not tap the ad again to collect details, and redact production or customer information.
+
+See [Advertising and Purchases]({{ '/subscriptions/' | relative_url }}).
 
 ## Safety
 
