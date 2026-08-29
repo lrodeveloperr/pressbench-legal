@@ -7,7 +7,7 @@ permalink: /terms/
 
 # Terms of Use
 
-**Effective: 25 August 2026**
+**Effective: 29 August 2026**
 
 These Terms govern use of **PressBench** (the “App”), provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”). By accepting these Terms in the App, you agree to them. If you do not agree, do not use the App.
 
@@ -35,21 +35,21 @@ A user-created saved setup records operator-entered information. Bundled demonst
 
 The App may include demonstration machines, setups and results with example values so the interface can be evaluated. Those values are not recommendations or manufacturer instructions. Replace or verify every value before production use.
 
-## 5. Local records
+## 5. Local records and optional Apple backup
 
-Production records are stored locally in Android private App storage. GoodUse Studios does not provide a PressBench cloud account or remote recovery service.
+Operational records are stored locally in the App’s private storage. GoodUse Studios does not provide a PressBench cloud account or remote recovery service.
 
-Deleting the App, clearing App storage, using **Delete Local Data**, losing the device or the operating system removing App data may permanently remove local records. We cannot recover records that we do not possess. The reviewed release disables Android backup and explicitly excludes App data from cloud backup and device-to-device transfer.
+On iOS, a user may optionally use Sign in with Apple to enable backup through the App’s private iCloud storage. GoodUse Studios does not receive a copy. Deleting the App, clearing storage, using **Delete Local Data**, losing the device or the operating system removing App data may permanently remove local records that were not backed up. Support cannot recover records GoodUse Studios does not possess.
 
-## 6. Current advertising, privacy-choice, billing and export status
+## 6. Advertising, subscriptions and reports
 
-The reviewed `1.0.0-closed-v16-native` Android build uses Google Mobile Ads and UMP with Google's official test identifiers. It requests test banners with the non-personalized-ad signal and shows Google's consent form or privacy-options entry when UMP reports that one is required. Test ads do not generate advertising revenue.
+The current iOS development profile uses Google’s official test app and fixed banner identifiers. Test ads do not generate advertising revenue. Ad personalization is disabled in the SDK configuration and requested creative is limited to Google’s General content rating. Production advertising will not be activated until the applicable consent, privacy-choice and store-disclosure work is complete.
 
-The build has no Google Play Billing dependency, paid product, purchase interface or subscription controls. All implemented features are available without payment. PDF and CSV export are functional: the App creates a report in its cache and opens Android's system share sheet; it does not automatically choose a recipient or upload the report.
+Free iOS use includes five successfully completed press runs. PressBench Pro is a one-month auto-renewable subscription intended at US$9.99 in the US storefront. While active, it provides unlimited press runs, removes ads and unlocks PDF/XLSX production reports. Apple’s purchase sheet supplies the authoritative localized price and billing period. Apple charges the user’s Apple Account and handles renewal, cancellation and refunds. The subscription renews automatically unless canceled at least 24 hours before the end of the current period. Existing records remain readable after expiry. Any former verified iOS lifetime purchase remains honored.
 
-If a later build activates production advertising or a paid product, the App, store disclosures and legal documents will be updated before distribution.
+Users can manage or cancel the subscription through Apple Account subscription settings and can use **Restore purchase** in the App. The [Advertising and Purchases page]({{ '/subscriptions/' | relative_url }}) forms part of these Terms.
 
-The [Purchases and Advertising Status page]({{ '/subscriptions/' | relative_url }}) forms part of these Terms.
+The reviewed Android closed-test build uses Google test banners and UMP but has no Google Play Billing dependency, paid product, purchase interface or subscription controls. Android PDF/CSV and eligible iOS PDF/XLSX reports are generated locally and shared only through the platform share sheet when the user chooses a destination.
 
 ## 7. Licence and acceptable use
 
