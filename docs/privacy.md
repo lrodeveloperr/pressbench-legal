@@ -7,7 +7,7 @@ permalink: /privacy/
 
 # Privacy Policy
 
-**Effective: 28 August 2026**
+**Effective: 29 August 2026**
 
 This Privacy Policy explains how **PressBench** (the “App”) handles information. PressBench is provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”).
 
@@ -20,7 +20,7 @@ PressBench is a local-first heat-press production log.
 - GoodUse Studios does not operate or receive data through a developer-controlled production database or synchronization server.
 - Operational records and preferences are stored in the App’s private storage on the device and, only when the iOS user enables Apple backup, in that user’s private iCloud container.
 - You can deliberately export a production report and choose where to share it using the platform’s system share sheet.
-- The closed-test build uses Google Mobile Ads and Google’s User Messaging Platform (“UMP”) and may display Google test banner ads. Ads are requested as non-personalized ads.
+- The Android closed-test and iOS development profiles may display Google test banner ads. The Android profile uses Google’s User Messaging Platform (“UMP”); the iOS development profile disables ad personalization in the SDK and does not yet activate production advertising.
 - PressBench does not include a GoodUse Studios analytics, crash-reporting or attribution service.
 - Android application backup and device-to-device transfer are disabled and all supported storage domains are explicitly excluded. The optional iOS iCloud backup is a separate, user-enabled feature.
 - We do not sell or rent your production records.
@@ -51,34 +51,38 @@ Users can back up immediately, restore from iCloud after an explicit overwrite w
 
 ## 4. Google advertising and consent services
 
-The closed-test build includes **Google Mobile Ads SDK 25.4.0** and **Google UMP SDK 4.0.0**. It uses Google’s official test app and banner identifiers, so displayed banners are test ads and do not generate advertising revenue. Before requesting an ad, the App asks UMP for the applicable consent status and displays a Google consent form when Google determines that one is required. A privacy-options control is shown when UMP reports that it is required.
+The reviewed Android closed-test build includes Google Mobile Ads SDK 25.4.0 and Google UMP SDK 4.0.0. It uses Google’s official test identifiers, requests non-personalized ads and checks UMP before an ad request.
 
-PressBench adds Google’s non-personalized-ad signal to each banner request. “Non-personalized” does not mean that no technical data is processed. According to Google’s Mobile Ads SDK disclosures, Google may automatically collect or receive:
+The current iOS development profile includes Google Mobile Ads SDK 13.9.0 and uses Google’s official demo app and 320 × 50 banner identifiers. It disables ad personalization through Google’s publisher privacy setting and limits requested creative to Google’s General content rating. It does not yet request production ads. Before any production iOS ad identifier is used, PressBench will add the applicable Google UMP consent/privacy-options flow and update the App Store privacy declarations and this policy.
+
+“Non-personalized” and “test” do not mean that no technical data is processed. According to Google’s Mobile Ads SDK disclosures, Google may automatically collect or receive:
 
 - IP address, which may be used to estimate general location;
 - app and ad interactions, such as app launches, ad views and taps;
 - diagnostic information, such as performance, launch time, hangs and energy use; and
-- device or account identifiers, such as the advertising ID, app set ID and related identifiers available to the SDK.
+- device or account identifiers available to the SDK.
 
 Google states that this information may be used for advertising, analytics, security and fraud prevention and is encrypted in transit. Google processes this information under its own terms and privacy policies. See:
 
 - [Google Privacy Policy](https://policies.google.com/privacy)
 - [How Google uses information from sites or apps that use its services](https://policies.google.com/technologies/partner-sites)
-- [Google Mobile Ads SDK Play data disclosure](https://developers.google.com/admob/android/privacy/play-data-disclosure)
+- [Google Mobile Ads SDK iOS data disclosure](https://developers.google.com/admob/ios/privacy/data-disclosure)
 
-The App does not send your machine, setup, run, report or free-text production fields to Google Mobile Ads.
+The App does not send machine, setup, run, report or free-text production fields to Google Mobile Ads.
 
 ## 5. Advertising and billing status
 
-The reviewed closed-test build may show Google test banner ads. All implemented App features are available without payment. The build has no Google Play Billing dependency, paid product, purchase interface or subscription controls, and cannot create a charge, renewal, restoration or entitlement.
+The current iOS development model gives free users five successfully completed press runs with a fixed Google test banner. A one-month PressBench Pro auto-renewable subscription is intended at US$9.99 in the US storefront and, while active, provides unlimited press runs, removes ads and unlocks PDF/XLSX reports. Apple supplies the localized storefront price and handles payment, renewal, cancellation, refund and verified entitlement information through StoreKit. PressBench stores only the minimum hashed transaction and entitlement evidence needed to enforce access locally; GoodUse Studios does not receive payment-card details.
 
-Any later build that introduces a paid product or production ad unit will require an updated policy, store declaration and applicable purchase terms before distribution.
+A subscription is available only when Apple has activated the product for the applicable storefront. Any former verified iOS lifetime purchase remains honored. Existing records remain readable after a subscription expires. See [Advertising and Purchases]({{ '/subscriptions/' | relative_url }}).
 
-## 6. PDF and CSV exports
+The reviewed Android closed-test build has no Google Play Billing dependency, paid product, purchase interface or subscription controls.
 
-When you choose an export, PressBench creates the report locally and opens the platform’s system share sheet. Android supports PDF/CSV export; iOS supports PDF/XLSX export. The App does not choose the recipient or upload the report automatically. The destination you select—such as email, messaging, cloud storage or another app—receives the report and handles it under that provider’s privacy practices.
+## 6. User-created reports
 
-Exports may contain the setup, machine, date, quantities, calculated first-pass yield, rework, waste and notes shown in the report. Review an export before sharing it. Temporary cache files may remain until Android or the App clears them.
+When an eligible user creates a report, PressBench generates it locally and opens the platform’s system share sheet. Android’s reviewed build supports PDF/CSV reports; iOS Pro supports PDF/XLSX reports. The App does not choose the recipient or upload the report automatically. The destination you select—such as email, messaging, cloud storage or another app—receives the report and handles it under that provider’s privacy practices.
+
+Reports may contain setup, machine, date, quantities, calculated first-pass yield, rework, waste and notes. Review a report before sharing it. Temporary cache files may remain until the operating system or the App clears them.
 
 ## 7. External links and support communications
 
