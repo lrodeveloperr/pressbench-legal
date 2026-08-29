@@ -1,30 +1,47 @@
 ---
 layout: default
-title: Advertising and Purchases Status
-nav_title: Advertising
+title: Advertising and Purchases
+nav_title: Purchases
 permalink: /subscriptions/
 ---
 
-# Advertising and Purchases Status
+# Advertising and Purchases
 
-**Effective: 25 August 2026**
+**Effective: 29 August 2026**
 
-## Current closed-test build
+## iOS development model
 
-- PressBench includes Google Mobile Ads SDK 25.4.0 and Google UMP SDK 4.0.0.
-- It uses Google's official test app and adaptive-banner identifiers. Test banners do not generate advertising revenue.
-- Each banner request includes Google's non-personalized-ad signal.
-- UMP is checked before an ad request; a consent form or privacy-options entry is shown when Google reports that it is required.
-- The App has no Google Play Billing dependency or purchase interface.
-- No paid product, payment, subscription, renewal, refund, restoration or Play entitlement can be created in this build.
-- All implemented PressBench features are available without payment.
+The current PressBench iOS development profile is designed as follows:
 
-A future paid ad-free option or production ad unit would require a new App build and updated store and legal disclosures before distribution. This page is not an offer of a future product.
+- Free use includes a fixed Google test banner and up to five successfully completed and saved press runs.
+- A failed, canceled or unsaved run does not use the free allowance.
+- Deleting a run or clearing local operational data does not restore free uses.
+- PressBench Pro is an auto-renewable one-month subscription. In the US storefront, the intended price is **US$9.99 per month**.
+- While active, Pro provides unlimited press runs, removes the banner and unlocks PDF/XLSX production reports.
+- Machines, setups, search, corrections, deletion and access to existing records are not separately capped.
+- Existing records remain readable if a subscription expires.
+- Any former verified iOS lifetime purchase remains honored and does not become a subscription.
 
-Do not send payment-card details or purchase tokens by email.
+The App shows the localized price supplied by Apple. The App Store purchase sheet is authoritative for the price, currency, billing period, taxes and any regional terms that apply to a transaction. The subscription automatically renews unless canceled at least 24 hours before the end of the current period. Apple charges the user’s Apple Account and manages renewal, cancellation, billing, refunds and subscription status. Users can manage or cancel through their Apple Account subscription settings and can use **Restore purchase** in PressBench.
+
+The subscription becomes available only after the product is active in App Store Connect for the applicable storefront. This page does not override the availability or terms shown by Apple.
+
+## Advertising test status
+
+The current iOS code uses Google’s official demo app and 320 × 50 banner identifiers. Test banners do not generate advertising revenue. Ad personalization is disabled in the SDK configuration and the maximum ad content rating is set to General.
+
+These demo identifiers are for development and testing. Production advertising will not be activated until the required Google consent flow, privacy choices, store privacy declarations, policy updates and production identifiers are implemented and reviewed.
+
+The in-app **Support** route may be used to report an inappropriate advertisement. Include a screenshot if safe to do so, but redact production or customer information.
+
+## Android status
+
+The reviewed Android closed-test build has no Google Play Billing dependency, paid product, purchase interface or subscription controls. Its Google banners use official test identifiers. The iOS subscription described above does not create an Android entitlement.
+
+Do not send payment-card details, StoreKit transaction data or purchase tokens by email.
 
 ## Contact
 
-Email: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Advertising)
+Email: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Purchases%20or%20Advertising)
 
-Subject: **PressBench Advertising**
+Subject: **PressBench Purchases or Advertising**
