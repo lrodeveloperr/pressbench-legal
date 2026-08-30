@@ -6,7 +6,7 @@ permalink: /
 
 # PressBench Legal & Support
 
-> **Closed-test baseline.** These documents describe PressBench Android `1.0.0-closed-v16-native` (version code 1403). The build uses Google Mobile Ads and UMP with Google's official test identifiers, exports PDF/CSV through Android's share sheet, and has no billing, purchase or subscription functionality.
+> **Platform status.** PressBench Android `1.0.0-closed-v16-native` (version code 1403) uses Google Mobile Ads and UMP with Google's official test identifiers, exports PDF/CSV through Android's share sheet, and has no billing, purchase or subscription functionality. The current iOS profile uses PressBench’s production AdMob banner configuration, a five-completed-run free allowance and the PressBench Pro subscription described on this site.
 
 PressBench is a local-first heat-press production setup and run-record utility. It records information entered by the operator; it does not inspect or control heat-press equipment or determine safe or correct operating settings.
 
@@ -23,4 +23,4 @@ PressBench is a local-first heat-press production setup and run-record utility. 
 Provider: **Lateef Razaq-Oyetola carrying on business as GoodUse Studios**, Ontario, Canada  
 Contact: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Support)
 
-Last reviewed: **25 August 2026**
+Last reviewed: **30 August 2026**

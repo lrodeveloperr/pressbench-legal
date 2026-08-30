@@ -11,6 +11,8 @@ permalink: /data-choices/
 
 PressBench has no GoodUse Studios cloud account or developer-controlled production database. GoodUse Studios cannot see, recover, edit or remotely delete the machines, setups, runs, quality-control records and preferences stored in the App's private local storage, in an Apple-managed device backup or transfer, or in the user's optional private iCloud key-value backup.
 
+PressBench does not create a GoodUse Studios or developer-operated user account, so there is no PressBench account to delete. Optional Sign in with Apple is used only to enable the App's private Apple backup controls. The effects of **Sign Out** and **Delete Local Data**, including what they do not delete, are described below.
+
 ## Delete local PressBench data
 
 On iOS, open **More → Settings → Maintenance → Delete Local Data** and confirm. This clears supported PressBench operational records, active-run state and supported preferences and returns the App to onboarding. It intentionally preserves verified StoreKit entitlement state and the monotonic count used to enforce the five-free-run allowance. On Android, use the corresponding in-App action, clear the App's storage in Android settings or uninstall it.
@@ -39,7 +41,7 @@ When you choose an export, PressBench creates it locally and opens the platform'
 
 ## Advertising and purchases
 
-The Android closed-test and iOS TestFlight profiles use Google Mobile Ads and UMP with Google's official test identifiers. The iOS profile requests current consent information and sends an ad request only when UMP reports that ads may be requested. Deleting local data resets supported App preferences; it does not delete information independently handled by Google or the device platform.
+The Android closed-test profile uses Google Mobile Ads and UMP with Google's official test identifiers. The iOS profile uses PressBench’s production AdMob identifiers, requests current consent information and sends a production ad request only when UMP reports that ads may be requested. Deleting local data resets supported App preferences; it does not delete information independently handled by Google or the device platform.
 
 The Android build has no Google Play Billing dependency or paid product. On iOS, PressBench Pro is a monthly auto-renewable subscription handled by Apple. Users can manage or cancel it through Apple subscription settings and use **Restore purchase** on the PressBench Pro paywall. Canceling the subscription does not delete local operational records.
 

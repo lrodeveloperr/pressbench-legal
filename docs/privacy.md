@@ -20,7 +20,7 @@ PressBench is a local-first heat-press production log.
 - GoodUse Studios does not operate or receive data through a developer-controlled production database or synchronization server.
 - Operational records and preferences are stored in the App’s private storage on the device. Apple may include iOS App data in a user-controlled device backup or device transfer. Separately, an iOS user who chooses Apple backup can place a portable PressBench backup in the App’s private iCloud key-value store.
 - You can deliberately export a production report and choose where to share it using the platform’s system share sheet.
-- The Android closed-test and iOS TestFlight profiles may display Google test banner ads. Both profiles use Google’s User Messaging Platform (“UMP”). The iOS profile disables ad personalization and does not activate production advertising.
+- The Android closed-test profile may display Google test banner ads. The iOS profile uses PressBench’s production AdMob configuration and may display production banner ads. Both profiles use Google’s User Messaging Platform (“UMP”), and the iOS profile disables ad personalization.
 - PressBench does not include a GoodUse Studios analytics, crash-reporting or attribution service.
 - Android application backup and device-to-device transfer are disabled and all supported storage domains are explicitly excluded. The optional iOS iCloud backup is a separate, user-enabled feature.
 - We do not sell or rent your production records.
@@ -53,7 +53,7 @@ Choosing **Sign Out** removes the locally stored Apple identifier and local last
 
 The reviewed Android closed-test build includes Google Mobile Ads SDK 25.4.0 and Google UMP SDK 4.0.0. It uses Google’s official test identifiers, requests non-personalized ads and checks UMP before an ad request.
 
-The current iOS TestFlight profile includes Google Mobile Ads SDK 13.9.0 and Google UMP SDK 3.1.0. It uses Google’s official demo app and 320 × 50 banner identifiers, requests current consent information, presents a required consent form when available, and sends an ad request only when UMP reports that ads may be requested. It disables ad personalization through Google’s publisher privacy setting and limits requested creative to Google’s General content rating. It does not request production ads. Production identifiers will not be enabled until the AdMob account configuration, privacy choices, App Store privacy answers and this policy are revalidated.
+The current iOS profile includes Google Mobile Ads SDK 13.9.0 and Google UMP SDK 3.1.0. It uses PressBench’s production AdMob app and 320 × 50 banner identifiers, requests current consent information, presents a required consent form when available, and sends a production ad request only when UMP reports that ads may be requested. It disables ad personalization through Google’s publisher privacy setting and limits requested creative to Google’s General content rating.
 
 “Non-personalized” and “test” do not mean that no technical data is processed. According to Google’s Mobile Ads SDK disclosures, Google may automatically collect or receive:
 
@@ -72,7 +72,7 @@ The App does not send machine, setup, run, report or free-text production fields
 
 ## 5. Advertising and billing status
 
-The current iOS development model gives free users five successfully completed press runs with a fixed Google test banner. A one-month PressBench Pro auto-renewable subscription is intended at US$9.99 in the US storefront and, while active, provides unlimited press runs, removes ads and unlocks PDF/XLSX reports. Apple supplies the localized storefront price and handles payment, renewal, cancellation, refund and verified entitlement information through StoreKit. PressBench stores only the minimum hashed transaction and entitlement evidence needed to enforce access locally; GoodUse Studios does not receive payment-card details.
+The current iOS model gives free users five successfully completed press runs with a fixed Google banner. A one-month PressBench Pro auto-renewable subscription is intended at US$9.99 in the US storefront and, while active, provides unlimited press runs, removes ads and unlocks PDF/XLSX reports. Apple supplies the localized storefront price and handles payment, renewal, cancellation, refund and verified entitlement information through StoreKit. PressBench stores only the minimum hashed transaction and entitlement evidence needed to enforce access locally; GoodUse Studios does not receive payment-card details.
 
 A subscription is available only when Apple has activated the product for the applicable storefront. Any former verified iOS lifetime purchase remains honored. Existing records remain readable after a subscription expires. See [Advertising and Purchases]({{ '/subscriptions/' | relative_url }}).
 

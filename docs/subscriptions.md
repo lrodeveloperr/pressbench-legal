@@ -9,11 +9,11 @@ permalink: /subscriptions/
 
 **Effective: 30 August 2026**
 
-## iOS TestFlight model
+## iOS model
 
-The current PressBench iOS development profile is designed as follows:
+The current PressBench iOS model is implemented as follows:
 
-- Free use includes a fixed Google test banner and up to five successfully completed and saved press runs.
+- Free use includes a fixed Google banner and up to five successfully completed and saved press runs.
 - A failed, canceled or unsaved run does not use the free allowance.
 - Deleting a run or clearing local operational data does not restore free uses.
 - PressBench Pro is an auto-renewable one-month subscription. In the US storefront, the configured price is **US$9.99 per month**.
@@ -26,13 +26,11 @@ The App shows the localized price supplied by Apple. The App Store purchase shee
 
 The subscription becomes available only after the product is active in App Store Connect for the applicable storefront. This page does not override the availability or terms shown by Apple.
 
-## Advertising test status
+## iOS advertising status
 
-The current iOS code uses Google’s official demo app and 320 × 50 banner identifiers. Test banners do not generate advertising revenue. Ad personalization is disabled in the SDK configuration and the maximum ad content rating is set to General.
+The current iOS code uses PressBench’s production AdMob app and 320 × 50 banner identifiers. It requests production banner ads when the consent gate permits an ad request and an ad is available. Ad personalization is disabled in the SDK configuration and the maximum ad content rating is set to General.
 
 The iOS TestFlight build includes Google UMP 3.1.0. It requests current consent information, presents a required form when available, and sends an ad request only when UMP reports that ads may be requested. A **Privacy Choices** entry is shown in the App when Google reports that a privacy-options form is required.
-
-These demo identifiers are for development and testing. Production advertising will not be activated until the AdMob account configuration, privacy choices, App Store privacy declarations, policy updates and production identifiers are revalidated.
 
 The in-app **Support** route may be used to report an inappropriate advertisement. Include a screenshot if safe to do so, but redact production or customer information.
 

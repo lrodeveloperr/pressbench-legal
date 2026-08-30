@@ -43,7 +43,7 @@ On iOS, a user may optionally use Sign in with Apple to enable backup through th
 
 ## 6. Advertising, subscriptions and reports
 
-The current iOS development profile uses Google’s official test app and fixed banner identifiers. Test ads do not generate advertising revenue. Ad personalization is disabled in the SDK configuration and requested creative is limited to Google’s General content rating. Production advertising will not be activated until the applicable consent, privacy-choice and store-disclosure work is complete.
+The current iOS profile uses PressBench’s production AdMob app and fixed banner identifiers and may display production banner ads. Ad personalization is disabled in the SDK configuration, requested creative is limited to Google’s General content rating, and an ad request is sent only after the UMP consent gate permits it.
 
 Free iOS use includes five successfully completed press runs. PressBench Pro is a one-month auto-renewable subscription intended at US$9.99 in the US storefront. While active, it provides unlimited press runs, removes ads and unlocks PDF/XLSX production reports. Apple’s purchase sheet supplies the authoritative localized price and billing period. Apple charges the user’s Apple Account and handles renewal, cancellation and refunds. The subscription renews automatically unless canceled at least 24 hours before the end of the current period. Existing records remain readable after expiry. Any former verified iOS lifetime purchase remains honored.
 
@@ -53,7 +53,7 @@ The reviewed Android closed-test build uses Google test banners and UMP but has 
 
 ## 7. Licence and acceptable use
 
-Subject to these Terms and Google Play rules, we grant you a limited, revocable, non-exclusive, non-transferable licence to use PressBench on supported devices for lawful purposes. You may not misuse the App, interfere with its security, distribute unauthorised copies, or use it to violate law or another person’s rights, except where applicable law or an open-source licence expressly permits an activity.
+Subject to these Terms and the applicable Apple App Store or Google Play rules, we grant you a limited, revocable, non-exclusive, non-transferable licence to use PressBench on supported devices for lawful purposes. You may not misuse the App, interfere with its security, distribute unauthorised copies, or use it to violate law or another person’s rights, except where applicable law or an open-source licence expressly permits an activity.
 
 ## 8. Third-party services
 
