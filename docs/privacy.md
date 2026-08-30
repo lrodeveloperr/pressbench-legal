@@ -7,7 +7,7 @@ permalink: /privacy/
 
 # Privacy Policy
 
-**Effective: 29 August 2026**
+**Effective: 30 August 2026**
 
 This Privacy Policy explains how **PressBench** (the “App”) handles information. PressBench is provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”).
 
@@ -16,11 +16,11 @@ This Privacy Policy explains how **PressBench** (the “App”) handles informat
 PressBench is a local-first heat-press production log.
 
 - No PressBench account or login is required to use the App.
-- On iOS, optional Sign in with Apple can enable automatic backup to the user’s private iCloud storage. Continuing without signing in remains available.
+- On iOS, optional Sign in with Apple enables user-initiated backup controls for the user’s private iCloud key-value storage. Continuing without signing in remains available.
 - GoodUse Studios does not operate or receive data through a developer-controlled production database or synchronization server.
-- Operational records and preferences are stored in the App’s private storage on the device and, only when the iOS user enables Apple backup, in that user’s private iCloud container.
+- Operational records and preferences are stored in the App’s private storage on the device and, only when the iOS user chooses Apple backup, in that user’s private iCloud key-value store.
 - You can deliberately export a production report and choose where to share it using the platform’s system share sheet.
-- The Android closed-test and iOS development profiles may display Google test banner ads. The Android profile uses Google’s User Messaging Platform (“UMP”); the iOS development profile disables ad personalization in the SDK and does not yet activate production advertising.
+- The Android closed-test and iOS TestFlight profiles may display Google test banner ads. Both profiles use Google’s User Messaging Platform (“UMP”). The iOS profile disables ad personalization and does not activate production advertising.
 - PressBench does not include a GoodUse Studios analytics, crash-reporting or attribution service.
 - Android application backup and device-to-device transfer are disabled and all supported storage domains are explicitly excluded. The optional iOS iCloud backup is a separate, user-enabled feature.
 - We do not sell or rent your production records.
@@ -39,21 +39,21 @@ Depending on how you use PressBench, local records may include:
 
 Some fields are free text. Do not enter personal, customer, employee, confidential or trade-secret information unless it is necessary and you are authorized to store it on the device.
 
-GoodUse Studios does not receive these production records during ordinary App operation and cannot see, recover or remotely delete them. When optional iOS backup is enabled, Apple stores the backup in the user’s private iCloud container; GoodUse Studios does not receive a copy.
+GoodUse Studios does not receive these production records during ordinary App operation and cannot see, recover or remotely delete them. When optional iOS backup is used, Apple stores the backup in the user’s private iCloud key-value store; GoodUse Studios does not receive a copy.
 
 ## 3. Optional Sign in with Apple and iCloud backup on iOS
 
-On iOS, Sign in with Apple is optional and is used only to enable the App’s Apple backup controls. PressBench does not request the user’s name or email address. The stable Apple authorization identifier is kept in the device Keychain so the App can verify whether authorization remains valid; it is not sent to GoodUse Studios.
+On iOS, Sign in with Apple is optional and is used only to authorize the App’s Apple backup controls. PressBench does not request the user’s name or email address. The stable Apple authorization identifier is stored in the App’s local UserDefaults storage and is not transmitted to a GoodUse Studios server.
 
-When enabled, PressBench automatically writes a portable backup of machines, setups, completed runs and App settings to the App’s private iCloud Drive container. The backup excludes App Store purchase entitlement and active-run session state. Apple processes the authorization and iCloud data under Apple’s terms and privacy policy. The iCloud account used by the device and Apple’s iCloud availability determine whether backup and restore can operate.
+When the user completes Sign in with Apple, PressBench attempts an initial backup. A signed-in user can later choose **Back Up Now** or **Restore** in Settings. PressBench stores a portable backup of machines, setups, completed runs and App settings in the App’s private `NSUbiquitousKeyValueStore` associated with the user’s iCloud account. The backup excludes App Store purchase entitlement and active-run session state. The current App does not perform continuous or automatic backup after every change.
 
-Users can back up immediately, restore from iCloud after an explicit overwrite warning, turn off automatic backup, and permanently delete the iCloud backup in Settings. Turning off backup does not by itself delete the existing iCloud copy. Deleting the iCloud backup does not delete data stored locally on the device.
+Choosing **Sign Out** removes the locally stored Apple identifier and local last-backup status. It does not delete the existing value from iCloud. Apple may provide device or account controls for iCloud data; their availability and behaviour are controlled by Apple. The current PressBench App has no in-app iCloud-backup deletion control. GoodUse Studios cannot access or remotely delete the user’s local or private iCloud data.
 
 ## 4. Google advertising and consent services
 
 The reviewed Android closed-test build includes Google Mobile Ads SDK 25.4.0 and Google UMP SDK 4.0.0. It uses Google’s official test identifiers, requests non-personalized ads and checks UMP before an ad request.
 
-The current iOS development profile includes Google Mobile Ads SDK 13.9.0 and uses Google’s official demo app and 320 × 50 banner identifiers. It disables ad personalization through Google’s publisher privacy setting and limits requested creative to Google’s General content rating. It does not yet request production ads. Before any production iOS ad identifier is used, PressBench will add the applicable Google UMP consent/privacy-options flow and update the App Store privacy declarations and this policy.
+The current iOS TestFlight profile includes Google Mobile Ads SDK 13.9.0 and Google UMP SDK 3.1.0. It uses Google’s official demo app and 320 × 50 banner identifiers, requests current consent information, presents a required consent form when available, and sends an ad request only when UMP reports that ads may be requested. It disables ad personalization through Google’s publisher privacy setting and limits requested creative to Google’s General content rating. It does not request production ads. Production identifiers will not be enabled until the AdMob account configuration, privacy choices, App Store privacy answers and this policy are revalidated.
 
 “Non-personalized” and “test” do not mean that no technical data is processed. According to Google’s Mobile Ads SDK disclosures, Google may automatically collect or receive:
 
@@ -100,14 +100,14 @@ The PressBench legal and support pages are hosted using GitHub Pages. GoodUse St
 
 Local PressBench records and preferences remain on the device until you delete them in PressBench, clear the App’s storage, uninstall the App or the operating system removes them. PressBench sets Android backup off and supplies explicit rules excluding every supported storage domain from cloud backup and device-to-device transfer.
 
-On iOS, an optional iCloud backup remains until it is replaced or the user chooses **Settings → Apple & iCloud Backup → Delete iCloud backup**. Turning off backup stops future automatic backups but leaves the existing iCloud copy available. Apple may also provide iCloud storage controls at the operating-system or account level.
+On iOS, an optional iCloud key-value backup remains until it is replaced. Apple may provide device or account controls for iCloud data; their availability and behaviour are controlled by Apple. The current App has no in-app **Delete iCloud Backup** control. Choosing **Sign Out** stops PressBench from using the backup controls locally but does not delete the existing iCloud value.
 
-Use **Settings → Delete Local Data** and confirm the deletion to clear PressBench’s local records and preferences on that device. On iOS this also turns off automatic PressBench backup so the retained iCloud copy is not immediately overwritten by the empty local state. GoodUse Studios cannot remotely retrieve or delete local or iCloud records it never received.
+On iOS, use **More → Settings → Maintenance → Delete Local Data** and confirm the deletion to clear supported PressBench operational records and reset supported preferences on that device. This also removes the local Apple backup sign-in link and last-backup status. It intentionally preserves verified StoreKit entitlement state and the monotonic free-run counter, and it does not delete the existing iCloud backup value. On Android, use the corresponding in-App deletion action. GoodUse Studios cannot remotely retrieve or delete local or iCloud records it never received.
 
 Deleting local App data does not delete:
 
 - a report or backup file that you already shared or saved elsewhere;
-- an optional PressBench iCloud backup, unless you separately delete it using the iOS backup controls;
+- an optional PressBench iCloud backup value, which the current App cannot delete in-app;
 - support email already sent to GoodUse Studios; or
 - information independently processed by Google Play, Google Mobile Ads, UMP, the device platform, a browser, an email provider or GitHub Pages.
 
@@ -115,7 +115,7 @@ Where UMP provides privacy choices, use the App’s **Privacy choices** control.
 
 ## 10. International processing and service providers
 
-Apple (for optional Sign in with Apple, Keychain and iCloud backup), Google Play, Google Mobile Ads, UMP, GitHub Pages, email providers, device platforms and any destination you select for an export may process information in more than one country under their own terms and privacy documentation. GoodUse Studios does not automatically receive your local production database from these services.
+Apple (for optional Sign in with Apple and private iCloud key-value backup), Google Play, Google Mobile Ads, UMP, GitHub Pages, email providers, device platforms and any destination you select for an export may process information in more than one country under their own terms and privacy documentation. GoodUse Studios does not automatically receive your local production database from these services.
 
 ## 11. Your privacy rights
 
@@ -129,7 +129,7 @@ PressBench is a professional heat-press workflow utility intended only for adult
 
 ## 13. Security
 
-The Android App uses HTTPS-capable Google SDKs and Android’s private app storage, disables clear-text network traffic, disables Android application backup and explicitly excludes App data from cloud backup and device-to-device transfer. Information handled by Google Mobile Ads is encrypted in transit according to Google. On iOS, the optional Apple authorization identifier is retained in the device Keychain and backup data is written only to the App’s private iCloud container using Apple platform services. No device or software is completely secure, so keep your device updated, use appropriate access controls and avoid entering unnecessary personal or confidential information.
+The Android App uses HTTPS-capable Google SDKs and Android’s private app storage, disables clear-text network traffic, disables Android application backup and explicitly excludes App data from cloud backup and device-to-device transfer. Information handled by Google Mobile Ads is encrypted in transit according to Google. On iOS, the optional Apple authorization identifier is retained in local UserDefaults and backup data is written only to the App’s private iCloud key-value store using Apple platform services. No device or software is completely secure, so keep your device updated, use appropriate access controls and avoid entering unnecessary personal or confidential information.
 
 ## 14. Changes
 
