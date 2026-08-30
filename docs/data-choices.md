@@ -7,30 +7,29 @@ permalink: /data-choices/
 
 # Local Data and Deletion
 
-**Last updated: 28 August 2026**
+**Last updated: 30 August 2026**
 
 PressBench has no GoodUse Studios cloud account or developer-controlled production database. GoodUse Studios cannot see, recover, edit or remotely delete the machines, setups, runs, quality-control records and preferences stored in the App's private local storage or in the user's optional private iCloud backup.
 
 ## Delete local PressBench data
 
-Open **Settings → Delete Local Data** and confirm. This clears PressBench's locally stored records, active-run state and preferences and returns the App to an empty initial state. You can also clear the App's storage in Android settings or uninstall it.
+On iOS, open **More → Settings → Maintenance → Delete Local Data** and confirm. This clears supported PressBench operational records, active-run state and supported preferences and returns the App to onboarding. It intentionally preserves verified StoreKit entitlement state and the monotonic count used to enforce the five-free-run allowance. On Android, use the corresponding in-App action, clear the App's storage in Android settings or uninstall it.
 
 The Android build disables Android backup and explicitly excludes every supported storage domain from cloud backup and device-to-device transfer. These controls reduce unintended transfer, but users should still secure their device.
 
-On iOS, **Delete Local Data** also turns off automatic PressBench backup so an existing iCloud backup is not overwritten by the newly empty local state. It does not itself delete that iCloud backup.
+On iOS, **More → Settings → Maintenance → Delete Local Data** removes the local Apple backup sign-in link and local last-backup status. It does not delete the existing iCloud backup value.
 
 ## Optional Apple and iCloud backup on iOS
 
-The iOS App remains fully usable without signing in. If you choose Sign in with Apple, PressBench stores the Apple authorization identifier in the device Keychain and can automatically back up machines, setups, completed runs and settings to the App's private iCloud container. GoodUse Studios does not receive the identifier or backup.
+The iOS App remains fully usable without signing in. If you choose Sign in with Apple, PressBench stores the Apple authorization identifier in local UserDefaults and attempts an initial backup of machines, setups, completed runs and settings to the App's private iCloud key-value store. The identifier and backup are not transmitted to a GoodUse Studios server. The current App does not continuously or automatically back up after every change.
 
-In **Settings → Apple & iCloud Backup**, you can:
+In **Settings → Local Data & Backups**, you can:
 
-- create a backup immediately;
+- choose **Back Up Now**;
 - restore from iCloud after confirming that local operational data will be replaced;
-- turn off automatic backup while retaining the existing iCloud copy; or
-- permanently delete the iCloud backup without deleting data on the device.
+- choose **Sign Out** to remove the local Apple authorization link and local last-backup status.
 
-The backup excludes App Store purchase entitlement and active-run session state. Availability depends on the device's Apple and iCloud configuration.
+The backup excludes App Store purchase entitlement and active-run session state. **Sign Out** does not delete the existing iCloud value. The current App has no in-app **Delete iCloud Backup** control. Apple may provide device or account controls for iCloud data; their availability and behaviour are controlled by Apple. Availability also depends on the device's Apple and iCloud configuration.
 
 ## Reports and exports
 
@@ -38,9 +37,9 @@ When you choose an export, PressBench creates it locally and opens the platform'
 
 ## Advertising and purchases
 
-The closed-test build uses Google Mobile Ads and UMP with Google's official test identifiers. Deleting local data resets App preferences, including applicable consent state held by the App; it does not delete information independently handled by Google or the device platform.
+The Android closed-test and iOS TestFlight profiles use Google Mobile Ads and UMP with Google's official test identifiers. The iOS profile requests current consent information and sends an ad request only when UMP reports that ads may be requested. Deleting local data resets supported App preferences; it does not delete information independently handled by Google or the device platform.
 
-The build has no Google Play Billing dependency, paid product, purchase, subscription, restore-purchase control or subscription-management control. There is therefore no PressBench subscription to cancel.
+The Android build has no Google Play Billing dependency or paid product. On iOS, PressBench Pro is a monthly auto-renewable subscription handled by Apple. Users can manage or cancel it through Apple subscription settings and use **Restore purchase** on the PressBench Pro paywall. Canceling the subscription does not delete local operational records.
 
 ## Support email
 
