@@ -7,7 +7,7 @@ permalink: /third-party-notices/
 
 # Third-Party Software Notices
 
-**Release baselines: PressBench Android 1.0.0-closed-v16-native and PressBench iOS 0.21.4 development profile, 29 August 2026**
+**Release baselines: PressBench Android 1.0.0-closed-v16-native and PressBench iOS 0.22.0 TestFlight profile, 30 August 2026**
 
 PressBench includes third-party software. Each component remains owned by its respective rights holder and is governed by its applicable licence and service terms. Nothing in the PressBench Terms limits rights granted by an applicable open-source licence.
 
@@ -27,7 +27,7 @@ The reviewed Android build directly declares dependencies on:
 These AndroidX components are generally provided under the Apache License 2.0. Kotlin, the Android Gradle plugin, the Compose compiler/plugin and transitive build/runtime components remain subject to their respective licences and terms.
 
 The reviewed Android build does **not** directly declare Google Play Billing or AndroidX Navigation. Google Mobile Ads and UMP are subject to Google's applicable SDK and service terms in addition to any included software licences.
-The iOS development profile directly uses Apple StoreKit 2 and Google Mobile Ads SDK 13.9.0 through Google’s Swift Package Manager distribution. Apple StoreKit is an operating-system framework governed by Apple’s platform terms. The Google SDK is subject to Google’s applicable SDK and service terms and includes its own transitive software and privacy manifest.
+The iOS TestFlight profile directly uses Apple StoreKit 2, AuthenticationServices, iCloud key-value storage, Google Mobile Ads SDK 13.9.0 and Google UMP SDK 3.1.0 through Google’s Swift Package Manager distributions. Apple frameworks and services are governed by Apple’s platform terms. The Google SDKs are subject to Google’s applicable SDK and service terms and include transitive software and privacy manifests.
 
 
 The exact transitive inventory can change when dependencies are updated. Release engineering should retain the dependency report and build files for each published version and regenerate these notices when a dependency or version changes.

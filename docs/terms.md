@@ -7,7 +7,7 @@ permalink: /terms/
 
 # Terms of Use
 
-**Effective: 29 August 2026**
+**Effective: 30 August 2026**
 
 These Terms govern use of **PressBench** (the “App”), provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”). By accepting these Terms in the App, you agree to them. If you do not agree, do not use the App.
 
@@ -57,7 +57,7 @@ Subject to these Terms and Google Play rules, we grant you a limited, revocable,
 
 ## 8. Third-party services
 
-Google Play, Android, device manufacturers, GitHub Pages, browsers and email providers are independent services with their own terms and privacy practices. Availability, installation, platform actions and user-opened legal or support links may depend on those services.
+Apple, the App Store, iCloud, Google Play, Android, Google Mobile Ads, UMP, device manufacturers, GitHub Pages, browsers and email providers are independent services with their own terms and privacy practices. Availability, installation, advertising, billing, backup, platform actions and user-opened legal or support links may depend on those services.
 
 ## 9. Updates and availability
 

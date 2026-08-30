@@ -24,6 +24,8 @@ PressBench has no developer cloud account or remote production database. Support
 
 The current iOS TestFlight model uses a fixed Google test banner and permits five completed free press runs. PressBench Pro is configured at US$9.99/month in the US storefront and provides unlimited presses, no ads and PDF/XLSX reports while active. Availability and the localized price are controlled by Apple. The reviewed Android closed-test build has test banners but no billing.
 
+### Report an ad
+
 To report an inappropriate ad, email the address above with the subject **PressBench Ad Report**. Include the time, screen, country, a description and—if safe—a screenshot of the ad. Do not tap the ad again to collect details, and redact production or customer information.
 
 See [Advertising and Purchases]({{ '/subscriptions/' | relative_url }}).
@@ -38,4 +40,5 @@ Support does not provide heat-press operating, engineering, material-compatibili
 - [Terms of Use]({{ '/terms/' | relative_url }})
 - [Heat-Press Safety Notice]({{ '/safety/' | relative_url }})
 - [Local Data and Deletion]({{ '/data-choices/' | relative_url }})
+- [Accessibility]({{ '/accessibility/' | relative_url }})
 - [Third-Party Software Notices]({{ '/third-party-notices/' | relative_url }})

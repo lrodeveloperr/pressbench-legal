@@ -9,7 +9,7 @@ permalink: /data-choices/
 
 **Last updated: 30 August 2026**
 
-PressBench has no GoodUse Studios cloud account or developer-controlled production database. GoodUse Studios cannot see, recover, edit or remotely delete the machines, setups, runs, quality-control records and preferences stored in the App's private local storage or in the user's optional private iCloud backup.
+PressBench has no GoodUse Studios cloud account or developer-controlled production database. GoodUse Studios cannot see, recover, edit or remotely delete the machines, setups, runs, quality-control records and preferences stored in the App's private local storage, in an Apple-managed device backup or transfer, or in the user's optional private iCloud key-value backup.
 
 ## Delete local PressBench data
 
@@ -21,7 +21,9 @@ On iOS, **More → Settings → Maintenance → Delete Local Data** removes the 
 
 ## Optional Apple and iCloud backup on iOS
 
-The iOS App remains fully usable without signing in. If you choose Sign in with Apple, PressBench stores the Apple authorization identifier in local UserDefaults and attempts an initial backup of machines, setups, completed runs and settings to the App's private iCloud key-value store. The identifier and backup are not transmitted to a GoodUse Studios server. The current App does not continuously or automatically back up after every change.
+The iOS App remains fully usable without signing in. If you choose Sign in with Apple, PressBench stores the Apple authorization identifier in local UserDefaults and attempts an initial backup of machines, setups, completed runs and settings to the App's private iCloud key-value store. The backup envelope includes that identifier as an owner check. The identifier and backup are not transmitted to a GoodUse Studios server. The current App does not continuously or automatically back up after every change.
+
+Separately, Apple may include the App's local storage and preferences in an Apple-managed device backup or device transfer under the user's Apple and iCloud settings. PressBench does not control those system copies, and GoodUse Studios does not receive them.
 
 In **Settings → Local Data & Backups**, you can:
 
