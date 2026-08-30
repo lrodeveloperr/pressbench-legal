@@ -7,7 +7,7 @@ permalink: /support/
 
 # PressBench Support
 
-**Last updated: 29 August 2026**
+**Last updated: 30 August 2026**
 
 Email: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Support)  
 Provider: **Lateef Razaq-Oyetola carrying on business as GoodUse Studios**, Ontario, Canada
@@ -22,7 +22,7 @@ PressBench has no developer cloud account or remote production database. Support
 
 ## Advertising, purchases and ad reports
 
-The current iOS development model uses a fixed Google test banner and permits five completed free press runs. An active US$9.99/month PressBench Pro subscription is intended to provide unlimited presses, no ads and PDF/XLSX reports. Availability and the localized price are controlled by Apple. The reviewed Android closed-test build has test banners but no billing.
+The current iOS TestFlight model uses a fixed Google test banner and permits five completed free press runs. PressBench Pro is configured at US$9.99/month in the US storefront and provides unlimited presses, no ads and PDF/XLSX reports while active. Availability and the localized price are controlled by Apple. The reviewed Android closed-test build has test banners but no billing.
 
 To report an inappropriate ad, email the address above with the subject **PressBench Ad Report**. Include the time, screen, country, a description and—if safe—a screenshot of the ad. Do not tap the ad again to collect details, and redact production or customer information.
 
