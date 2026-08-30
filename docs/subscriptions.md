@@ -7,16 +7,16 @@ permalink: /subscriptions/
 
 # Advertising and Purchases
 
-**Effective: 29 August 2026**
+**Effective: 30 August 2026**
 
-## iOS development model
+## iOS TestFlight model
 
 The current PressBench iOS development profile is designed as follows:
 
 - Free use includes a fixed Google test banner and up to five successfully completed and saved press runs.
 - A failed, canceled or unsaved run does not use the free allowance.
 - Deleting a run or clearing local operational data does not restore free uses.
-- PressBench Pro is an auto-renewable one-month subscription. In the US storefront, the intended price is **US$9.99 per month**.
+- PressBench Pro is an auto-renewable one-month subscription. In the US storefront, the configured price is **US$9.99 per month**.
 - While active, Pro provides unlimited press runs, removes the banner and unlocks PDF/XLSX production reports.
 - Machines, setups, search, corrections, deletion and access to existing records are not separately capped.
 - Existing records remain readable if a subscription expires.
@@ -30,7 +30,9 @@ The subscription becomes available only after the product is active in App Store
 
 The current iOS code uses Google’s official demo app and 320 × 50 banner identifiers. Test banners do not generate advertising revenue. Ad personalization is disabled in the SDK configuration and the maximum ad content rating is set to General.
 
-These demo identifiers are for development and testing. Production advertising will not be activated until the required Google consent flow, privacy choices, store privacy declarations, policy updates and production identifiers are implemented and reviewed.
+The iOS TestFlight build includes Google UMP 3.1.0. It requests current consent information, presents a required form when available, and sends an ad request only when UMP reports that ads may be requested. A **Privacy Choices** entry is shown in the App when Google reports that a privacy-options form is required.
+
+These demo identifiers are for development and testing. Production advertising will not be activated until the AdMob account configuration, privacy choices, App Store privacy declarations, policy updates and production identifiers are revalidated.
 
 The in-app **Support** route may be used to report an inappropriate advertisement. Include a screenshot if safe to do so, but redact production or customer information.
 
