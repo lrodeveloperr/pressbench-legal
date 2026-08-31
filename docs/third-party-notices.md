@@ -7,29 +7,14 @@ permalink: /third-party-notices/
 
 # Third-Party Software Notices
 
-**Release baselines: PressBench Android 1.0.0-closed-v16-native and PressBench iOS 0.22.0 TestFlight profile, 30 August 2026**
+**Release baselines: PressBench Android 1.0.0-closed-v16-native and PressBench iOS 1.0 release candidate, 31 August 2026**
 
-PressBench includes third-party software. Each component remains owned by its respective rights holder and is governed by its applicable licence and service terms. Nothing in the PressBench Terms limits rights granted by an applicable open-source licence.
+PressBench includes third-party software. Each component remains owned by its respective rights holder and is governed by its applicable licence and service terms.
 
-The reviewed Android build directly declares dependencies on:
+The reviewed Android profile directly declares AndroidX Core KTX, Activity Compose, Lifecycle, DataStore, Jetpack Compose UI, Material 3 and Material Icons, Google Mobile Ads SDK 25.4.0, Google User Messaging Platform SDK 4.0.0, JUnit for tests and Compose UI Tooling in debug builds. It does not directly declare Google Play Billing or AndroidX Navigation.
 
-- AndroidX Core KTX;
-- AndroidX Activity Compose;
-- AndroidX Lifecycle;
-- AndroidX DataStore;
-- Jetpack Compose UI;
-- Material 3 and Material Icons;
-- Google Mobile Ads SDK 25.4.0;
-- Google User Messaging Platform SDK 4.0.0;
-- JUnit for unit tests; and
-- Jetpack Compose UI Tooling in debug builds.
+The iOS release uses Apple SwiftUI/UIKit, StoreKit 2, AuthenticationServices, iCloud key-value storage, UserNotifications and related Apple system frameworks. It contains no third-party advertising, consent-management, analytics, crash-reporting, attribution or tracking SDK. Apple frameworks and services are governed by Apple’s platform terms.
 
-These AndroidX components are generally provided under the Apache License 2.0. Kotlin, the Android Gradle plugin, the Compose compiler/plugin and transitive build/runtime components remain subject to their respective licences and terms.
-
-The reviewed Android build does **not** directly declare Google Play Billing or AndroidX Navigation. Google Mobile Ads and UMP are subject to Google's applicable SDK and service terms in addition to any included software licences.
-The iOS TestFlight profile directly uses Apple StoreKit 2, AuthenticationServices, iCloud key-value storage, Google Mobile Ads SDK 13.9.0 and Google UMP SDK 3.1.0 through Google’s Swift Package Manager distributions. Apple frameworks and services are governed by Apple’s platform terms. The Google SDKs are subject to Google’s applicable SDK and service terms and include transitive software and privacy manifests.
-
-
-The exact transitive inventory can change when dependencies are updated. Release engineering should retain the dependency report and build files for each published version and regenerate these notices when a dependency or version changes.
+The exact transitive inventory can change when dependencies are updated. Release engineering should retain dependency reports and regenerate these notices when a dependency or version changes.
 
 For a licensing question, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Open%20Source) with the subject **PressBench Open Source**.
