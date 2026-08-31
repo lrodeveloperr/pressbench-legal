@@ -19,9 +19,9 @@ permalink: /subscriptions/
 - Machines, setups, search, corrections, deletion and access to existing records are not separately capped.
 - Existing records remain readable after expiry. Any former verified iOS lifetime purchase remains honored.
 
-The App shows the localized price supplied by Apple. Apple’s purchase sheet is authoritative for price, currency, billing period, taxes and regional terms. The subscription automatically renews unless canceled at least 24 hours before the end of the current period. Apple charges the user’s Apple Account and manages renewal, cancellation, billing, refunds and subscription status. Users can manage or cancel through Apple Account subscription settings and can use **Restore purchase** in PressBench.
+The App shows the localized price supplied by Apple. Apple’s purchase sheet is authoritative for price, currency, billing period, taxes, regional terms and any introductory offer. Payment is charged to the user’s Apple Account at confirmation of purchase. The subscription automatically renews unless canceled at least 24 hours before the end of the current period. Apple charges the account for renewal within 24 hours before that period ends at the renewal price shown by Apple. Users can manage or cancel through [Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench. Deleting PressBench does not cancel the subscription.
 
-The subscription is available only after Apple activates the product for the applicable storefront.
+No free trial or introductory offer is promised unless Apple displays one on the purchase sheet. The subscription is available only after Apple activates the product for the applicable storefront.
 
 ## Android status
 
