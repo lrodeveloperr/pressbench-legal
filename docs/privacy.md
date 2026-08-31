@@ -53,7 +53,7 @@ The reviewed Android closed-test profile includes Google Mobile Ads and UMP and 
 
 Free iOS users may save five successfully completed press runs. PressBench Pro is a one-month auto-renewable subscription that unlocks unlimited press runs and locally generated PDF/XLSX reports. Neither tier displays ads. Failed, canceled or unsaved runs do not consume the allowance, and deleting records does not reset it. Existing records remain readable after a subscription expires. Any former verified iOS lifetime purchase remains honored.
 
-Apple supplies localized price information and handles payment, renewal, cancellation, refund and verified entitlement information through StoreKit. PressBench stores only the minimum transaction and entitlement evidence needed to enforce access locally. GoodUse Studios does not receive payment-card details. See [Subscriptions and Purchases]({{ '/subscriptions/' | relative_url }}).
+Apple supplies localized price information and handles payment, renewal, cancellation, refund and verified entitlement information through StoreKit. To enforce access on the device, PressBench may store the product identifier, StoreKit transaction and original-transaction identifiers, purchase and expiration dates, and entitlement status (such as active, expired or revoked). This evidence remains in local App storage and is not sent to a GoodUse Studios server. GoodUse Studios does not receive payment-card details. See [Subscriptions and Purchases]({{ '/subscriptions/' | relative_url }}).
 
 The reviewed Android closed-test profile has no Google Play Billing dependency, paid product, purchase interface or subscription controls.
 
