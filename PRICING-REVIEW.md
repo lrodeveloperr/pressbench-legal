@@ -1,23 +1,26 @@
-# PressBench Pricing Plan
+# PressBench Android Pricing Plan
 
-**Reviewed:** 25 August 2026
-**Current closed-test baseline:** `1.0.0-closed-v16-native` (version code 1403)
+**Reviewed:** 1 September 2026  
+**Current baseline:** `1.0.0-closed-v17-native` (version code 1404)
 
-## Current build
+## Current model
 
-The current Android closed-test build is free. It has no Google Play Billing dependency, paid product, purchase screen, subscription controls or entitlement. All implemented features are available without payment. Its Google banner ads use official test identifiers and generate no revenue.
+- Free allowance: five successfully completed and saved press runs.
+- Failed, canceled or unsaved runs do not consume the allowance.
+- Free users may see a production Google banner after UMP permits ad requests.
+- PressBench Pro: **US$6.99 per month** in the US storefront, geo-priced by Google Play.
+- Pro benefits while active and verified: unlimited press runs, banner removal and PDF/CSV reports.
+- Existing records remain readable after the free limit or subscription expiry.
+- In-App local-data deletion does not reset the separately stored free-run counter.
+- Product ID: `pressbench_unlimited_monthly_android`.
+- Monthly base plan: `monthly`.
+- Verified legacy monthly-subscription and lifetime-product purchases remain honored.
 
-## Future internal plan
+## Pricing controls
 
-The working reference price for a future Android ad-free subscription is **US$9.99 per month**. This is an internal planning value only—not an offer, displayed price or entitlement in the current build.
-
-Before offering it:
-
-1. Implement and test current Google Play Billing requirements and a durable entitlement lifecycle.
-2. Create and activate the subscription/base plan in Play Console.
-3. Show the user's localized Play-provided price and billing period; do not hard-code a worldwide storefront price.
-4. Clearly explain that the recurring benefit is removal of advertising while entitlement is active.
-5. Implement purchase acknowledgement, restoration, grace/hold/expiry/refund handling and subscription management access.
-6. Update the privacy policy, terms, Data Safety/store declarations, listing and regional merchant/tax disclosures before distribution.
-
-Until all conditions are complete, the App and listing must not claim that an ad-free purchase or subscription is available.
+1. Google Play’s purchase sheet is authoritative for localized price, currency, taxes, billing period and offers.
+2. Review Google-generated regional prices before activating each country or region; “geo-priced” does not mean every suggested conversion is commercially appropriate.
+3. Do not hard-code US$6.99 as the displayed worldwide price.
+4. Keep the recurring benefits, renewal wording, cancellation route, Restore purchase and legal links visible before purchase.
+5. Do not promise a free trial or introductory offer unless the active Play configuration supplies it.
+6. Reconcile listing copy, subscription metadata and public policies whenever the price or benefits change.

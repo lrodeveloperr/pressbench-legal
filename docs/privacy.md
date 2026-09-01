@@ -7,7 +7,7 @@ permalink: /privacy/
 
 # Privacy Policy
 
-**Effective: 31 August 2026**
+**Effective: 1 September 2026**
 
 This Privacy Policy explains how **PressBench** (the “App”) handles information. PressBench is provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”).
 
@@ -19,7 +19,7 @@ PressBench is a local-first heat-press production log.
 - Operational records and preferences are stored in the App’s private on-device storage. GoodUse Studios does not operate a production-data server and does not receive those records during ordinary use.
 - On iOS, optional Sign in with Apple enables user-initiated backup and restore through the App’s private iCloud key-value storage. The App remains usable without signing in.
 - On iOS, PressBench contains no advertising, analytics, crash-reporting, attribution or tracking SDK, displays no ads and does not request App Tracking Transparency permission.
-- The reviewed Android closed-test profile may use Google test ads and Google User Messaging Platform (“UMP”), as described below.
+- On Android, the free tier uses Google Mobile Ads and Google User Messaging Platform (“UMP”) for a bottom banner. PressBench requests non-personalized ads and shows Google privacy choices when required. A verified Pro entitlement removes the banner.
 - Reports are generated locally and shared only when you choose a destination through the platform share sheet.
 - We do not sell or rent your production records.
 
@@ -29,7 +29,7 @@ Depending on how you use PressBench, local records may include machine and setup
 
 Some fields are free text. Do not enter personal, customer, employee, confidential or trade-secret information unless it is necessary and you are authorized to store it.
 
-GoodUse Studios cannot see, recover or remotely delete local operational records. Apple may include iOS App data in a user-controlled device backup or transfer, depending on the user’s settings. Android application backup and device-to-device transfer are disabled for the reviewed Android profile.
+GoodUse Studios cannot see, recover or remotely delete local operational records. Apple may include iOS App data in a user-controlled device backup or transfer, depending on the user’s settings. Android application backup and device-to-device transfer are disabled for the Android release.
 
 ## 3. Optional Sign in with Apple and private iCloud backup on iOS
 
@@ -45,9 +45,11 @@ You may choose **Delete iCloud Backup** in **More → Settings → Local Data & 
 
 The iOS App contains no advertising, analytics, crash-reporting or attribution SDK. It displays no ads, does not request App Tracking Transparency permission and does not use App activity for advertising or tracking.
 
-### Android closed-test profile
+### Android
 
-The reviewed Android closed-test profile includes Google Mobile Ads and UMP and uses Google’s official test identifiers. Google may process technical information such as IP address, approximate location, app or ad interaction, diagnostics and identifiers under Google’s own terms. Production records are not deliberately sent to Google Mobile Ads. See the [Google Privacy Policy](https://policies.google.com/privacy) and [Google partner-sites notice](https://policies.google.com/technologies/partner-sites).
+The Android free tier includes Google Mobile Ads SDK 25.4.0 and UMP SDK 4.0.0. The approved release workflow supplies production AdMob identifiers. PressBench asks UMP whether ads may be requested before initializing Google Mobile Ads, exposes Google privacy options when UMP requires them, and adds a non-personalized-ad signal to each banner request. A non-personalized request can still use contextual information and does not eliminate the SDK disclosures below.
+
+Google states that its Mobile Ads SDK automatically collects and shares information including IP address (which may estimate general location), app interactions, diagnostic information, and device or account identifiers for advertising, analytics, and fraud-prevention purposes. Production records and report contents are not deliberately sent to Google Mobile Ads. A verified PressBench Pro entitlement removes the banner; the App may need to contact Google Play to verify that entitlement. See the [Google Privacy Policy](https://policies.google.com/privacy), [Google partner-sites notice](https://policies.google.com/technologies/partner-sites), and [Google Mobile Ads data disclosure](https://developers.google.com/admob/android/privacy/play-data-disclosure).
 
 ## 5. Subscription and billing status on iOS
 
@@ -55,11 +57,13 @@ Free iOS users may save five successfully completed press runs. PressBench Pro i
 
 Apple supplies localized price information and handles payment, renewal, cancellation, refund and verified entitlement information through StoreKit. To enforce access on the device, PressBench may store the product identifier, StoreKit transaction and original-transaction identifiers, purchase and expiration dates, and entitlement status (such as active, expired or revoked). This evidence remains in local App storage and is not sent to a GoodUse Studios server. GoodUse Studios does not receive payment-card details. See [Subscriptions and Purchases]({{ '/subscriptions/' | relative_url }}).
 
-The reviewed Android closed-test profile has no Google Play Billing dependency, paid product, purchase interface or subscription controls.
+On Android, free users may save five successfully completed press runs. PressBench Pro is a one-month auto-renewable Google Play subscription: US$6.99 per month in the US storefront, with regional prices supplied by Google Play. While active and verified, Pro provides unlimited runs, removes the banner and enables locally generated PDF/CSV reports. Failed, canceled or unsaved runs do not consume the allowance; deleting operational records through the in-App deletion control does not reset the free-run counter; and existing records remain readable after the limit or subscription expiry.
+
+Google Play handles checkout, payment, renewal, cancellation and refund processing. PressBench queries Google Play for product price and purchase status, processes purchase tokens transiently for acknowledgement and entitlement checks, and stores only the time of the most recent successful paid-entitlement verification in separate local storage for up to 72 hours of offline continuity. GoodUse Studios does not receive payment-card details, although Google may make order and subscription records available to the publisher through Play Console. Verified legacy Android subscription and lifetime-product entitlements remain recognized.
 
 ## 6. User-created reports
 
-When an eligible user creates a report, PressBench generates it locally and opens the platform’s system share sheet. Android’s reviewed profile supports PDF/CSV reports; iOS Pro supports PDF/XLSX reports. The App does not choose a recipient or upload a report automatically. A selected email, messaging, cloud-storage or other destination handles the shared copy under that provider’s practices.
+When an eligible user creates a report, PressBench generates it locally and opens the platform’s system share sheet. Android Pro supports PDF/CSV reports; iOS Pro supports PDF/XLSX reports. The App does not choose a recipient or upload a report automatically. A selected email, messaging, cloud-storage or other destination handles the shared copy under that provider’s practices.
 
 ## 7. External links and support communications
 
@@ -77,13 +81,15 @@ The PressBench legal and support pages are hosted using GitHub Pages. GoodUse St
 
 Local records remain until you delete them in PressBench, clear App storage, uninstall the App or the operating system removes them. On iOS, use **More → Settings → Maintenance → Delete Local Data** to clear supported operational records and preferences on that device. This intentionally preserves verified StoreKit entitlement state and the monotonic free-run counter.
 
+On Android, the in-App **Delete Local Data** control clears the production database and preferences held in DataStore but intentionally preserves the separately stored free-run counter and recent paid-entitlement verification time. Clearing all Android App storage or uninstalling removes App-local storage, including those local counters; a qualifying purchase can be restored from Google Play.
+
 For the optional private iCloud backup, use **More → Settings → Local Data & Backups → Delete iCloud Backup**. This deletion is separate from deleting local data. Apple-managed device backups or transferred copies remain subject to the user’s Apple and iCloud controls.
 
-Deleting local App data does not delete reports or backup files already shared elsewhere, support email already sent, or information independently processed by Apple, Google Play, the reviewed Android Google SDKs, GitHub Pages, a browser, an email provider or a destination selected for export.
+Deleting local App data does not delete reports or backup files already shared elsewhere, support email already sent, or information independently processed by Apple, Google Play, the Android Google SDKs, GitHub Pages, a browser, an email provider or a destination selected for export.
 
 ## 10. International processing and service providers
 
-Apple, Google Play, the reviewed Android Google SDKs, GitHub Pages, email providers, device platforms and user-selected export destinations may process information in more than one country under their own terms. GoodUse Studios does not automatically receive your local production database from these services.
+Apple, Google Play, the Android Google SDKs, GitHub Pages, email providers, device platforms and user-selected export destinations may process information in more than one country under their own terms. GoodUse Studios does not automatically receive your local production database from these services.
 
 ## 11. Your privacy rights
 
@@ -97,7 +103,7 @@ PressBench is a professional utility intended only for adults aged 18 and over a
 
 ## 13. Security
 
-PressBench uses platform-private storage. The optional iOS backup uses the App’s private iCloud key-value storage. The reviewed Android profile disables clear-text traffic, Android application backup and device-to-device transfer. No device or software is completely secure; keep your device updated, use appropriate access controls and avoid entering unnecessary personal or confidential information.
+PressBench uses platform-private storage. The optional iOS backup uses the App’s private iCloud key-value storage. The Android release disables clear-text traffic, Android application backup and device-to-device transfer. No device or software is completely secure; keep your device updated, use appropriate access controls and avoid entering unnecessary personal or confidential information.
 
 ## 14. Changes
 

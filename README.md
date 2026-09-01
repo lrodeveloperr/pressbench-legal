@@ -2,7 +2,7 @@
 
 Public legal and support documents for **PressBench** by GoodUse Studios.
 
-Current Android closed-test release baseline: **1.0.0-closed-v16-native (version code 1403) — 25 August 2026**.
+Current Android release baseline: **1.0.0-closed-v17-native (version code 1404) — 1 September 2026**.
 
 Public GitHub Pages routes:
 
@@ -14,4 +14,6 @@ Public GitHub Pages routes:
 - Support: `/support/`
 - Third-party notices: `/third-party-notices/`
 
-The canonical Android package is `com.goodusestudios.pressbench`. The repository and Pages site must remain publicly reachable. Store declarations must be rechecked against the exact signed AAB and current SDK versions before every release.
+The Android baseline uses Google Mobile Ads/UMP and Google Play Billing. Free users receive five successfully completed and saved runs; PressBench Pro is US$6.99 per month in the US storefront with Google Play geo-pricing and provides unlimited runs, ad removal and PDF/CSV reports while active.
+
+The canonical Android package is `com.goodusestudios.pressbench`. The repository and Pages site must remain publicly reachable. Store declarations must be rechecked against the exact signed AAB, Play Console configuration and current SDK disclosures before every release.

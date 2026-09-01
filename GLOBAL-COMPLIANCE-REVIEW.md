@@ -1,34 +1,39 @@
 # PressBench — Global Play & Privacy Compliance Review
 
-**Review date:** 25 August 2026
-**Release baseline:** Android `1.0.0-closed-v16-native`, version code 1403
+**Review date:** 1 September 2026  
+**Android release baseline:** `1.0.0-closed-v17-native`, version code 1404  
+**Source reviewed:** `lrodeveloperr/pressbench-apk-compiler@689d5d596ac5bd2de02f30984b9867dbd92c3624`
 
-This is an engineering/store-readiness review, not legal advice for every jurisdiction. PressBench minimizes publisher processing: operational records remain on-device, there is no PressBench account or cloud database, Android backup/device transfer is disabled, and routine external services are limited to Google Mobile Ads/UMP, the public legal site and user-chosen external apps.
+This is an engineering and store-readiness review, not a legal opinion for every jurisdiction. PressBench minimizes publisher processing: operational records remain on-device, there is no PressBench account or developer production database, Android backup/device transfer is disabled, and routine external services are Google Mobile Ads/UMP, Google Play Billing, the public legal site and user-selected export destinations.
 
 ## Google Play baseline
 
+- Free users receive five successfully completed and saved runs and may see a production Google banner.
+- Android PressBench Pro is a monthly Google Play subscription: US$6.99 US base price, geo-priced elsewhere, for unlimited runs, banner removal and PDF/CSV reports.
 - Keep the public privacy policy and in-App legal links accessible without login.
-- Declare Google Mobile Ads data in Data Safety even though PressBench production records remain local.
-- Declare **Contains ads: Yes**, **In-app purchases: No**, adult target audience and unrestricted App access.
-- The closed-test build has no Play Billing dependency or purchase/subscription UI.
-- Use only official Google test ad identifiers in testing. Do not publish a production release with test IDs.
-- Request ads only after UMP permits it, expose privacy options when required, and keep the `npa=1` signal.
-- Recheck target API, SDK policy status, permissions and 16 KB compatibility from the exact signed AAB before every release.
+- Declare Google Mobile Ads data in Data Safety even though production records remain local.
+- Reconfirm how Play Console expects Google Play Billing purchase history/status to be declared for the exact SDK and implementation.
+- Declare **Contains ads: Yes**, **In-app purchases: Yes**, the actual adult target audience and unrestricted App access.
+- Request ads only after UMP permits it, expose privacy options when required, and keep the non-personalized-ad signal.
+- Provide a working Google Play subscription-management route and clear recurring-benefit, billing-period and cancellation disclosures.
+- Recheck target API, SDK policy status, permissions, 16 KB compatibility and the signed AAB before every release.
 
 ## Regional privacy considerations
 
-For Canada, maintain transparency, appropriate purposes/consent, safeguards, retention limits and a rights/contact process. In the EEA and UK, the principal risk is advertising consent: configure applicable Google-certified consent messaging and confirm with qualified counsel whether an Article 27 EEA representative and/or UK representative is required for the actual establishment, targeting and monitoring facts. If required, appoint and publish the representative before distribution in that market.
+For Canada, maintain accountability, clear purposes, meaningful consent, safeguards, access/correction, retention limits and a privacy-contact process. In the EEA and UK, configure applicable Google-certified consent messaging and confirm with qualified counsel whether an Article 27 EEA representative and/or UK representative is required for the actual establishment, targeting and monitoring facts. If required, appoint and publish the representative before distribution in that market.
 
-For US states, Brazil, Japan, Australia, New Zealand, Switzerland, Türkiye, South Africa, South Korea, India and other markets, requirements vary with business thresholds and actual processing. Confirm applicable notices, consent/opt-out mechanisms, representatives/officers, language, security, retention and consumer disclosures. Temporarily exclude a market if a mandatory local obligation cannot be confirmed.
+For US states, Brazil, Japan, Australia, New Zealand, Switzerland, Türkiye, South Africa, South Korea, India and other markets, requirements vary with business thresholds and actual processing. Confirm applicable notices, consent/opt-out mechanisms, representatives or officers, language, security, retention and consumer disclosures. Exclude a market if a mandatory local obligation cannot be met.
 
-## Consumer and commercial status
+## Consumer and subscription status
 
-This build is free, shows only Google test ads and offers no purchase or subscription. A future paid ad-free option requires a separate billing implementation, Play product/base plan, localized Play price, entitlement and restoration lifecycle, cancellation access, updated legal/store disclosures and regional merchant/tax checks. An internal planning price is not a public offer.
+The Android subscription supplies recurring access to unlimited workflow usage, banner removal and report generation. Google Play supplies the localized price and manages payment, renewal, cancellation and refunds. Keep benefits available throughout paid entitlement, preserve existing records after expiry, honor supported legacy purchases, and do not advertise a trial or offer unless it is active in Play Console.
+
+The client-only entitlement implementation relies on periodic Play verification with up to 72 hours of cached paid continuity. This is simpler and minimizes developer-held purchase data, but it is less resistant to tampering and delayed revocation than Google’s recommended secure-backend verification. Monitor fraud and refund risk; if a backend is later introduced, update the privacy policy, security model, Data Safety answers and retention/deletion rules before launch.
 
 ## Languages and market scope
 
-The App and listing may be localized while this legal site is English. Do not treat machine translation as legally reviewed local terms. Obtain qualified local review where local-language legal documents are mandatory or exclude the affected market until ready.
+The App is localized broadly while the legal site is currently English. Do not treat machine translation as qualified local legal review. Obtain local review where mandatory local-language consumer or privacy terms apply, or exclude the affected market until ready.
 
 ## Release rule
 
-A global distribution selection does not prove global compliance. Re-run this review whenever the App adds or changes an SDK, permission, data flow, account/cloud feature, ad format, purchase, price or target market.
+A worldwide distribution selection does not itself establish worldwide compliance. Re-run this review whenever PressBench changes an SDK, permission, data flow, account/cloud feature, ad format, price, subscription benefit, report gate, entitlement system or target market.

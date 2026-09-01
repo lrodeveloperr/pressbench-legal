@@ -7,7 +7,7 @@ permalink: /terms/
 
 # Terms of Use
 
-**Effective: 31 August 2026**
+**Effective: 1 September 2026**
 
 These Terms govern use of **PressBench** (the “App”), provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”). By accepting these Terms in the App, you agree to them. If you do not agree, do not use the App.
 
@@ -29,15 +29,23 @@ A saved setup records operator-entered information. Bundled demonstration values
 
 ## 5. Local records and optional Apple backup
 
-Operational records are stored locally. GoodUse Studios does not provide a PressBench cloud account or remote recovery service. On iOS, optional Sign in with Apple enables user-initiated private iCloud backup controls. GoodUse Studios does not receive the backup. Users can delete the current private iCloud backup through **More → Settings → Local Data & Backups → Delete iCloud Backup**. Local deletion and Apple-managed device backups are separate controls.
+Operational records are stored locally. GoodUse Studios does not provide a PressBench cloud account or remote recovery service. Android cloud backup and device-to-device transfer are disabled. On iOS, optional Sign in with Apple enables user-initiated private iCloud backup controls. GoodUse Studios does not receive the backup. Users can delete the current private iCloud backup through **More → Settings → Local Data & Backups → Delete iCloud Backup**. Local deletion and Apple-managed device backups are separate controls.
 
-## 6. Subscriptions and reports
+## 6. Subscriptions, advertising and reports
 
-Free iOS users may save five successfully completed press runs. Failed, canceled or unsaved runs do not consume the allowance, and deleting records does not reset it. PressBench Pro is a one-month auto-renewable subscription intended at US$9.99 in the US storefront. While active, it provides unlimited press runs and PDF/XLSX reports. The App contains no advertising SDK and displays no ads in either tier.
+### iOS
 
-Apple’s purchase sheet supplies the authoritative localized price, currency, billing period, taxes and any introductory offer. Payment is charged to the user’s Apple Account at confirmation of purchase. The subscription renews automatically unless canceled at least 24 hours before the end of the current period, and Apple charges the account for renewal within 24 hours before that period ends at the price Apple displays for the renewal. Deleting PressBench does not cancel a subscription. Existing records remain readable after expiry, and any former verified iOS lifetime purchase remains honored. Users can manage or cancel through Apple Account settings and use **Restore purchase** in the App. [Subscriptions and Purchases]({{ '/subscriptions/' | relative_url }}) forms part of these Terms.
+Free iOS users may save five successfully completed press runs. Failed, canceled or unsaved runs do not consume the allowance, and deleting records does not reset it. iOS PressBench Pro is a one-month auto-renewable subscription intended at US$9.99 in the US storefront. While active, it provides unlimited press runs and PDF/XLSX reports. The iOS App contains no advertising SDK and displays no ads.
 
-The reviewed Android closed-test profile uses Google test banners and UMP but has no billing. Android PDF/CSV and eligible iOS PDF/XLSX reports are generated locally and shared only when the user selects a destination.
+Apple’s purchase sheet supplies the authoritative localized price, currency, billing period, taxes and any introductory offer. Payment is charged to the user’s Apple Account at confirmation of purchase. The subscription renews automatically unless canceled at least 24 hours before the end of the current period, and Apple charges the account for renewal within 24 hours before that period ends at the renewal price Apple displays. Deleting PressBench does not cancel a subscription. Existing records remain readable after expiry, and any former verified iOS lifetime purchase remains honored.
+
+### Android
+
+Free Android users may save five successfully completed press runs and may see a bottom Google banner. Failed, canceled or unsaved runs do not consume the allowance. Android PressBench Pro is a one-month auto-renewable Google Play subscription priced at US$6.99 per month in the US storefront and geo-priced by Google Play elsewhere. While active and verified, Pro provides unlimited press runs, removes the banner and enables PDF/CSV reports. Existing records remain readable after the free limit or subscription expiry. The in-App **Delete Local Data** action does not reset the separately stored free-run counter.
+
+Google Play supplies the authoritative localized price, currency, billing period, taxes, renewal terms and any offer before purchase. Payment is charged through the user’s Google Play account and the subscription renews monthly until canceled. Deleting PressBench does not cancel the subscription. Users can manage or cancel through [Google Play subscriptions](https://play.google.com/store/account/subscriptions), and can use **Restore purchase** in PressBench. Pro may require periodic online verification; a recently verified entitlement may continue offline for up to 72 hours. Verified legacy Android subscription or lifetime-product purchases remain honored.
+
+Android PDF/CSV and eligible iOS PDF/XLSX reports are generated locally and shared only when the user selects a destination. [Subscriptions and Purchases]({{ '/subscriptions/' | relative_url }}) forms part of these Terms.
 
 ## 7. Licence and acceptable use
 
@@ -45,7 +53,7 @@ Subject to applicable store rules, we grant a limited, revocable, non-exclusive,
 
 ## 8. Third-party services
 
-Apple, the App Store, iCloud, Google Play, Android, the reviewed Android Google SDKs, GitHub Pages, browsers and email providers are independent services with their own terms and privacy practices.
+Apple, the App Store, iCloud, Google Play, Android, the Android Google SDKs, GitHub Pages, browsers and email providers are independent services with their own terms and privacy practices.
 
 ## 9. Apple App Store licence terms
 
