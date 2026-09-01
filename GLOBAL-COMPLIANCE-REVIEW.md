@@ -34,4 +34,4 @@ The App is localized broadly while the legal site is currently English. Do not t
 
 ## Release rule
 
-A worldwide distribution selection does not itself establish worldwide compliance. Re-run this review whenever PressBench changes an SDK, permission, data flow, account/cloud feature, SDK, price, subscription benefit, report gate, entitlement system or target market.
+A worldwide distribution selection does not itself establish worldwide compliance. Re-run this review whenever PressBench changes an SDK, permission, data flow, account/cloud feature, monetization model, price, subscription benefit, report gate, entitlement system or target market.
