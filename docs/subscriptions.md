@@ -23,10 +23,11 @@ Apple’s purchase sheet is authoritative for price, currency, billing period, t
 
 ## Android model
 
-- Free use includes up to five successfully completed and saved press runs and may include a bottom Google banner.
+- Free use includes up to five successfully completed and saved press runs.
 - Failed, canceled or unsaved runs do not use the allowance. The in-App local-data deletion action does not restore free uses.
 - Android PressBench Pro is an auto-renewable one-month Google Play subscription. Its configured US base price is **US$6.99 per month**, with regional prices supplied by Google Play.
-- While active and verified, Android Pro provides unlimited press runs, removes the banner and enables PDF/CSV production reports.
+- While active and verified, Android Pro provides unlimited press runs and PDF/CSV production reports.
+- The Android App contains no advertising SDK and displays no ads in either tier.
 - Machines, setups, search, corrections, deletion and access to existing records are not separately capped.
 - Existing records remain readable after expiry.
 - Verified purchases under the legacy monthly subscription or lifetime-product identifiers remain honored.

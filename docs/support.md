@@ -22,7 +22,7 @@ PressBench has no developer cloud account or remote production database. Support
 
 Free iOS users may save five successfully completed runs. iOS PressBench Pro is configured at US$9.99/month in the US storefront and unlocks unlimited press runs plus PDF/XLSX reports while active. The iOS App contains no advertising SDK and displays no ads.
 
-Free Android users may save five successfully completed runs and may see a Google banner. Android PressBench Pro is configured at US$6.99/month in the US storefront with Google Play geo-pricing and unlocks unlimited runs, banner removal and PDF/CSV reports while active and verified. Purchase availability and localized prices are controlled by the applicable store.
+Free Android users may save five successfully completed runs. Android PressBench Pro is configured at US$6.99/month in the US storefront with Google Play geo-pricing and unlocks unlimited runs and PDF/CSV reports while active and verified. The Android App contains no advertising SDK and displays no ads. Purchase availability and localized prices are controlled by the applicable store.
 
 See [Subscriptions and Purchases]({{ '/subscriptions/' | relative_url }}).
 

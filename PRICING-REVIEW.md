@@ -1,15 +1,15 @@
 # PressBench Android Pricing Plan
 
 **Reviewed:** 1 September 2026  
-**Current baseline:** `1.0.0-closed-v17-native` (version code 1404)
+**Current baseline:** `1.0.0-closed-v18-native` (version code 1405)
 
 ## Current model
 
 - Free allowance: five successfully completed and saved press runs.
 - Failed, canceled or unsaved runs do not consume the allowance.
-- Free users may see a production Google banner after UMP permits ad requests.
+- Neither tier contains advertising or an advertising SDK.
 - PressBench Pro: **US$6.99 per month** in the US storefront, geo-priced by Google Play.
-- Pro benefits while active and verified: unlimited press runs, banner removal and PDF/CSV reports.
+- Pro benefits while active and verified: unlimited press runs and PDF/CSV reports.
 - Existing records remain readable after the free limit or subscription expiry.
 - In-App local-data deletion does not reset the separately stored free-run counter.
 - Product ID: `pressbench_unlimited_monthly_android`.

@@ -36,7 +36,7 @@ Reports are created locally and shared only when you choose a destination throug
 
 On iOS, free users may save five successfully completed runs. iOS PressBench Pro is a monthly auto-renewable subscription that unlocks unlimited runs and PDF/XLSX reports. The iOS App displays no ads.
 
-On Android, free users may save five successfully completed runs and may see a bottom Google banner. Android PressBench Pro is a monthly auto-renewable Google Play subscription that unlocks unlimited runs, removes the banner and enables PDF/CSV reports while active and verified. The US base price is US$6.99 per month; Google Play supplies regional prices. Users can manage or cancel through Google Play subscription settings and use **Restore purchase** in PressBench. Canceling does not delete existing records.
+On Android, free users may save five successfully completed runs. Android PressBench Pro is a monthly auto-renewable Google Play subscription that unlocks unlimited runs and PDF/CSV reports while active and verified. The Android App contains no advertising SDK and displays no ads. The US base price is US$6.99 per month; Google Play supplies regional prices. Users can manage or cancel through Google Play subscription settings and use **Restore purchase** in PressBench. Canceling does not delete existing records.
 
 ## Support email
 

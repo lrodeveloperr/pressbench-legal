@@ -31,7 +31,7 @@ A saved setup records operator-entered information. Bundled demonstration values
 
 Operational records are stored locally. GoodUse Studios does not provide a PressBench cloud account or remote recovery service. Android cloud backup and device-to-device transfer are disabled. On iOS, optional Sign in with Apple enables user-initiated private iCloud backup controls. GoodUse Studios does not receive the backup. Users can delete the current private iCloud backup through **More → Settings → Local Data & Backups → Delete iCloud Backup**. Local deletion and Apple-managed device backups are separate controls.
 
-## 6. Subscriptions, advertising and reports
+## 6. Subscriptions and reports
 
 ### iOS
 
@@ -41,7 +41,7 @@ Apple’s purchase sheet supplies the authoritative localized price, currency, b
 
 ### Android
 
-Free Android users may save five successfully completed press runs and may see a bottom Google banner. Failed, canceled or unsaved runs do not consume the allowance. Android PressBench Pro is a one-month auto-renewable Google Play subscription priced at US$6.99 per month in the US storefront and geo-priced by Google Play elsewhere. While active and verified, Pro provides unlimited press runs, removes the banner and enables PDF/CSV reports. Existing records remain readable after the free limit or subscription expiry. The in-App **Delete Local Data** action does not reset the separately stored free-run counter.
+Free Android users may save five successfully completed press runs. Failed, canceled or unsaved runs do not consume the allowance. Android PressBench Pro is a one-month auto-renewable Google Play subscription priced at US$6.99 per month in the US storefront and geo-priced by Google Play elsewhere. While active and verified, Pro provides unlimited press runs and PDF/CSV reports. The Android App contains no advertising SDK and displays no ads. Existing records remain readable after the free limit or subscription expiry. The in-App **Delete Local Data** action does not reset the separately stored free-run counter.
 
 Google Play supplies the authoritative localized price, currency, billing period, taxes, renewal terms and any offer before purchase. Payment is charged through the user’s Google Play account and the subscription renews monthly until canceled. Deleting PressBench does not cancel the subscription. Users can manage or cancel through [Google Play subscriptions](https://play.google.com/store/account/subscriptions), and can use **Restore purchase** in PressBench. Pro may require periodic online verification; a recently verified entitlement may continue offline for up to 72 hours. Verified legacy Android subscription or lifetime-product purchases remain honored.
 
@@ -53,7 +53,7 @@ Subject to applicable store rules, we grant a limited, revocable, non-exclusive,
 
 ## 8. Third-party services
 
-Apple, the App Store, iCloud, Google Play, Android, the Android Google SDKs, GitHub Pages, browsers and email providers are independent services with their own terms and privacy practices.
+Apple, the App Store, iCloud, Google Play, Android, Google Play Billing, GitHub Pages, browsers and email providers are independent services with their own terms and privacy practices.
 
 ## 9. Apple App Store licence terms
 
