@@ -7,7 +7,7 @@ permalink: /terms/
 
 # Terms of Use
 
-**Effective: 1 September 2026**
+**Effective: 3 September 2026**
 
 These Terms govern use of **PressBench** (the “App”), provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”). By accepting these Terms in the App, you agree to them. If you do not agree, do not use the App.
 
@@ -27,9 +27,9 @@ Heat presses and related materials can cause burns, fire, fumes, electrical inju
 
 A saved setup records operator-entered information. Bundled demonstration values are examples, not recommendations. “Proven” means only that PressBench recorded the number of issue-free operator runs required by its internal rule; it is not independent safety, quality or process validation.
 
-## 5. Local records and optional Apple backup
+## 5. Local records and optional iOS backup files
 
-Operational records are stored locally. GoodUse Studios does not provide a PressBench cloud account or remote recovery service. Android cloud backup and device-to-device transfer are disabled. On iOS, optional Sign in with Apple enables user-initiated private iCloud backup controls. GoodUse Studios does not receive the backup. Users can delete the current private iCloud backup through **More → Settings → Local Data & Backups → Delete iCloud Backup**. Local deletion and Apple-managed device backups are separate controls.
+Operational records are stored locally. GoodUse Studios does not provide a PressBench cloud account or remote recovery service. Android cloud backup and device-to-device transfer are disabled. On iOS, no account or sign-in is required. **Create backup** and **Import backup** use Apple’s Files interface with a destination selected by the user. GoodUse Studios does not receive or control backup files. Exported files are not encrypted by PressBench; users are responsible for protecting, managing and deleting copies in Files or with the selected provider. Local deletion, exported backup files and Apple-managed device backups are separate controls.
 
 ## 6. Subscriptions and reports
 

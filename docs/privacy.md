@@ -7,7 +7,7 @@ permalink: /privacy/
 
 # Privacy Policy
 
-**Effective: 1 September 2026**
+**Effective: 3 September 2026**
 
 This Privacy Policy explains how **PressBench** (the “App”) handles information. PressBench is provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”).
 
@@ -17,7 +17,7 @@ PressBench is a local-first heat-press production log.
 
 - No PressBench account is required.
 - Operational records and preferences are stored in the App’s private on-device storage. GoodUse Studios does not operate a production-data server and does not receive those records during ordinary use.
-- On iOS, optional Sign in with Apple enables user-initiated backup and restore through the App’s private iCloud key-value storage. The App remains usable without signing in.
+- On iOS, no account or sign-in is required. Optional backup and restore are user initiated through Apple’s Files interface, where you choose iCloud Drive, On My iPhone or another available Files provider.
 - On iOS, PressBench contains no advertising, analytics, crash-reporting, attribution or tracking SDK, displays no ads and does not request App Tracking Transparency permission.
 - On Android, PressBench contains no advertising, consent-management, analytics, crash-reporting, attribution or tracking SDK and displays no ads.
 - Reports are generated locally and shared only when you choose a destination through the platform share sheet.
@@ -31,13 +31,13 @@ Some fields are free text. Do not enter personal, customer, employee, confidenti
 
 GoodUse Studios cannot see, recover or remotely delete local operational records. Apple may include iOS App data in a user-controlled device backup or transfer, depending on the user’s settings. Android application backup and device-to-device transfer are disabled for the Android release.
 
-## 3. Optional Sign in with Apple and private iCloud backup on iOS
+## 3. User-owned backup files on iOS
 
-Sign in with Apple is optional and is used only to enable PressBench backup controls. PressBench does not request your name or email address. The stable Apple authorization identifier is stored locally and is included in the private backup as an owner check; it is not sent to a GoodUse Studios server.
+PressBench does not create an account and does not use Sign in with Apple. In **More → Settings → Local Data & Backups**, **Create backup** opens Apple’s Files interface. You choose the destination, which may be iCloud Drive, On My iPhone or another Files provider available on the device. PressBench does not choose a destination or upload a backup automatically.
 
-After sign-in, PressBench attempts an initial backup. You may later choose **Back Up Now** or **Restore** in **More → Settings → Local Data & Backups**. The private backup can contain machines, setups, completed runs and App settings. It excludes App Store entitlement and active-run session state. Backup is user-initiated, not continuous after every change.
+**Import backup** lets you select a compatible PressBench backup file through Files. Before replacing local operational data, the App validates the file and shows a confirmation summary. A backup can contain machines, setups, completed runs, App settings and the monotonic count used to enforce the five-free-run allowance. It excludes App Store entitlement and active-run session state.
 
-You may choose **Delete iCloud Backup** in **More → Settings → Local Data & Backups**. This removes the current PressBench value from the App’s private iCloud key-value store. It does not delete local records or copies independently retained in Apple-managed device backups or transfers. **Sign Out** and **Delete Local Data** remove the local Apple sign-in link and backup status but do not by themselves delete the private iCloud backup; use **Delete iCloud Backup** first if you also want that value removed. GoodUse Studios cannot access or remotely delete the private iCloud value.
+Backup files are not encrypted by PressBench. Anyone who can access a backup file may be able to read its contents, including free-text fields. Protect the destination appropriately and avoid entering unnecessary personal, customer, confidential or trade-secret information. GoodUse Studios does not receive, control or remotely delete user-chosen backup files. Delete or manage exported copies in Files or with the selected storage provider.
 
 ## 4. Advertising, analytics and tracking
 
@@ -81,7 +81,7 @@ Local records remain until you delete them in PressBench, clear App storage, uni
 
 On Android, the in-App **Delete Local Data** control clears the production database and preferences held in DataStore but intentionally preserves the separately stored free-run counter and recent paid-entitlement verification time. Clearing all Android App storage or uninstalling removes App-local storage, including those local counters; a qualifying purchase can be restored from Google Play.
 
-For the optional private iCloud backup, use **More → Settings → Local Data & Backups → Delete iCloud Backup**. This deletion is separate from deleting local data. Apple-managed device backups or transferred copies remain subject to the user’s Apple and iCloud controls.
+Backup files exported through **More → Settings → Local Data & Backups → Create backup** are separate from local App data. Manage or delete those copies in Files or with the destination provider. Apple-managed device backups or transferred copies remain subject to the user’s Apple and iCloud controls.
 
 Deleting local App data does not delete reports or backup files already shared elsewhere, support email already sent, or information independently processed by Apple, Google Play, Google Play Billing, GitHub Pages, a browser, an email provider or a destination selected for export.
 
@@ -93,7 +93,7 @@ Apple, Google Play, Google Play Billing, GitHub Pages, email providers, device p
 
 Depending on where you live, you may have rights concerning personal information GoodUse Studios actually holds, including access, correction, deletion, restriction, portability, objection, withdrawal of consent or a complaint to a regulator, subject to applicable law and exceptions.
 
-Because GoodUse Studios does not receive the local or private iCloud production database during ordinary use, requests to us normally concern support correspondence or other information we actually hold. Use the App, device and Apple-account controls for local and Apple-stored copies.
+Because GoodUse Studios does not receive the local production database or user-chosen backup files during ordinary use, requests to us normally concern support correspondence or other information we actually hold. Use the App, Files, device and selected storage-provider controls for local and exported copies.
 
 ## 12. Children
 
@@ -101,7 +101,7 @@ PressBench is a professional utility intended only for adults aged 18 and over a
 
 ## 13. Security
 
-PressBench uses platform-private storage. The optional iOS backup uses the App’s private iCloud key-value storage. The Android release disables clear-text traffic, Android application backup and device-to-device transfer. No device or software is completely secure; keep your device updated, use appropriate access controls and avoid entering unnecessary personal or confidential information.
+PressBench uses platform-private storage. On iOS, backup export and import use Apple’s Files interface and user-selected destinations; exported backup files are not encrypted by PressBench. The Android release disables clear-text traffic, Android application backup and device-to-device transfer. No device or software is completely secure; keep your device updated, protect backup destinations, use appropriate access controls and avoid entering unnecessary personal or confidential information.
 
 ## 14. Changes
 

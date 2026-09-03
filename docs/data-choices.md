@@ -7,30 +7,31 @@ permalink: /data-choices/
 
 # Local Data and Deletion
 
-**Last updated: 1 September 2026**
+**Last updated: 3 September 2026**
 
-PressBench has no GoodUse Studios cloud account or developer-controlled production database. GoodUse Studios cannot see, recover, edit or remotely delete operational records stored locally, in Apple-managed backups, or in the user’s optional private iCloud backup.
+PressBench has no GoodUse Studios cloud account or developer-controlled production database. GoodUse Studios cannot see, recover, edit or remotely delete operational records stored locally, in Apple-managed backups, or in backup files you export to a destination you choose.
 
 ## Delete local PressBench data
 
-On iOS, open **More → Settings → Maintenance → Delete Local Data** and confirm. This clears supported operational records, active-run state and preferences and returns the App to onboarding. It intentionally preserves verified StoreKit entitlement state and the monotonic count used to enforce the five-free-run allowance. It also removes the local Apple backup sign-in link and local last-backup status, but it does not delete the private iCloud backup.
+On iOS, open **More → Settings → Maintenance → Delete Local Data** and confirm. This clears supported operational records, active-run state and preferences and returns the App to onboarding. It intentionally preserves verified StoreKit entitlement state and the monotonic count used to enforce the five-free-run allowance. It clears the local last-backup status, but it does not delete backup files previously exported to Files.
 
 On Android, the in-App **Delete Local Data** action clears operational records and preferences held in DataStore. It intentionally preserves the separately stored five-run usage counter and recent paid-entitlement verification time. Clearing all Android App storage or uninstalling removes all App-local storage, including those counters. Android cloud backup and device-to-device transfer are disabled; a qualifying purchase can be restored from Google Play.
 
-## Optional Apple and iCloud backup on iOS
+## Optional backup files on iOS
 
-The iOS App remains usable without signing in. Optional Sign in with Apple enables **Back Up Now**, **Restore**, **Sign Out** and **Delete iCloud Backup** in **More → Settings → Local Data & Backups**.
+No account or sign-in is required. In **More → Settings → Local Data & Backups**:
 
-- **Back Up Now** replaces the current private PressBench iCloud key-value backup.
-- **Restore** replaces local operational records after confirmation.
-- **Delete iCloud Backup** removes the current PressBench value from the App’s private iCloud key-value store; it does not delete local records or Apple-managed device backups.
-- **Sign Out** removes the local Apple authorization link and local backup status; it does not delete the private iCloud backup.
+- **Create backup** opens Apple’s Files interface so you can save a PressBench backup to iCloud Drive, On My iPhone or another available Files provider.
+- **Import backup** lets you select a compatible file, validates it and shows a summary before replacing local operational data.
+- Restore never imports or changes App Store purchase entitlement.
+- Restore never lowers the monotonic five-free-run usage count. The App keeps the highest of the current secure count, the count carried by the backup and the number of completed runs in the restored data.
+- **Delete Local Data** does not delete exported backup files. Delete those copies in Files or with the selected provider.
 
-The backup may contain the stable Apple authorization identifier as an owner check plus machines, setups, completed runs and settings. It excludes App Store entitlement and active-run session state. GoodUse Studios does not receive a copy.
+A backup may contain machines, setups, completed runs, settings and the free-run usage count. It excludes active-run state and App Store entitlement. The file is not encrypted by PressBench, so protect its destination and sharing permissions. GoodUse Studios does not receive a copy.
 
 ## Reports and exports
 
-Reports are created locally and shared only when you choose a destination through the platform share sheet. Android Pro supports PDF/CSV and iOS Pro supports PDF/XLSX. Copies saved or shared elsewhere are controlled by the destination and are not deleted by **Delete Local Data** or **Delete iCloud Backup**.
+Reports are created locally and shared only when you choose a destination through the platform share sheet. Android Pro supports PDF/CSV and iOS Pro supports PDF/XLSX. Copies saved or shared elsewhere are controlled by the destination and are not deleted by **Delete Local Data**.
 
 ## Purchases
 
