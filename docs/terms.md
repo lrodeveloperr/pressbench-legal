@@ -7,7 +7,7 @@ permalink: /terms/
 
 # Terms of Use
 
-**Effective: 3 September 2026**
+**Effective: 4 September 2026**
 
 These Terms govern use of **PressBench** (the “App”), provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”). By accepting these Terms in the App, you agree to them. If you do not agree, do not use the App.
 
@@ -35,7 +35,7 @@ Operational records are stored locally. GoodUse Studios does not provide a Press
 
 ### iOS
 
-Free iOS users may save five successfully completed press runs. Failed, canceled or unsaved runs do not consume the allowance, and deleting records does not reset it. iOS PressBench Pro is a one-month auto-renewable subscription intended at US$9.99 in the US storefront. While active, it provides unlimited press runs and PDF/XLSX reports. The iOS App contains no advertising SDK and displays no ads.
+Free iOS users may save five successfully completed press runs. Failed, canceled or unsaved runs do not consume the allowance, and deleting records does not reset it. iOS PressBench Pro is a one-month auto-renewable subscription configured at US$6.99 per month in the US storefront and geo-priced by Apple elsewhere. While active, it provides unlimited press runs and PDF/XLSX reports. The iOS App contains no advertising SDK and displays no ads.
 
 Apple’s purchase sheet supplies the authoritative localized price, currency, billing period, taxes and any introductory offer. Payment is charged to the user’s Apple Account at confirmation of purchase. The subscription renews automatically unless canceled at least 24 hours before the end of the current period, and Apple charges the account for renewal within 24 hours before that period ends at the renewal price Apple displays. Deleting PressBench does not cancel a subscription. Existing records remain readable after expiry, and any former verified iOS lifetime purchase remains honored.
 

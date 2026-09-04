@@ -7,13 +7,13 @@ permalink: /third-party-notices/
 
 # Third-Party Software Notices
 
-**Release baselines: PressBench Android 1.0.0-closed-v18-native and PressBench iOS 1.0 release candidate, 1 September 2026**
+**Release baselines: PressBench Android 1.0.0-closed-v18-native and PressBench iOS 1.0 release candidate, 4 September 2026**
 
 PressBench includes third-party software. Each component remains owned by its respective rights holder and is governed by its applicable licence and service terms.
 
 The reviewed Android profile directly declares AndroidX Core KTX 1.17.0, Activity Compose/KTX 1.13.0, Lifecycle 2.10.0, DataStore Preferences 1.2.1, Jetpack Compose, Material 3 and Material Icons, Google Play Billing Library KTX 9.1.0, JUnit 4.13.2 for tests and Compose UI Tooling in debug builds. It does not directly declare Google Mobile Ads, a consent-management SDK, AndroidX Navigation, a developer analytics SDK or a developer crash-reporting SDK.
 
-The iOS release uses Apple SwiftUI/UIKit, StoreKit 2, AuthenticationServices, iCloud key-value storage, UserNotifications and related Apple system frameworks. It contains no third-party advertising, consent-management, analytics, crash-reporting, attribution or tracking SDK. Apple frameworks and services are governed by Apple’s platform terms.
+The iOS release uses Apple SwiftUI/UIKit, StoreKit 2, JavaScriptCore, UserNotifications, the Files interface and related Apple system frameworks. It contains no third-party advertising, consent-management, analytics, crash-reporting, attribution or tracking SDK. Apple frameworks and services are governed by Apple’s platform terms.
 
 The exact transitive inventory can change when dependencies are updated. Release engineering should retain dependency reports and regenerate these notices when a dependency or version changes.
 

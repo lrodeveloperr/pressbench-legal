@@ -7,13 +7,13 @@ permalink: /subscriptions/
 
 # Subscriptions and Purchases
 
-**Effective: 1 September 2026**
+**Effective: 4 September 2026**
 
 ## iOS model
 
 - Free use includes up to five successfully completed and saved press runs.
 - Failed, canceled or unsaved runs do not use the allowance. Deleting records or local operational data does not restore free uses.
-- PressBench Pro is an auto-renewable one-month subscription. The configured US storefront price is **US$9.99 per month**.
+- PressBench Pro is an auto-renewable one-month subscription. The configured US storefront base price is **US$6.99 per month**, with regional prices supplied by Apple.
 - While active, iOS Pro provides unlimited press runs and PDF/XLSX production reports.
 - The iOS App contains no advertising SDK and displays no ads in either tier; ad removal is not an iOS subscription benefit.
 - Machines, setups, search, corrections, deletion and access to existing records are not separately capped.

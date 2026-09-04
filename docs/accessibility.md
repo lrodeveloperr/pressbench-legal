@@ -7,13 +7,13 @@ permalink: /accessibility/
 
 # Accessibility
 
-**Last updated: 30 August 2026**
+**Last updated: 4 September 2026**
 
-PressBench for iOS is built with native SwiftUI and system controls. Its current accessibility implementation includes:
+PressBench for iOS is built with native SwiftUI and system controls. Its accessibility design includes:
 
 - system text styles and layout changes for accessibility Dynamic Type sizes on core run and setup surfaces;
 - VoiceOver labels, values and standard control semantics on key buttons, status controls and form fields;
-- a shared minimum touch-target size of 48 points for primary controls and list rows;
+- expanded touch areas on primary actions and many custom list rows;
 - reduced press animations when iOS **Reduce Motion** is enabled; and
 - text or symbols alongside status colours on core status surfaces.
 
