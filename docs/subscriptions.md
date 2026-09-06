@@ -1,27 +1,31 @@
 ---
 layout: default
-title: Subscriptions and Purchases
+title: Purchases and Subscriptions
 nav_title: Purchases
 permalink: /subscriptions/
 ---
 
-# Subscriptions and Purchases
+# Purchases and Subscriptions
 
-**Effective: 4 September 2026**
+**Effective: 6 September 2026**
 
 ## iOS model
 
-- Free use includes up to five successfully completed and saved press runs.
+- Free use includes up to three successfully completed and saved press runs.
 - Failed, canceled or unsaved runs do not use the allowance. Deleting records or local operational data does not restore free uses.
-- PressBench Pro is an auto-renewable one-month subscription. The configured US storefront base price is **US$6.99 per month**, with regional prices supplied by Apple.
-- While active, iOS Pro provides unlimited press runs and PDF/XLSX production reports.
-- The iOS App contains no advertising SDK and displays no ads in either tier; ad removal is not an iOS subscription benefit.
-- Machines, setups, search, corrections, deletion and access to existing records are not separately capped.
-- Existing records remain readable after expiry. Any former verified iOS lifetime purchase remains honored.
+- New iOS customers can permanently unlock PressBench with one non-consumable App Store purchase.
+- The United States reference price is **US$39.99 one time**, with the approved geopriced storefront schedule supplied through App Store Connect.
+- The permanent unlock provides unlimited press runs and PDF/XLSX production reports. It does not renew and has no recurring charge.
+- The iOS App contains no advertising SDK and displays no ads.
+- Machines, setups, search, corrections, deletion, backup/restore and access to existing records are not separately capped.
+- Existing records remain readable regardless of purchase status.
+- The iOS lifetime product is `pressbench_unlimited_lifetime_ios`. The former `pressbench_unlimited_monthly_ios` subscription is not offered to new customers; verified legacy entitlement is honored during migration according to its original transaction status.
 
-Apple’s purchase sheet is authoritative for price, currency, billing period, taxes, regional terms and any introductory offer. Payment is charged to the user’s Apple Account at confirmation of purchase. The subscription automatically renews unless canceled at least 24 hours before the end of the current period. Apple charges the account for renewal within 24 hours before that period ends at the renewal price shown by Apple. Users can manage or cancel through [Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench. Deleting PressBench does not cancel the subscription.
+Apple’s purchase sheet is authoritative for price, currency, taxes and transaction terms. Payment is charged to the user’s Apple Account at confirmation. The lifetime unlock does not auto-renew. Users can use **Restore purchase** in PressBench to restore an eligible non-consumable purchase associated with the current Apple Account. Deleting PressBench does not remove the purchase from the Apple Account. Refunds and revocations are handled under Apple’s rules and may affect entitlement.
 
 ## Android model
+
+The Android release has not been changed by the 6 September 2026 iOS pricing migration. Its currently configured model remains as documented in the Android release materials until a separate Android monetization release is approved.
 
 - Free use includes up to five successfully completed and saved press runs.
 - Failed, canceled or unsaved runs do not use the allowance. The in-App local-data deletion action does not restore free uses.
@@ -30,11 +34,9 @@ Apple’s purchase sheet is authoritative for price, currency, billing period, t
 - The Android App contains no advertising SDK and displays no ads in either tier.
 - Machines, setups, search, corrections, deletion and access to existing records are not separately capped.
 - Existing records remain readable after expiry.
-- Verified purchases under the legacy monthly subscription or lifetime-product identifiers remain honored.
+- Verified purchases under supported legacy identifiers remain honored according to the Android release implementation.
 
-Google Play’s purchase sheet is authoritative for localized price, currency, billing period, taxes, renewal terms and any offer. Payment, renewal, cancellation and refunds are handled by Google Play. The subscription renews monthly until canceled. Users can manage or cancel through [Google Play subscriptions](https://play.google.com/store/account/subscriptions) and can use **Restore purchase** in PressBench. Deleting PressBench does not cancel the subscription.
-
-PressBench periodically checks Google Play for entitlement status. A recently verified Pro entitlement may continue offline for up to 72 hours. Product availability depends on activation in Play Console for the applicable country or region.
+Google Play’s purchase sheet is authoritative for localized price, currency, billing period, taxes, renewal terms and any offer. Payment, renewal, cancellation and refunds are handled by Google Play. Users can manage or cancel through [Google Play subscriptions](https://play.google.com/store/account/subscriptions) and can use **Restore purchase** in PressBench where supported. Deleting PressBench does not cancel a Google Play subscription.
 
 Android product: `pressbench_unlimited_monthly_android`  
 Monthly base plan: `monthly`
