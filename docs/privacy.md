@@ -51,11 +51,11 @@ Eligible reports are generated locally. iOS permanent-unlock users can generate 
 
 ### iOS
 
-Free iOS users may save three successfully completed press runs. A one-time non-consumable purchase, `pressbench_unlimited_lifetime_ios`, permanently unlocks unlimited runs and locally generated PDF/XLSX reports for the purchaser’s Apple Account, subject to normal App Store verification, refund and revocation rules. The United States reference price is **US$39.99 one time**; App Store Connect supplies the approved geopriced amount for other storefronts. The store purchase sheet is authoritative for the price, currency, tax and transaction terms shown to you.
+Free iOS users may save three successfully completed press runs. A one-time non-consumable purchase, `pressbench_unlimited_lifetime_ios_v2`, permanently unlocks unlimited runs and locally generated PDF/XLSX reports for the purchaser’s Apple Account, subject to normal App Store verification, refund and revocation rules. The United States reference price is **US$39.99 one time**; App Store Connect supplies the approved geopriced amount for other storefronts. The store purchase sheet is authoritative for the price, currency, tax and transaction terms shown to you.
 
 Apple handles checkout, payment, refund and purchase verification through StoreKit. PressBench may store the product identifier, transaction and original-transaction identifiers, purchase date and entitlement status locally so it can provide and restore access. The free-run usage ledger is stored locally, including in the iOS Keychain, and is designed to survive ordinary deletion or reinstall on the same device. GoodUse Studios does not receive payment-card details.
 
-There is no recurring charge or automatic renewal for new iOS customers. The former `pressbench_unlimited_monthly_ios` product is not offered to new customers; verified legacy subscription entitlement may remain recognized during migration according to its original App Store transaction state.
+There is no recurring charge or automatic renewal for new iOS customers. The reserved former lifetime product `pressbench_unlimited_lifetime_ios` and the former monthly product `pressbench_unlimited_monthly_ios` are not offered to new customers; verified legacy entitlements remain recognized during migration according to their original App Store transaction state.
 
 ### Android
 

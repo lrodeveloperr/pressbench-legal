@@ -19,7 +19,7 @@ permalink: /subscriptions/
 - The iOS App contains no advertising SDK and displays no ads.
 - Machines, setups, search, corrections, deletion, backup/restore and access to existing records are not separately capped.
 - Existing records remain readable regardless of purchase status.
-- The iOS lifetime product is `pressbench_unlimited_lifetime_ios`. The former `pressbench_unlimited_monthly_ios` subscription is not offered to new customers; verified legacy entitlement is honored during migration according to its original transaction status.
+- The current iOS lifetime product is `pressbench_unlimited_lifetime_ios_v2`. The reserved former lifetime product `pressbench_unlimited_lifetime_ios` and the former subscription `pressbench_unlimited_monthly_ios` are not offered to new customers; verified legacy entitlements are honored during migration according to their original transaction status.
 
 Apple’s purchase sheet is authoritative for price, currency, taxes and transaction terms. Payment is charged to the user’s Apple Account at confirmation. The lifetime unlock does not auto-renew. Users can use **Restore purchase** in PressBench to restore an eligible non-consumable purchase associated with the current Apple Account. Deleting PressBench does not remove the purchase from the Apple Account. Refunds and revocations are handled under Apple’s rules and may affect entitlement.
 
