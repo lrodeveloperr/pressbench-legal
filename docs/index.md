@@ -6,7 +6,7 @@ permalink: /
 
 # PressBench Legal & Support
 
-> **Platform status.** Android free users receive five successfully completed and saved runs. Android PressBench Pro is US$6.99 per month in the US storefront with Google Play geo-pricing and provides unlimited runs and PDF/CSV reports while active. The Android App contains no advertising SDK and displays no ads. On iOS, two successfully saved runs are free. PressBench Pro is offered at US$12.99 per month or US$119.99 per year in the US storefront, with Apple-provided localized pricing, and provides unlimited runs plus PDF/XLSX reports while active. The iOS release contains no advertising or tracking SDK.
+> **Platform status.** Android free users receive five successfully completed and saved runs. Android PressBench Pro is US$6.99 per month in the US storefront with Google Play geo-pricing and provides unlimited runs and PDF/CSV reports while active. The Android App contains no advertising SDK and displays no ads. On iOS, two successfully completed and saved runs are free. PressBench Pro is offered at US$12.99 per month or US$119.99 per year in the US storefront, with Apple-provided localized pricing, and provides unlimited runs plus PDF/XLSX reports while active. The iOS release contains no advertising or tracking SDK.
 
 PressBench is a local-first heat-press production setup and run-record utility. It records information entered by the operator; it does not inspect or control equipment or determine safe or correct settings.
 
