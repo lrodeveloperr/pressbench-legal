@@ -45,7 +45,7 @@ A backup can contain machines, setups, completed runs, App settings and the mono
 
 PressBench backup files are not encrypted by the App. Anyone with access to a backup may be able to read it, including its free-text fields. Protect the destination and its sharing permissions. GoodUse Studios does not receive, control or remotely delete user-chosen backup files.
 
-Eligible reports are generated locally. Active iOS Pro subscribers and users with a verified grandfathered lifetime entitlement can generate PDF/XLSX reports. Android reporting follows the Android release configuration. The system share sheet opens only when you choose to export. A selected email, messaging, cloud-storage or other destination handles the shared copy under that provider’s privacy practices.
+Eligible reports are generated locally. Active iOS Pro subscribers can generate PDF/XLSX reports. Android reporting follows the Android release configuration. The system share sheet opens only when you choose to export. A selected email, messaging, cloud-storage or other destination handles the shared copy under that provider’s privacy practices.
 
 ## 5. Purchases and purchase information
 
@@ -55,7 +55,7 @@ Free iOS users may save two successfully completed press runs. PressBench Pro is
 
 Apple handles checkout, payment, refund and purchase verification through StoreKit. PressBench may store the product identifier, transaction and original-transaction identifiers, purchase date and entitlement status locally so it can provide and restore access. The free-run usage ledger is stored locally, including in the iOS Keychain, and is designed to survive ordinary deletion or reinstall on the same device. GoodUse Studios does not receive payment-card details.
 
-Subscriptions renew automatically for the selected billing period until canceled in the user’s Apple Account subscription settings. PressBench can restore eligible subscriptions. The retired lifetime products `pressbench_unlimited_lifetime_ios_v2` and `pressbench_unlimited_lifetime_ios` are not offered to new customers; verified historical lifetime entitlements remain permanently recognized unless Apple refunds or revokes them.
+Subscriptions renew automatically for the selected billing period until canceled in the user’s Apple Account subscription settings. PressBench can restore eligible subscriptions.
 
 ### Android
 

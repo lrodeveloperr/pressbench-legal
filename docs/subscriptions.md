@@ -19,9 +19,9 @@ permalink: /subscriptions/
 - The iOS App contains no advertising SDK and displays no ads.
 - Machines, setups, search, corrections, deletion, backup/restore and access to existing records are not separately capped.
 - Existing records remain readable after the free allowance is used or a subscription expires.
-- The subscription products are `pressbench_unlimited_monthly_ios` and `pressbench_unlimited_annual_ios`. The retired lifetime products `pressbench_unlimited_lifetime_ios_v2` and `pressbench_unlimited_lifetime_ios` are not offered to new customers. Verified historical lifetime purchases remain permanently unlocked unless Apple refunds or revokes them.
+- The subscription products are `pressbench_unlimited_monthly_ios` and `pressbench_unlimited_annual_ios`.
 
-Apple’s purchase sheet is authoritative for the localized price, currency, taxes, billing period and transaction terms shown before purchase. Payment is charged to the user’s Apple Account at confirmation. Subscriptions renew automatically for the selected billing period until canceled. Users can [manage or cancel in their Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench to refresh an eligible subscription or grandfathered lifetime entitlement. Deleting PressBench does not cancel a subscription. Refunds, billing recovery, grace periods and revocations are handled under Apple’s rules and may affect entitlement.
+Apple’s purchase sheet is authoritative for the localized price, currency, taxes, billing period and transaction terms shown before purchase. Payment is charged to the user’s Apple Account at confirmation. Subscriptions renew automatically for the selected billing period until canceled. Users can [manage or cancel in their Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench to refresh an eligible subscription. Deleting PressBench does not cancel a subscription. Refunds, billing recovery, grace periods and revocations are handled under Apple’s rules and may affect entitlement.
 
 ## Android model
 
