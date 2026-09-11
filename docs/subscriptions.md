@@ -7,21 +7,21 @@ permalink: /subscriptions/
 
 # Purchases and Subscriptions
 
-**Effective: 6 September 2026**
+**Effective: 11 September 2026**
 
 ## iOS model
 
-- Free use includes up to three successfully completed and saved press runs.
+- Free use includes up to two successfully completed and saved press runs.
 - Failed, canceled or unsaved runs do not use the allowance. Deleting records or local operational data does not restore free uses.
-- New iOS customers can permanently unlock PressBench with one non-consumable App Store purchase.
-- The United States reference price is **US$39.99 one time**, with the approved geopriced storefront schedule supplied through App Store Connect.
-- The permanent unlock provides unlimited press runs and PDF/XLSX production reports. It does not renew and has no recurring charge.
+- PressBench Pro is offered to new iOS customers as an auto-renewable monthly or annual App Store subscription.
+- The United States reference prices are **US$12.99 per month** and **US$119.99 per year**. App Store Connect supplies the approved price for each storefront.
+- While active, either plan provides unlimited press runs and locally generated PDF/XLSX production reports.
 - The iOS App contains no advertising SDK and displays no ads.
 - Machines, setups, search, corrections, deletion, backup/restore and access to existing records are not separately capped.
-- Existing records remain readable regardless of purchase status.
-- The current iOS lifetime product is `pressbench_unlimited_lifetime_ios_v2`. The reserved former lifetime product `pressbench_unlimited_lifetime_ios` and the former subscription `pressbench_unlimited_monthly_ios` are not offered to new customers; verified legacy entitlements are honored during migration according to their original transaction status.
+- Existing records remain readable after the free allowance is used or a subscription expires.
+- The subscription products are `pressbench_unlimited_monthly_ios` and `pressbench_unlimited_annual_ios`. The retired lifetime products `pressbench_unlimited_lifetime_ios_v2` and `pressbench_unlimited_lifetime_ios` are not offered to new customers. Verified historical lifetime purchases remain permanently unlocked unless Apple refunds or revokes them.
 
-Apple’s purchase sheet is authoritative for price, currency, taxes and transaction terms. Payment is charged to the user’s Apple Account at confirmation. The lifetime unlock does not auto-renew. Users can use **Restore purchase** in PressBench to restore an eligible non-consumable purchase associated with the current Apple Account. Deleting PressBench does not remove the purchase from the Apple Account. Refunds and revocations are handled under Apple’s rules and may affect entitlement.
+Apple’s purchase sheet is authoritative for the localized price, currency, taxes, billing period and transaction terms shown before purchase. Payment is charged to the user’s Apple Account at confirmation. Subscriptions renew automatically for the selected billing period until canceled. Users can [manage or cancel in their Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench to refresh an eligible subscription or grandfathered lifetime entitlement. Deleting PressBench does not cancel a subscription. Refunds, billing recovery, grace periods and revocations are handled under Apple’s rules and may affect entitlement.
 
 ## Android model
 

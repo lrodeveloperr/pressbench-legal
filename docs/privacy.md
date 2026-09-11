@@ -7,7 +7,7 @@ permalink: /privacy/
 
 # Privacy Policy
 
-**Effective: 6 September 2026**
+**Effective: 11 September 2026**
 
 This Privacy Policy explains how **PressBench** (the “App”) handles information. PressBench is provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”). It covers the iOS and Android releases; platform-specific differences are identified below.
 
@@ -23,7 +23,7 @@ This Privacy Policy explains how **PressBench** (the “App”) handles informat
 
 Depending on how you use PressBench, on-device records may include machine and setup details; material and transfer labels; temperature, time and pressure values; job references and free-text notes; run, timer, first-piece and quality-control state; production, rework and waste quantities; issue notes, timestamps and App preferences; purchase-entitlement status; and the monotonic free-run count used to enforce the applicable platform allowance.
 
-On iOS, the free allowance is three successfully completed and saved press runs. The 6 September 2026 iOS release uses a one-time non-consumable purchase for permanent unlimited access. The Android release remains governed by its separately configured monetization model until an Android pricing migration is released.
+On iOS, the free allowance is two successfully completed and saved press runs. New customers can subscribe to PressBench Pro monthly or annually for unlimited runs and PDF/XLSX reports while the subscription is active. The Android release remains governed by its separately configured monetization model until an Android pricing migration is released.
 
 Some fields accept free text. Do not enter personal, customer, employee, confidential or trade-secret information unless it is necessary and you are authorised to store it.
 
@@ -45,17 +45,17 @@ A backup can contain machines, setups, completed runs, App settings and the mono
 
 PressBench backup files are not encrypted by the App. Anyone with access to a backup may be able to read it, including its free-text fields. Protect the destination and its sharing permissions. GoodUse Studios does not receive, control or remotely delete user-chosen backup files.
 
-Eligible reports are generated locally. iOS permanent-unlock users can generate PDF/XLSX reports. Android reporting follows the Android release configuration. The system share sheet opens only when you choose to export. A selected email, messaging, cloud-storage or other destination handles the shared copy under that provider’s privacy practices.
+Eligible reports are generated locally. Active iOS Pro subscribers and users with a verified grandfathered lifetime entitlement can generate PDF/XLSX reports. Android reporting follows the Android release configuration. The system share sheet opens only when you choose to export. A selected email, messaging, cloud-storage or other destination handles the shared copy under that provider’s privacy practices.
 
 ## 5. Purchases and purchase information
 
 ### iOS
 
-Free iOS users may save three successfully completed press runs. A one-time non-consumable purchase, `pressbench_unlimited_lifetime_ios_v2`, permanently unlocks unlimited runs and locally generated PDF/XLSX reports for the purchaser’s Apple Account, subject to normal App Store verification, refund and revocation rules. The United States reference price is **US$39.99 one time**; App Store Connect supplies the approved geopriced amount for other storefronts. The store purchase sheet is authoritative for the price, currency, tax and transaction terms shown to you.
+Free iOS users may save two successfully completed press runs. PressBench Pro is offered to new customers through the auto-renewable subscriptions `pressbench_unlimited_monthly_ios` and `pressbench_unlimited_annual_ios`. The United States reference prices are **US$12.99 per month** and **US$119.99 per year**. App Store Connect supplies the approved localized price for each storefront, and Apple’s purchase sheet is authoritative for the price, currency, tax, billing period and transaction terms shown to you. While active, either plan provides unlimited runs and locally generated PDF/XLSX reports.
 
 Apple handles checkout, payment, refund and purchase verification through StoreKit. PressBench may store the product identifier, transaction and original-transaction identifiers, purchase date and entitlement status locally so it can provide and restore access. The free-run usage ledger is stored locally, including in the iOS Keychain, and is designed to survive ordinary deletion or reinstall on the same device. GoodUse Studios does not receive payment-card details.
 
-There is no recurring charge or automatic renewal for new iOS customers. The reserved former lifetime product `pressbench_unlimited_lifetime_ios` and the former monthly product `pressbench_unlimited_monthly_ios` are not offered to new customers; verified legacy entitlements remain recognized during migration according to their original App Store transaction state.
+Subscriptions renew automatically for the selected billing period until canceled in the user’s Apple Account subscription settings. PressBench can restore eligible subscriptions. The retired lifetime products `pressbench_unlimited_lifetime_ios_v2` and `pressbench_unlimited_lifetime_ios` are not offered to new customers; verified historical lifetime entitlements remain permanently recognized unless Apple refunds or revokes them.
 
 ### Android
 
@@ -77,7 +77,7 @@ Where applicable, we process support correspondence to respond to your request, 
 
 Operational records remain on the device until you delete them, clear App storage, uninstall the App or the operating system removes them.
 
-On iOS, use **More → Settings → Maintenance → Delete Local Data** and confirm. This clears supported operational records, active-run state and preferences, cancels the pending PressBench timer notification and returns the App to onboarding. It intentionally preserves verified StoreKit entitlement state and the monotonic three-free-run usage ledger. The Keychain copy of that ledger may remain after uninstalling and reinstalling on the same device.
+On iOS, use **More → Settings → Maintenance → Delete Local Data** and confirm. This clears supported operational records, active-run state and preferences, cancels the pending PressBench timer notification and returns the App to onboarding. It intentionally preserves verified StoreKit entitlement state and the monotonic two-free-run usage ledger. The Keychain copy of that ledger may remain after uninstalling and reinstalling on the same device.
 
 On Android, **Delete Local Data** clears operational records and preferences but intentionally preserves the separately stored free-run counter and recent paid-entitlement verification time. Clearing all Android App storage or uninstalling removes App-local storage; qualifying purchases can be restored from Google Play.
 

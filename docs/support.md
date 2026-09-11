@@ -7,7 +7,7 @@ permalink: /support/
 
 # PressBench Support
 
-**Last updated: 7 September 2026**
+**Last updated: 11 September 2026**
 
 Email: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Support)  
 Provider: **Lateef Razaq-Oyetola carrying on business as GoodUse Studios**, Ontario, Canada
@@ -20,7 +20,7 @@ PressBench has no developer cloud account or remote production database. Support
 
 ## Subscriptions and purchases
 
-Free iOS users may save three successfully completed runs. A one-time, non-consumable App Store purchase permanently unlocks unlimited press runs plus PDF/XLSX reports. The United States reference price is US$39.99, with the approved geo-priced amount supplied by Apple in other storefronts. The iOS App contains no advertising SDK and displays no ads.
+Free iOS users may save two successfully completed runs. PressBench Pro is an auto-renewable App Store subscription that provides unlimited press runs plus PDF/XLSX reports while active. The United States reference prices are US$12.99 per month and US$119.99 per year; Apple supplies the approved localized price in each storefront. Users can [manage or cancel in their Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench. The iOS App contains no advertising SDK and displays no ads.
 
 Free Android users may save five successfully completed runs. Android PressBench Pro is configured at US$6.99/month in the US storefront with Google Play geo-pricing and unlocks unlimited runs and PDF/CSV reports while active and verified. The Android App contains no advertising SDK and displays no ads. Purchase availability and localized prices are controlled by the applicable store.
 

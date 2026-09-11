@@ -7,7 +7,7 @@ permalink: /terms/
 
 # Terms of Use
 
-**Effective: 7 September 2026**
+**Effective: 11 September 2026**
 
 These Terms govern use of **PressBench** (the “App”), provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”). By accepting these Terms in the App, you agree to them. If you do not agree, do not use the App.
 
@@ -35,9 +35,9 @@ Operational records are stored locally. GoodUse Studios does not provide a Press
 
 ### iOS
 
-Free iOS users may save three successfully completed press runs. Failed, canceled or unsaved runs do not consume the allowance, and deleting records does not reset it. A one-time, non-consumable App Store purchase permanently unlocks unlimited press runs and PDF/XLSX reports. The United States reference price is US$39.99, with the approved geo-priced amount supplied by Apple in other storefronts. The iOS App contains no advertising SDK and displays no ads.
+Free iOS users may save two successfully completed press runs. Failed, canceled or unsaved runs do not consume the allowance, and deleting records or restoring an older backup does not reset it. PressBench Pro is available to new iOS customers as a monthly or annual auto-renewable App Store subscription. The United States reference prices are US$12.99 per month and US$119.99 per year; Apple supplies the approved localized price in each storefront. While active, either plan provides unlimited press runs and PDF/XLSX reports. The iOS App contains no advertising SDK and displays no ads.
 
-Apple’s purchase sheet supplies the authoritative localized price, currency, taxes and transaction terms. Payment is charged to the user’s Apple Account at confirmation of purchase. The lifetime unlock does not renew and has no recurring charge. It can be restored for an eligible purchase associated with the current Apple Account. Refunds or revocations may remove paid entitlement, but existing records remain readable. The reserved former lifetime product and the former monthly product are not offered to new customers; verified legacy entitlements may remain recognized according to their original App Store transaction state.
+Apple’s purchase sheet supplies the authoritative localized price, currency, taxes, billing period and transaction terms before purchase. Payment is charged to the user’s Apple Account at confirmation. The selected plan renews automatically for the same billing period until canceled. Users can [manage or cancel in their Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench. Refunds, revocations or expiry may remove subscription access, but existing records remain readable. Verified historical purchases of the retired lifetime products remain permanently unlocked unless Apple refunds or revokes them.
 
 ### Android
 
