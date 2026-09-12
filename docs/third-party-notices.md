@@ -7,7 +7,7 @@ permalink: /third-party-notices/
 
 # Third-Party Software Notices
 
-**Release baselines: PressBench Android 1.0.0-closed-v18-native and PressBench iOS 1.0 release candidate, 4 September 2026**
+**Release baselines: PressBench Android 1.0.0-closed-v18-native and PressBench iOS source `db7c7a71f2275ee1337407b6e62fdcad5ced660d`, reviewed 12 September 2026**
 
 PressBench includes third-party software. Each component remains owned by its respective rights holder and is governed by its applicable licence and service terms.
 

@@ -7,7 +7,7 @@ permalink: /accessibility/
 
 # Accessibility
 
-**Last updated: 4 September 2026**
+**Last updated: 12 September 2026**
 
 PressBench for iOS is built with native SwiftUI and system controls. Its accessibility design includes:
 
@@ -17,6 +17,6 @@ PressBench for iOS is built with native SwiftUI and system controls. Its accessi
 - reduced press animations when iOS **Reduce Motion** is enabled; and
 - text or symbols alongside status colours on core status surfaces.
 
-In **More → Settings → General → Accessibility**, PressBench shows the current iOS state for larger text, Reduce Motion and Differentiate Without Color and provides a link to the system Settings app. These features are controlled by iOS; PressBench does not replace the device's accessibility settings.
+Tap the gear icon to open **Settings**, then choose **Accessibility**. PressBench shows the current iOS state for larger text, Reduce Motion and Differentiate Without Color and provides a link to the system Settings app. These features are controlled by iOS; PressBench does not replace the device's accessibility settings.
 
 Accessibility can vary by device, iOS version, language, text size and assistive-technology configuration. If a screen or control is difficult to use, email [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Accessibility) with the subject **PressBench Accessibility**. Include the device model, iOS version, PressBench version, language, text size or assistive technology in use, the screen and the affected control. Do not include confidential production or customer information.

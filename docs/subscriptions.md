@@ -7,21 +7,21 @@ permalink: /subscriptions/
 
 # Purchases and Subscriptions
 
-**Effective: 11 September 2026**
+**Effective: 12 September 2026**
 
 ## iOS model
 
-- Free use includes up to two successfully completed and saved press runs.
-- Failed, canceled or unsaved runs do not use the allowance. Deleting records or local operational data does not restore free uses.
-- PressBench Pro is offered to new iOS customers as an auto-renewable monthly or annual App Store subscription.
-- The United States reference prices are **US$12.99 per month** and **US$119.99 per year**. App Store Connect supplies the approved price for each storefront.
-- While active, either plan provides unlimited press runs and locally generated PDF/XLSX production reports.
+- Free use includes ten qualifying runs. A run uses one allowance only after it is successfully committed and saved and records at least one processed item or a first-piece attempt.
+- Starting, leaving or discarding a run before save, and a failed save or commit, do not use the allowance. A saved run counts even if its recorded quality outcome is unsuccessful. Deleting records or local operational data does not restore free uses.
+- PressBench Pro is offered to new iOS customers as an auto-renewable monthly App Store subscription.
+- The configured United States reference price is **US$9.99 per month**. App Store Connect supplies the approved price for each storefront.
+- While active, the subscription provides unlimited press runs and locally generated PDF/XLSX production reports.
 - The iOS App contains no advertising SDK and displays no ads.
 - Machines, setups, search, corrections, deletion, backup/restore and access to existing records are not separately capped.
 - Existing records remain readable after the free allowance is used or a subscription expires.
-- The subscription products are `pressbench_unlimited_monthly_ios` and `pressbench_unlimited_annual_ios`.
+- The product offered for sale is `pressbench_unlimited_monthly_ios`. A previously acquired, verified `pressbench_unlimited_annual_ios` entitlement may remain recognized until its StoreKit expiration date, but the annual product is not loaded, displayed or offered for sale to new customers.
 
-Apple’s purchase sheet is authoritative for the localized price, currency, taxes, billing period and transaction terms shown before purchase. Payment is charged to the user’s Apple Account at confirmation. Subscriptions renew automatically for the selected billing period until canceled. Users can [manage or cancel in their Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench to refresh an eligible subscription. Deleting PressBench does not cancel a subscription. Refunds, billing recovery, grace periods and revocations are handled under Apple’s rules and may affect entitlement.
+Apple’s purchase sheet is authoritative for the localized price, currency, taxes, billing period and transaction terms shown before purchase. Payment is charged to the user’s Apple Account at confirmation. The monthly subscription renews automatically each month until canceled. Users can [manage or cancel in their Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench to refresh an eligible subscription. Deleting PressBench does not cancel a subscription. Refunds, billing recovery, grace periods and revocations are handled under Apple’s rules and may affect entitlement.
 
 ## Android model
 

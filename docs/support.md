@@ -7,7 +7,7 @@ permalink: /support/
 
 # PressBench Support
 
-**Last updated: 11 September 2026**
+**Last updated: 12 September 2026**
 
 Email: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Support)  
 Provider: **Lateef Razaq-Oyetola carrying on business as GoodUse Studios**, Ontario, Canada
@@ -16,11 +16,11 @@ For the fastest help, include your platform version, device model, PressBench ve
 
 ## Local-data limitation
 
-PressBench has no developer cloud account or remote production database. Support cannot retrieve records from a lost, reset, damaged, uninstalled or cleared device. On iOS, **More → Settings → Local Data & Backups → Create backup** opens Apple’s Files interface. You choose iCloud Drive, On My iPhone or another available Files provider. GoodUse Studios does not receive or control those backup files.
+PressBench has no developer cloud account or remote production database. Support cannot retrieve records from a lost, reset, damaged, uninstalled or cleared device. On iOS, tap the gear icon to open **Settings**, then choose **Local Data & Backups → Create backup** to open Apple’s Files interface. You choose iCloud Drive, On My iPhone or another available Files provider. GoodUse Studios does not receive or control those backup files.
 
 ## Subscriptions and purchases
 
-Free iOS users may save two successfully completed runs. PressBench Pro is an auto-renewable App Store subscription that provides unlimited press runs plus PDF/XLSX reports while active. The United States reference prices are US$12.99 per month and US$119.99 per year; Apple supplies the approved localized price in each storefront. Users can [manage or cancel in their Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench. The iOS App contains no advertising SDK and displays no ads.
+Free iOS users receive ten qualifying runs: a run counts only after it is successfully committed and saved and records at least one processed item or a first-piece attempt. A saved run counts even if its recorded quality outcome is unsuccessful. PressBench Pro is a monthly auto-renewable App Store subscription that provides unlimited press runs plus PDF/XLSX reports while active. Its configured United States reference price is US$9.99 per month; Apple supplies the approved localized price in each storefront. Users can [manage or cancel in their Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench. A previously acquired, verified annual entitlement may remain valid until its StoreKit expiration date, but the annual product is not offered for sale to new customers. The iOS App contains no advertising SDK and displays no ads.
 
 Free Android users may save five successfully completed runs. Android PressBench Pro is configured at US$6.99/month in the US storefront with Google Play geo-pricing and unlocks unlimited runs and PDF/CSV reports while active and verified. The Android App contains no advertising SDK and displays no ads. Purchase availability and localized prices are controlled by the applicable store.
 
