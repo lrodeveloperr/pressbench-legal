@@ -14,7 +14,7 @@ permalink: /subscriptions/
 - Free use includes ten qualifying runs. A run uses one allowance only after it is successfully committed and saved and records at least one processed item or a first-piece attempt.
 - Starting, leaving or discarding a run before save, and a failed save or commit, do not use the allowance. A saved run counts even if its recorded quality outcome is unsuccessful. Deleting records or local operational data does not restore free uses.
 - PressBench Pro is offered to new iOS customers as an auto-renewable monthly App Store subscription.
-- The configured United States reference price is **US$9.99 per month**. App Store Connect supplies the approved price for each storefront.
+- Apple displays the current localized price before purchase in each storefront.
 - While active, the subscription provides unlimited press runs and locally generated PDF/XLSX production reports.
 - The iOS App contains no advertising SDK and displays no ads.
 - Machines, setups, search, corrections, deletion, backup/restore and access to existing records are not separately capped.

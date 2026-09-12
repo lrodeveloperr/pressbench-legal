@@ -7,7 +7,7 @@
 ## Confirmed implementation baseline
 
 - Ten qualifying runs are free. A run uses one allowance only after it is successfully committed and saved and records at least one processed item or a first-piece attempt. Starting, leaving or discarding a run before save, and a failed save or commit, do not count. A saved run counts even if its recorded quality outcome is unsuccessful.
-- PressBench Pro is offered through the monthly auto-renewable product `pressbench_unlimited_monthly_ios`, configured with a US reference price of US$9.99 and Apple-supplied storefront pricing shown by StoreKit.
+- PressBench Pro is offered through the monthly auto-renewable product `pressbench_unlimited_monthly_ios`; Apple-supplied storefront pricing is shown by StoreKit.
 - The annual product is not loaded, displayed or offered. `pressbench_unlimited_annual_ios` remains recognized only for continuity of a previously acquired, verified entitlement until its StoreKit expiration date.
 - Pro unlocks unlimited runs and locally generated PDF/XLSX reports while the verified entitlement is active. Existing records remain readable without Pro.
 - Purchases, restoration and entitlement updates use StoreKit 2. Payment-card data is not handled by the App. Product and transaction identifiers, purchase and expiration dates and verification state are processed in memory; entitlement is excluded from operational persistence and reconstructed from StoreKit at launch.
@@ -37,4 +37,4 @@ Android-specific disclosures were preserved and were not re-certified as part of
 
 ## Result
 
-After correction and re-review, the public iOS policy statements are consistent with the identified source commit for the data lifecycle, permissions, backup/export behavior, deletion behavior, monetization, entitlement handling, advertising/tracking status and safety boundary. The source establishes the intended US$9.99 reference price and monthly product, but the active App Store Connect price, product duration and regional availability require separate verification in App Store Connect. This is a code-to-policy consistency review, not a legal opinion or a guarantee of App Store approval.
+After correction and re-review, the public iOS policy statements are consistent with the identified source commit for the data lifecycle, permissions, backup/export behavior, deletion behavior, monetization, entitlement handling, advertising/tracking status and safety boundary. The source establishes the monthly product, but the active App Store Connect price, product duration and regional availability require separate verification in App Store Connect. This is a code-to-policy consistency review, not a legal opinion or a guarantee of App Store approval.

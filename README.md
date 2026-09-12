@@ -20,4 +20,4 @@ The Android baseline contains no advertising SDK. Free users receive five succes
 
 The canonical Android package is `com.goodusestudios.pressbench`. The repository and Pages site must remain publicly reachable. Store declarations must be rechecked against the exact signed AAB, Play Console configuration and current SDK disclosures before every release.
 
-The canonical iOS bundle identifier is `com.goodusestudios.pressbench`. The current iOS App offers ten qualifying runs at no charge, then a monthly auto-renewable subscription configured at a US$9.99 reference price for unlimited runs and PDF/XLSX reports. The purchase screen uses Apple’s storefront-localized StoreKit price. A legacy annual identifier is recognized for entitlement continuity but is not offered for sale.
+The canonical iOS bundle identifier is `com.goodusestudios.pressbench`. The current iOS App offers ten qualifying runs at no charge, then a monthly auto-renewable App Store subscription for unlimited runs and PDF/XLSX reports. The purchase screen uses Apple’s storefront-localized StoreKit price. A legacy annual identifier is recognized for entitlement continuity but is not offered for sale.
