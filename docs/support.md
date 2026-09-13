@@ -7,7 +7,7 @@ permalink: /support/
 
 # PressBench Support
 
-**Last updated: 12 September 2026**
+**Last updated: 13 September 2026**
 
 Email: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Support)  
 Provider: **Lateef Razaq-Oyetola carrying on business as GoodUse Studios**, Ontario, Canada
@@ -22,7 +22,7 @@ PressBench has no developer cloud account or remote production database. Support
 
 Free iOS users receive ten qualifying runs: a run counts only after it is successfully committed and saved and records at least one processed item or a first-piece attempt. A saved run counts even if its recorded quality outcome is unsuccessful. PressBench Pro is a monthly auto-renewable App Store subscription that provides unlimited press runs plus PDF/XLSX reports while active. Apple displays the current localized price before purchase in each storefront. Users can [manage or cancel in their Apple Account subscription settings](https://apps.apple.com/account/subscriptions) and can use **Restore purchase** in PressBench. A previously acquired, verified annual entitlement may remain valid until its StoreKit expiration date, but the annual product is not offered for sale to new customers. The iOS App contains no advertising SDK and displays no ads.
 
-Free Android users may save five successfully completed runs. Android PressBench Pro is configured at US$6.99/month in the US storefront with Google Play geo-pricing and unlocks unlimited runs and PDF/CSV reports while active and verified. The Android App contains no advertising SDK and displays no ads. Purchase availability and localized prices are controlled by the applicable store.
+Free Android users receive ten qualifying runs under the same completion-and-save rule used on iOS. Android PressBench Pro is a monthly auto-renewable Google Play subscription that unlocks unlimited runs and PDF/CSV reports while active and verified. The Android App contains no advertising SDK and displays no ads. Purchase availability and localized offers are controlled by Google Play.
 
 See [Subscriptions and Purchases]({{ '/subscriptions/' | relative_url }}).
 
