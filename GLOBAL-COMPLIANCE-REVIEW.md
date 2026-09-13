@@ -1,15 +1,15 @@
 # PressBench — Global Play & Privacy Compliance Review
 
-**Review date:** 1 September 2026  
-**Android release baseline:** `1.0.0-closed-v18-native`, version code 1405  
-**Source reviewed:** `lrodeveloperr/pressbench-apk-compiler@92ba7dd7a4beab7d9294d044a8d2fc10d1f6b499`
+**Review date:** 13 September 2026  
+**Android release baseline:** `1.0.1`, version code 2  
+**Source reviewed:** `lrodeveloperr/press-bench-android`
 
 This is an engineering and store-readiness review, not a legal opinion for every jurisdiction. PressBench minimizes publisher processing: operational records remain on-device, there is no PressBench account or developer production database, Android backup/device transfer is disabled, and routine external services are Google Play Billing, the public legal site and user-selected export destinations.
 
 ## Google Play baseline
 
-- Free users receive five successfully completed and saved runs; no advertising SDK or ad inventory is included.
-- Android PressBench Pro is a monthly Google Play subscription: US$6.99 US base price, geo-priced elsewhere, for unlimited runs and PDF/CSV reports.
+- Free users receive ten qualifying runs under the same completion-and-save rule used on iOS; no advertising SDK or ad inventory is included.
+- Android PressBench Pro is a monthly Google Play subscription for unlimited runs and PDF/CSV reports. Google Play displays the current localized offer before purchase.
 - Keep the public privacy policy and in-App legal links accessible without login.
 - Reconfirm how Play Console expects Google Play Billing purchase history/status to be declared for the exact SDK and implementation.
 - Declare **Contains ads: No**, **In-app purchases: Yes**, the actual adult target audience and unrestricted App access.
@@ -26,7 +26,7 @@ For US states, Brazil, Japan, Australia, New Zealand, Switzerland, Türkiye, Sou
 
 The Android subscription supplies recurring access to unlimited workflow usage and report generation. Google Play supplies the localized price and manages payment, renewal, cancellation and refunds. Keep benefits available throughout paid entitlement, preserve existing records after expiry, honor supported legacy purchases, and do not advertise a trial or offer unless it is active in Play Console.
 
-The client-only entitlement implementation relies on periodic Play verification with up to 72 hours of cached paid continuity. This is simpler and minimizes developer-held purchase data, but it is less resistant to tampering and delayed revocation than Google’s recommended secure-backend verification. Monitor fraud and refund risk; if a backend is later introduced, update the privacy policy, security model, Data Safety answers and retention/deletion rules before launch.
+The client-only entitlement implementation relies on periodic Play verification with a signed, bounded local continuity record that cannot extend its original verification window. This minimizes developer-held purchase data, but it is less resistant to delayed revocation than a production purchase-verification backend. Monitor fraud and refund risk; if a backend is later introduced, update the privacy policy, security model, Data Safety answers and retention/deletion rules before launch.
 
 ## Languages and market scope
 
