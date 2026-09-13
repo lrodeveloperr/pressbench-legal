@@ -1,26 +1,26 @@
 # PressBench Android — Store Readiness Gate
 
-**Baseline:** `1.0.0-closed-v18-native` (version code 1405)  
-**Source:** `lrodeveloperr/pressbench-apk-compiler@92ba7dd7a4beab7d9294d044a8d2fc10d1f6b499`  
-**Reviewed:** 1 September 2026
+**Baseline:** `1.0.1` (version code 2)  
+**Source:** `lrodeveloperr/press-bench-android`  
+**Reviewed:** 13 September 2026
 
 ## Implemented baseline
 
 - Native Jetpack Compose Setup → First piece → Production → Result workflow.
 - Explicit Terms acceptance and safety acknowledgement before normal use.
-- Five successfully completed and saved free runs; failed, canceled and unsaved runs do not consume the allowance.
+- Ten qualifying free runs under the same completion-and-save rule used on iOS; failed, canceled and unsaved runs do not consume the allowance.
 - Google Play Billing Library 9.1.0 with product `pressbench_unlimited_monthly_android` and monthly base plan `monthly`.
-- US$6.99/month US base price model with Google Play localized/geo-priced display.
+- Google Play-localized monthly offer displayed dynamically; no amount embedded in the App or public policies.
 - Pro gates unlimited runs and PDF/CSV reports after entitlement verification.
-- Purchase acknowledgement, restore/reconciliation, subscription management route, legacy entitlement recognition and up to 72 hours of verified offline continuity.
+- Purchase acknowledgement, restore/reconciliation, subscription management route, existing annual-entitlement recognition and signed 30-day offline continuity.
 - No advertising SDK or ad inventory in either tier.
 - No PressBench account or developer cloud database.
 - Local deletion, local PDF/CSV sharing, and Android backup/device-transfer exclusions.
 
 ## Play Console checks before rollout
 
-- Verify the uploaded artifact is the signed version code 1405 AAB and record its SHA-256.
-- Activate `pressbench_unlimited_monthly_android` and base plan `monthly`; set US$6.99 and review every Google-generated regional price.
+- Verify the uploaded artifact is the signed version code 2 AAB and record its SHA-256.
+- Activate `pressbench_unlimited_monthly_android` and base plan `monthly`; keep top-end markets at iOS parity and reduce only lower-price markets by roughly one Play pricing tier, then review every localized amount.
 - Test with Play licence testers: new purchase, pending state, acknowledgement, restore, renewal, cancellation, expiry, refund/revocation, legacy products and reinstall.
 - Verify the purchase screen shows Play’s localized price and monthly period, benefits, renewal wording, Privacy Policy, Terms and Restore purchase.
 - Verify Settings provides a working subscription-management link.
@@ -36,9 +36,9 @@
 - version code/name, package, target API 36 and merged permissions;
 - `com.android.vending.BILLING`, with no AdMob metadata, advertising identifier permission or Google Mobile Ads/UMP components;
 - Play Billing 9.1.0, active product/base-plan match and acknowledgement path;
-- free-run monotonicity, Pro gates, expiry behavior and 72-hour offline boundary;
+- free-run monotonicity, Pro gates, expiry behavior and signed 30-day offline boundary;
 - backup/data-transfer exclusions and clear-text traffic disabled;
-- PDF/CSV entitlement gate and user-initiated FileProvider sharing;
+- PDF/CSV entitlement gate and user-initiated export through Android’s system document interface;
 - 16 KB native-library compatibility, release lint, tests, bundle integrity and upload signature;
 - light/dark, LTR/RTL, long-translation and supported-Android device smoke tests.
 
