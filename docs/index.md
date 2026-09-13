@@ -6,7 +6,7 @@ permalink: /
 
 # PressBench Legal & Support
 
-> **Platform status.** Android free users receive five successfully completed and saved runs. Android PressBench Pro is US$6.99 per month in the US storefront with Google Play geo-pricing and provides unlimited runs and PDF/CSV reports while active. The Android App contains no advertising SDK and displays no ads. On iOS, ten qualifying runs are free; a run counts after it is successfully committed and saved and records at least one processed item or a first-piece attempt. PressBench Pro is offered as a monthly auto-renewable App Store subscription with Apple-provided localized pricing, and provides unlimited runs plus PDF/XLSX reports while active. A previously acquired, verified annual iOS entitlement may remain valid until expiry but is not offered for sale to new customers. The iOS release contains no advertising or tracking SDK.
+> **Platform status.** On both Android and iOS, ten qualifying runs are free; a run counts after it is successfully committed and saved and records at least one processed item or a first-piece attempt. PressBench Pro is offered to new customers as a monthly auto-renewable subscription and provides unlimited runs plus locally generated reports while active: PDF/CSV on Android and PDF/XLSX on iOS. Each store displays its current localized offer before purchase. A previously acquired, verified annual entitlement may remain valid until expiry but is not offered to new customers. Neither release contains advertising or tracking SDK.
 
 PressBench is a local-first heat-press production setup and run-record utility. It records information entered by the operator; it does not inspect or control equipment or determine safe or correct settings.
 
@@ -24,4 +24,4 @@ PressBench is a local-first heat-press production setup and run-record utility. 
 Provider: **Lateef Razaq-Oyetola carrying on business as GoodUse Studios**, Ontario, Canada  
 Contact: [lrodeveloperr@gmail.com](mailto:lrodeveloperr@gmail.com?subject=PressBench%20Support)
 
-Last reviewed: **12 September 2026**
+Last reviewed: **13 September 2026**
