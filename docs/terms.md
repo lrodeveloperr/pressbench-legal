@@ -7,7 +7,7 @@ permalink: /terms/
 
 # Terms of Use
 
-**Effective: 12 September 2026**
+**Effective: 13 September 2026**
 
 These Terms govern use of **PressBench** (the “App”), provided by **Lateef Razaq-Oyetola carrying on business as GoodUse Studios, Ontario, Canada** (“GoodUse Studios,” “we,” “us,” or “our”). By downloading, accessing or using the App, you agree to them. If you do not agree, do not use the App.
 
@@ -41,9 +41,9 @@ Apple’s purchase sheet supplies the authoritative localized price, currency, t
 
 ### Android
 
-Free Android users may save five successfully completed press runs. Failed, canceled or unsaved runs do not consume the allowance. Android PressBench Pro is a one-month auto-renewable Google Play subscription priced at US$6.99 per month in the US storefront and geo-priced by Google Play elsewhere. While active and verified, Pro provides unlimited press runs and PDF/CSV reports. The Android App contains no advertising SDK and displays no ads. Existing records remain readable after the free limit or subscription expiry. The in-App **Delete Local Data** action does not reset the separately stored free-run counter.
+Free Android users receive ten qualifying runs under the same completion-and-save rule used on iOS. Failed, canceled or unsaved runs do not consume the allowance. Android PressBench Pro is a one-month auto-renewable Google Play subscription. While active and verified, Pro provides unlimited press runs and PDF/CSV reports. The Android App contains no advertising SDK and displays no ads. Existing records remain readable after the free limit or subscription expiry. The in-App **Delete Local Data** action does not reset the separately stored free-run counter. A verified existing annual entitlement may remain valid until it expires, but the annual product is not offered to new customers.
 
-Google Play supplies the authoritative localized price, currency, billing period, taxes, renewal terms and any offer before purchase. Payment is charged through the user’s Google Play account and the subscription renews monthly until canceled. Deleting PressBench does not cancel the subscription. Users can manage or cancel through [Google Play subscriptions](https://play.google.com/store/account/subscriptions), and can use **Restore purchase** in PressBench. Pro may require periodic online verification; a recently verified entitlement may continue offline for up to 72 hours.
+Google Play supplies the authoritative localized price, currency, billing period, taxes, renewal terms and any offer before purchase. Payment is charged through the user’s Google Play account and the subscription renews monthly until canceled. Deleting PressBench does not cancel the subscription. Users can manage or cancel through [Google Play subscriptions](https://play.google.com/store/account/subscriptions), and can use **Restore purchase** in PressBench. Pro may require periodic online verification; a signed recent entitlement-verification record may continue offline only within its original bounded verification window.
 
 Android PDF/CSV and eligible iOS PDF/XLSX reports are generated locally and shared only when the user selects a destination. [Subscriptions and Purchases]({{ '/subscriptions/' | relative_url }}) forms part of these Terms.
 

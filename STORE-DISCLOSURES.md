@@ -1,21 +1,21 @@
 # PressBench Android — Google Play Disclosure Worksheet
 
-**Release reviewed:** `1.0.0-closed-v18-native` (version code 1405)  
+**Release reviewed:** `1.0.1` (version code 2)  
 **Package:** `com.goodusestudios.pressbench`  
-**Source reviewed:** `lrodeveloperr/pressbench-apk-compiler` at `92ba7dd7a4beab7d9294d044a8d2fc10d1f6b499`  
-**Reviewed:** 1 September 2026
+**Source reviewed:** `lrodeveloperr/press-bench-android`  
+**Reviewed:** 13 September 2026
 
-This worksheet describes the Android v18 source and the release configuration used by the approved GitHub AAB workflow. Recheck the exact signed AAB and Play Console product state before rollout.
+This worksheet describes the Android 1.0.1 source. Recheck the exact signed AAB and Play Console product state before rollout.
 
 ## Store model
 
-- Free allowance: five successfully completed and saved press runs. Failed, canceled or unsaved runs do not consume the allowance.
+- Free allowance: ten qualifying press runs under the same completion-and-save rule used on iOS. Failed, canceled or unsaved runs do not consume the allowance.
 - Neither tier contains advertising or an advertising SDK.
 - PressBench Pro: one-month auto-renewable Google Play subscription.
-- US base price: US$6.99 per month; regional prices are supplied through Google Play geo-pricing.
+- Google Play supplies the current localized offer before purchase; public policies contain no fixed amount.
 - Pro benefits: unlimited press runs and PDF/CSV report export while active and verified.
 - Product ID: `pressbench_unlimited_monthly_android`; base plan: `monthly`.
-- Verified legacy subscription `remove_ads_monthly` and lifetime product `pressbench_unlimited_lifetime_android` remain recognized.
+- A verified existing `pressbench_unlimited_annual_android` subscription remains recognized until expiry but is not offered to new customers.
 - Existing records remain readable after the limit or subscription expiry.
 - In-App deletion does not reset the separately stored free-run counter.
 - No PressBench account, developer cloud sync, GoodUse Studios analytics, crash-reporting or attribution SDK.
@@ -37,7 +37,7 @@ This worksheet describes the Android v18 source and the release configuration us
 
 No advertising, consent-management, analytics, crash-reporting, attribution or tracking SDK is included. No advertising data categories should be declared for this release.
 
-Google Play Billing processes purchase and subscription information. PressBench receives purchase status and tokens for acknowledgement and entitlement checks, processes tokens transiently, and stores locally only the time of the latest successful paid verification.
+Google Play Billing processes purchase and subscription information. PressBench receives purchase status and tokens for acknowledgement and entitlement checks. For restart continuity, the Android App stores the recognized product ID, purchase token, latest successful verification time, bounded expiry time and acknowledgement state in an app-private record authenticated with an Android Keystore HMAC. The record cannot extend itself and is accepted for no more than 30 days from that verification.
 
 | Data type | Collected | Shared | Purposes |
 | --- | --- | --- | --- |
@@ -45,7 +45,7 @@ Google Play Billing processes purchase and subscription information. PressBench 
 
 - Data transmitted to Google services is encrypted in transit according to Google’s service documentation.
 - PressBench does not automatically upload machine, setup, run, report or free-text fields.
-- PDF/CSV sharing is user initiated through Android’s system share sheet.
+- PDF/CSV export is user initiated through Android’s system document interface and writes only to the document destination the user selects.
 - GoodUse Studios has no developer backend receiving production records or purchase tokens.
 - Reconfirm every Data Safety answer from the exact signed AAB and the SDK declarations shown in Play Console before submission.
 
@@ -57,11 +57,11 @@ Google Play Billing processes purchase and subscription information. PressBench 
 4. Keep **Restore purchase** and the direct Google Play subscription-management route working.
 5. Do not promise a trial or introductory price unless the active Play offer supplies it.
 6. Preserve access to existing records after expiry.
-7. Test purchase, acknowledgement, pending purchase, cancellation, expiry, refund/revocation, reinstall/restore and the 72-hour offline continuity boundary.
+7. Test purchase, acknowledgement, pending purchase, cancellation, expiry, refund/revocation, reinstall/restore and the signed 30-day offline-continuity boundary.
 
 ## Release controls
 
-1. Verify the signed v18 AAB is version code 1405 and contains no advertising SDK, advertising components or advertising identifiers.
+1. Verify the signed 1.0.1 AAB is version code 2 and contains no advertising SDK, advertising components or advertising identifiers.
 2. Confirm the Play subscription and `monthly` base plan are active in every selected country/region.
 3. Keep the listing, **Contains ads**, **In-app purchases**, Data Safety and subscription disclosures synchronized with the binary.
 4. Recheck target API, permissions, Play SDK status, 16 KB compatibility, signing and dependency inventory.
