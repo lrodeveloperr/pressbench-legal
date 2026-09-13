@@ -7,7 +7,7 @@ permalink: /subscriptions/
 
 # Purchases and Subscriptions
 
-**Effective: 12 September 2026**
+**Effective: 13 September 2026**
 
 ## iOS model
 
@@ -25,16 +25,14 @@ Apple’s purchase sheet is authoritative for the localized price, currency, tax
 
 ## Android model
 
-The Android release has not been changed by the 6 September 2026 iOS pricing migration. Its currently configured model remains as documented in the Android release materials until a separate Android monetization release is approved.
-
-- Free use includes up to five successfully completed and saved press runs.
+- Free use includes ten qualifying runs under the same completion-and-save rule used on iOS.
 - Failed, canceled or unsaved runs do not use the allowance. The in-App local-data deletion action does not restore free uses.
-- Android PressBench Pro is an auto-renewable one-month Google Play subscription. Its configured US base price is **US$6.99 per month**, with regional prices supplied by Google Play.
+- Android PressBench Pro is an auto-renewable one-month Google Play subscription. Google Play displays the current localized offer before purchase.
 - While active and verified, Android Pro provides unlimited press runs and PDF/CSV production reports.
 - The Android App contains no advertising SDK and displays no ads in either tier.
 - Machines, setups, search, corrections, deletion and access to existing records are not separately capped.
 - Existing records remain readable after expiry.
-- Verified purchases under supported legacy identifiers remain honored according to the Android release implementation.
+- A verified existing `pressbench_unlimited_annual_android` subscription may remain recognized until it expires, but the annual product is not offered to new customers.
 
 Google Play’s purchase sheet is authoritative for localized price, currency, billing period, taxes, renewal terms and any offer. Payment, renewal, cancellation and refunds are handled by Google Play. Users can manage or cancel through [Google Play subscriptions](https://play.google.com/store/account/subscriptions) and can use **Restore purchase** in PressBench where supported. Deleting PressBench does not cancel a Google Play subscription.
 
